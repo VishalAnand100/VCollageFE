@@ -1,0 +1,53 @@
+<div *ngIf="detailedReport" class="svg-container">
+    <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 793 1123" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <clipPath id="a">
+                <path d="M0 0h793v1123H0z"/>
+            </clipPath>
+            
+        </defs>
+        <g clip-path="url(#a)">
+            <rect x="0" y="0" width="793" height="1122.8" fill="#FFFFFF" />
+            
+            <path d="M21 29.0208 769 29.0208 769 1103.79 21 1103.79 21 29.0208Z" stroke="#091E6B" stroke-width="3.99832"
+                stroke-linecap="square" stroke-miterlimit="8"  fill="#F3F8FF" fill-rule="evenodd" />
+            <g>
+                <g>
+                    <g>
+                        <path
+                            d="M27.9153 13.5997C27.9153 13.5997 12.5262 16.2838 7.1571 28.6308 1.78796 40.9779 1.07306 50.9991 6.44133 62.9882 11.8096 74.9773 28.6298 76.5879 28.6298 76.5879L35.7875 98.7763 42.2295 77.303 120.964 77.303C120.964 77.303 137.426 76.2293 143.152 63.7033 148.878 51.1772 149.057 40.0826 143.868 27.1986 138.679 14.3146 122.395 12.1675 122.395 12.1675L27.9119 13.599Z"
+                            stroke="#000000" stroke-width="1.43162" stroke-linejoin="round" fill="none"
+                            transform="matrix(1.00358 0 0 1 49.6756 200)" />
+                    </g>
+                </g>
+            </g><text font-weight="400" font-size="15" transform="matrix(1 0 0 1.00072 74 255)">What it
+                means</text>
+        </g>
+    </svg>
+    <div class="absolute-text">
+        <div class="translated-font">
+            Your personality traits interact dynamically, creating unique patterns of thought, behaviour, and emotional
+            responses that shape how you engage with the world. Each trait influences the others, forming an interplay
+            that impacts your decision-making, relationships, and ability to adapt to different situations.
+        </div>
+        <br>
+        <div class="translated-font"  *ngIf="highScores && highScores.length > 0">
+            You have Scored <strong>HIGH</strong> in {{highScores.join(', ')}}
+        </div>
+        <div class="translated-font">
+            You have Scored <strong>LOW</strong> in {{lowScores.join(', ')}}
+        </div>
+
+
+    </div>
+    <div class="absolute-text-2">
+        <ul>
+            <li *ngFor="let item of psychometricScore; let i = index">
+                <span class="translated-font" style="font-weight: 600;">
+                    {{item.scoreObject.categoryScoreLevel}} score in {{item.scoreObject.categoryDisplayText}}</span>
+                <div class="translated-font">{{item.scoreObject.categoryInterpretation}}</div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  background: #edf0fa;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  position: fixed; /* Ensures the container is fixed to the screen */
+  top: 0;
+  left: 0;
+  // overflow: hidden; /* Prevents scrolling */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row; /* Change to row for large screens */
+  }
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.custom-button {
+  border-radius: 25px;
+  border-color: white;
+  background: #0062ff;
+  color: white;
+  padding: 8px 40px;
+  margin-left: 14px;
+  font-size: 16px;
+}
+.payment-details {
+  width: 70%; /* Covers 70% of the page */
+  height: 70%; /* Covers 70% of the page */
+
+  background: white;
+  padding: 25px 100px; /* 25px top & bottom, 100px left & right */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
+  position: relative;
+
+  h2 {
+    margin-bottom: 40px;
+    color: #000;
+    font-size: 26px;
+  }
+
+  .payment-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .payment-column {
+      color: #000;
+      flex: 1;
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+    .payment-column-data {
+      color: #808080;
+      flex: 1;
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 49px;
+}
+.card h2 {
+  margin-bottom: 18px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.coupon-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.coupon-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+.coupon-box button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cancel {
+  background: #ccc;
+}
+.proceed {
+  background: #007bff;
+  color: white;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.img {
+  width: 66px;
+}
+.ticket {
+  width: 300px;
+  height: 150px;
+  background: #E88878; /* Adjust to match your ticket color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  border-radius: 10px; /* Slightly rounded corners */
+}
+#couponCode {
+  border: none !important;
+  outline: none;
+  background: white;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 1rem;
+ 
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+.input-group {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+}
+
+.input-group button {
+  background-color: white;
+  padding: 7px 8px;
+  font-weight: bold;
+  color: #999;
+  border: none;
+  cursor: pointer;
+}
+
+.coupon-card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.coupon-title {
+  font-weight: 800;
+  font-size: 1.30rem;
+  margin: 0;
+  color:#000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.coupon-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.coupon-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coupon-code {
+  background: url('/assets/image/Coupanbox.png');
+  width:150px;
+
+  color: white;
+  padding: 8px 16px;
+  border-radius: 0.5rem;
+  font-weight: 1000;
+  font-size: 1rem;
+}
+
+.coupon-code div {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.apply-btn {
+  background-color: #fff;
+  color: #9ca3af;
+  padding: 6px 16px;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #9ca3af;
+  color: #fff;
+}
+

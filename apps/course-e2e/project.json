@@ -1,0 +1,9 @@
+{
+  "name": "course-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/course-e2e/src",
+  "implicitDependencies": ["course"],
+  "// targets": "to see all targets run: nx show project course-e2e --web",
+  "targets": {}
+}

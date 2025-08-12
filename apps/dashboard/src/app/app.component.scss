@@ -1,0 +1,486 @@
+// .layout-wrapper {
+//   display: flex;
+//   transition: all 0.3s ease;
+// }
+
+// app-sidebar {
+//   width: 250px;
+//   transition: all 0.3s ease;
+// }
+
+// .layout-main-container {
+//   margin-left: 250px;
+//   transition: all 0.3s ease;
+//   width: calc(100% - 250px);
+// }
+
+// .layout-wrapper.sidebar-closed app-sidebar {
+//   width: 0;
+//   overflow: hidden;
+// }
+
+// .layout-wrapper.sidebar-closed .layout-main-container {
+//   margin-left: 0;
+//   width: 100%;
+// }
+
+// .layout-wrapper {
+//   display: flex;
+//   position: relative;
+//   transition: all 0.3s ease;
+// }
+
+// /* Base Sidebar Style */
+// app-sidebar {
+//   width: 250px;
+//   transition: all 0.3s ease;
+//   background: #fff;
+//   z-index: 1001;
+// }
+
+// /* Sidebar collapsible (desktop) */
+// .layout-wrapper.sidebar-closed app-sidebar {
+//   width: 0;
+//   overflow: hidden;
+// }
+
+// .layout-wrapper.sidebar-closed .layout-main-container {
+//   margin-left: 0;
+//   width: 100%;
+// }
+
+// /* Main container (desktop) */
+// .layout-main-container {
+//   margin-left: 250px;
+//   transition: all 0.3s ease;
+//   width: calc(100% - 250px);
+// }
+
+
+app-sidebar {
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+/* General sidebar collapse behavior */
+.layout-wrapper.sidebar-closed app-sidebar {
+  width: 0;
+  overflow: hidden;
+}
+.layout-wrapper.sidebar-closed .layout-main-container {
+  margin-left: 0;
+  width: 100%;
+}
+
+
+/* ========== Responsive Sidebar Widths ========== */
+
+/* Small Tablets (300px - 600px) */
+@media (min-width: 300px) and (max-width: 500px) {
+  .layout-wrapper {
+    position: relative;
+  }
+
+  app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 200px; /* Wider than default */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+
+  .layout-wrapper.sidebar-open app-sidebar {
+    transform: translateX(0);
+  }
+
+  .layout-main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .layout-wrapper.sidebar-open .sidebar-backdrop {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}
+
+
+/* Small Tablets (601px - 768px) */
+@media (min-width: 501px) and (max-width: 768px) {
+  .layout-wrapper {
+    position: relative;
+  }
+
+  app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 300px; /* Wider than default */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+
+  .layout-wrapper.sidebar-open app-sidebar {
+    transform: translateX(0);
+  }
+
+  .layout-main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .layout-wrapper.sidebar-open .sidebar-backdrop {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}
+
+/* Medium Tablets (769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .layout-wrapper {
+    position: relative;
+  }
+
+  app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 350px; /* Wider than default */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+
+  .layout-wrapper.sidebar-open app-sidebar {
+    transform: translateX(0);
+  }
+
+  .layout-main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .layout-wrapper.sidebar-open .sidebar-backdrop {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}
+
+/* Large Tablets / Small Desktops (993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .layout-wrapper {
+    position: relative;
+  }
+
+  app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 350px; /* Wider than default */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+
+  .layout-wrapper.sidebar-open app-sidebar {
+    transform: translateX(0);
+  }
+
+  .layout-main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .layout-wrapper.sidebar-open .sidebar-backdrop {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}
+
+/* Mobile/Tablet View */
+//from 300px to 500px
+// @media (min-width: 300px) and (max-width: 600px) {
+//   .layout-wrapper {
+//     position: relative;
+//   }
+
+//   app-sidebar {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 200px;
+//     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+//     transform: translateX(-100%);
+//     transition: transform 0.3s ease;
+//     z-index: 1001;
+//   }
+
+//   .layout-wrapper.sidebar-open app-sidebar {
+//     transform: translateX(0);
+//   }
+
+//   .layout-main-container {
+//     margin-left: 0;
+//     width: 100%;
+//   }
+
+//   /* Backdrop */
+//   .sidebar-backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     z-index: 1000;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: opacity 0.3s ease;
+//   }
+
+//   .layout-wrapper.sidebar-open .sidebar-backdrop {
+//     opacity: 1;
+//     pointer-events: all;
+//   }
+
+//   /* Prevent background scroll when sidebar is open */
+//   body.sidebar-open {
+//     overflow: hidden;
+//   }
+// }
+
+
+// @media (min-width: 601px) and (max-width: 768px) {
+//   .layout-wrapper {
+//     position: relative;
+//   }
+
+//   app-sidebar {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 350px;
+//     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+//     transform: translateX(-100%);
+//     transition: transform 0.3s ease;
+//     z-index: 1001;
+//   }
+
+//   .layout-wrapper.sidebar-open app-sidebar {
+//     transform: translateX(0);
+//   }
+
+//   .layout-main-container {
+//     margin-left: 0;
+//     width: 100%;
+//   }
+
+//   /* Backdrop */
+//   .sidebar-backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     z-index: 1000;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: opacity 0.3s ease;
+//   }
+
+//   .layout-wrapper.sidebar-open .sidebar-backdrop {
+//     opacity: 1;
+//     pointer-events: all;
+//   }
+
+//   /* Prevent background scroll when sidebar is open */
+//   body.sidebar-open {
+//     overflow: hidden;
+//   }
+// }
+
+
+// @media (min-width: 968px) and (max-width: 1200px) {
+//   .layout-wrapper {
+//     position: relative;
+//   }
+
+//   app-sidebar {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 450px;
+//     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+//     transform: translateX(-100%);
+//     transition: transform 0.3s ease;
+//     z-index: 1001;
+//   }
+
+//   .layout-wrapper.sidebar-open app-sidebar {
+//     transform: translateX(0);
+//   }
+
+//   .layout-main-container {
+//     margin-left: 0;
+//     width: 100%;
+//   }
+
+//   /* Backdrop */
+//   .sidebar-backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     z-index: 1000;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: opacity 0.3s ease;
+//   }
+
+//   .layout-wrapper.sidebar-open .sidebar-backdrop {
+//     opacity: 1;
+//     pointer-events: all;
+//   }
+
+//   /* Prevent background scroll when sidebar is open */
+//   body.sidebar-open {
+//     overflow: hidden;
+//   }
+// }
+
+// //from 
+// @media screen and (max-width: 1200px) {
+//   .layout-wrapper {
+//     position: relative;
+//   }
+
+//   app-sidebar {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 250px;
+//     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+//     transform: translateX(-100%);
+//     transition: transform 0.3s ease;
+//     z-index: 1001;
+//   }
+
+//   .layout-wrapper.sidebar-open app-sidebar {
+//     transform: translateX(0);
+//   }
+
+//   .layout-main-container {
+//     margin-left: 0;
+//     width: 100%;
+//   }
+
+//   /* Backdrop */
+//   .sidebar-backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     z-index: 1000;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: opacity 0.3s ease;
+//   }
+
+//   .layout-wrapper.sidebar-open .sidebar-backdrop {
+//     opacity: 1;
+//     pointer-events: all;
+//   }
+
+//   /* Prevent background scroll when sidebar is open */
+//   body.sidebar-open {
+//     overflow: hidden;
+//   }
+// }

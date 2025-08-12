@@ -1,0 +1,191 @@
+<div class="p-fluid p-2 m-2">
+  <p-panel header="Payment">
+    <div class="container">
+      <div class="card">
+        <h2>Payment Transaction Details</h2>
+        <div class="form-container">
+          <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" [value]="studentDto.studentName" disabled />
+          </div>
+          <div class="form-group">
+            <label>Amount to be Paid</label>
+            <input
+              type="text"
+              [value]="undiscountedPrice | currency : 'INR'"
+              disabled
+            />
+          </div>
+          <div class="form-group">
+            <label>Discount</label>
+            <input type="text" [value]="discount | currency : 'INR'" disabled />
+          </div>
+          <div class="form-group">
+            <label>Final Price</label>
+            <input
+              type="text"
+              [value]="finalPrice | currency : 'INR'"
+              disabled
+            />
+          </div>
+          <div class="form-group full-width">
+            <label>Email Address</label>
+            <input type="email" [value]="studentDto.emailAddress" disabled />
+          </div>
+        </div>
+        <small
+          >Will send invoice on your email. You can see it after the transaction
+          is successful.</small
+        >
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input
+            type="text"
+            [value]="studentDto.details.contactNumber"
+            disabled
+          />
+        </div>
+        <div class="coupon-box">
+          <div
+            class="flex flex-row justify-content-center align-items-center cursor-pointer gap-2"
+            (click)="showApplyCouponDialog = true"
+          >
+            <img class="img" src="assets/image/image.jpeg" alt="diamond" />
+            <div class="flex flex-column">
+              <h1 class="font-bold">Coupons</h1>
+              <p style="color: #3479ff; font-size: 15px; margin-top: -10px">
+                Apply now and save extra!
+              </p>
+            </div>
+            <!-- <div>
+                            <input id="couponCode" type="text" placeholder="Coupon Code" pInputText
+                                [(ngModel)]="couponCode" />
+                        </div> -->
+          </div>
+          <!-- <button type="button" (click)="showApplyCouponDialog = true">
+            Coupon
+          </button> -->
+
+          <!-- <button (click)="applyCoupon(couponCode)">Apply Coupon</button> -->
+        </div>
+        <div class="buttons">
+          <!-- <button class="cancel">Cancel</button> -->
+          <button class="proceed" (click)="pay()">Proceed</button>
+        </div>
+      </div>
+      <!-- <div class="ticket">
+        <div>Coupon Code</div>
+        <div>SUMMER20</div>
+      </div> -->
+    </div>
+    <!-- 🟦 Coupon Dialog Popup -->
+    <p-dialog
+      [(visible)]="showApplyCouponDialog"
+      [modal]="true"
+      [breakpoints]="{ '1199px': '44vw', '700px': '85vw' }"
+      [style]="{ width: '30vw' }"
+      [draggable]="false"
+      [resizable]="false"
+    >
+      <div>
+        <div class="modal-content">
+          <div class="input-group">
+            <input
+              id="couponCode"
+              type="text"
+              placeholder="Enter Coupon Code"
+              pInputText
+              [(ngModel)]="couponCode"
+            />
+            <!-- <input type="text" placeholder="Enter Coupon Code" /> -->
+            <button (click)="applyCoupon(couponCode)">Apply</button>
+          </div>
+
+          <div class="coupon-card">
+            <img src="assets/image/coupan.png" />
+            <p class="coupon-title">Flat 10% OFF</p>
+            <p class="coupon-description">
+              Get a flat 10% off on your total purchase instantly.
+            </p>
+            <div class="coupon-footer">
+              <div class="coupon-code">
+                DISCOUNT10
+                <div>Expires on 22nd Sep, 2025</div>
+              </div>
+              <!-- <button class="apply-btn" >Apply</button> -->
+            </div>
+          </div>
+          <div class="coupon-card">
+            <img src="assets/image/coupan.png" />
+            <p class="coupon-title">Flat 20% OFF</p>
+            <p class="coupon-description">
+              Get a flat 20% off on your total purchase instantly.
+            </p>
+            <div class="coupon-footer">
+              <div class="coupon-code">
+                 SUMMER20
+                <div>Expires on 22nd Sep, 2025</div>
+              </div>
+              <!-- <button class="apply-btn" >Apply</button> -->
+            </div>
+          </div>
+
+          <!-- <div class="coupon-card">
+            <img src="assets/image/coupan.png" />
+            <p class="coupon-title">Flat 30% OFF</p>
+            <p class="coupon-description">
+              Get a flat 30% off on your total purchase instantly.
+            </p>
+            <div class="coupon-footer">
+              <div class="coupon-code">
+                SAVE30
+                <div>Expires on , 2025</div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="coupon-card">
+            <img src="assets/image/coupan.png" />
+            <p class="coupon-title">Flat 40% OFF</p>
+            <p class="coupon-description">
+              Get a flat 40% off on your total purchase instantly.
+            </p>
+            <div class="coupon-footer">
+              <div class="coupon-code">
+                SKILLS2025
+                <div>Expires on , 2025</div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <ng-template pTemplate="footer">
+        <div class="flex flex-wrap justify-content-center m-2 p-2">
+          <!-- <p-button
+            pRipple
+            raised="true"
+            type="button"
+            label="Apply Coupon"
+            class="flex p-1 m-1"
+            icon="pi pi-check"
+            (onClick)="applyCoupon(couponCode)"
+          >
+          </p-button> -->
+
+          <!-- <p-button
+            pRipple
+            raised="true"
+            type="button"
+            label="Cancel"
+            class="flex p-1 m-1"
+            icon="pi pi-cancel"
+            (onClick)="showApplyCouponDialog = false"
+          ></p-button> -->
+        </div>
+      </ng-template>
+    </p-dialog>
+    <!--   popup End -->
+    <p-toast position="top-center"></p-toast>
+  </p-panel>
+</div>

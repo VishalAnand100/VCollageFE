@@ -1,0 +1,83 @@
+:host ::ng-deep .p-paginator {
+  display: none !important;
+}
+.assessment-container {
+  margin-top: 5rem;
+  background-color: #edf0fa;
+  height: calc(100vh - 5rem);
+
+  .transition-page {
+    text-align: center;
+
+    .instructions-list {
+      font-size: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: left;
+      padding-left: 1rem;
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .assessment-page {
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .last-saved {
+      font-size: 0.85rem;
+      color: #777;
+      text-align: right;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .question-and-review {
+      display: flex;
+      min-height: 55vh;
+      .question-view {
+        display: flex;
+      }
+
+      .question-review-container {
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+        padding: 2px;
+        margin: 2px;
+        height: -webkit-fill-available;
+        flex-wrap: wrap;
+
+        .question-review {
+          border: #777;
+          display: flex;
+          gap: 8px;
+          flex-wrap: wrap;
+
+          .question-item {
+            flex: 1 1 16% !important; // Each item takes up 20% of the container's width
+            box-sizing: border-box !important; // Ensures padding and border are included in the width
+            padding: 12px !important; // Optional: Adds some spacing around each item
+          }
+        }
+      }
+    }
+  }
+}

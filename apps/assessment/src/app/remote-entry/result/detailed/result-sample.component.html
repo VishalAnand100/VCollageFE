@@ -1,0 +1,35 @@
+<div *ngIf="!reportLoading" id="report-container" class="container mt-4 report-container"
+    [ngStyle]="{ 'visibility': loading ? 'collapse' : 'visible'}">
+    <div *ngIf="detailedReport" class="a4-size" #queryElem>
+        <app-page1></app-page1>
+        <div class="page-break"></div>
+        <app-page2 [detailedReport]="detailedReport"></app-page2>
+        <div class="page-break"></div>
+        <app-page3 [detailedReport]="detailedReport"></app-page3>
+    </div>
+
+    <!-- Download Button -->
+    <div *ngIf="detailedReport" class="custom-button-container download-report-btn floating flex gap-2 justify-content-center flex-column lg:flex-row p-1 m-1"
+        id="download-report-btn">
+         <button class="custom-button" (click)="exportPDF()">Download Report</button> 
+        <button pButton pRipple raised="true" class="custom-button justify-content-center" (click)="pay()">Click to See Your Result</button>
+        <button pButton pRipple raised="true" class="custom-button justify-content-center" (click)="goToDashboard()">Go
+            to Dashboard</button>
+    </div>
+</div>
+<div *ngIf="reportLoading" class="flex flex-column justify-content-center align-items-center" style="font-size: xx-large !important;
+display: flex;
+height: 100vh;
+width: 100vw;
+align-self: center;
+justify-content: center;
+align-items: anchor-center;">
+    <div class="flex flex-column justify-content-center align-items-center">
+        <p-progressSpinner styleClass="w-4rem h-4rem" strokeWidth="8" fill="var(--surface-ground)"
+            animationDuration=".5s" />
+    </div>
+    <div class="fadeindown animation-duration-1000 animation-delay-500 animation-iteration-infinite flex align-items-center justify-content-center
+    font-bold bg-primary border-round m-2 px-5 py-3">
+        Report is being loaded
+    </div>
+</div>

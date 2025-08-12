@@ -1,0 +1,86 @@
+<div style="position: fixed; top: 20px; right: 20px; z-index: 9999;">
+  <button class="custom-button" (click)="exportPDF()">Download Report</button>
+</div>
+
+<div *ngIf="!reportLoading" id="report-container" class="container mt-4"
+    [ngStyle]="{ 'visibility': loading ? 'collapse' : 'visible'}">
+    <div *ngIf="detailedReport" class="a4-size" #queryElem>
+
+        <app-page1 class="page"></app-page1>
+        <div class="page-break"></div>
+        <app-page2 class="page" [detailedReport]="detailedReport"></app-page2>
+        <div class="page-break"></div>
+        <app-page3 class="page" [detailedReport]="detailedReport"></app-page3>
+        <div class="page-break"></div>
+        <app-page4 class="page" [detailedReport]="detailedReport"></app-page4>
+        <div class="page-break"></div>
+        <app-page5 class="page" [detailedReport]="detailedReport"></app-page5>
+        <div class="page-break"></div>
+        <app-page6 class="page" [detailedReport]="detailedReport"></app-page6>
+        <div class="page-break"></div>
+        <app-page7 class="page" [detailedReport]="detailedReport"></app-page7>
+        <div class="page-break"></div>
+        <app-page8 class="page" [detailedReport]="detailedReport"></app-page8>
+        <div class="page-break"></div>
+        <app-page9 class="page" [detailedReport]="detailedReport"></app-page9>
+        <div class="page-break"></div>
+        <app-page10 class="page" [detailedReport]="detailedReport"></app-page10>
+        <div class="page-break"></div>
+        <app-page11 class="page" [detailedReport]="detailedReport"></app-page11>
+        <div class="page-break"></div>
+        <app-page12 class="page" [detailedReport]="detailedReport"></app-page12>
+        <div class="page-break"></div>
+        <app-page13 class="page" [detailedReport]="detailedReport"></app-page13>
+        <div class="page-break"></div>
+        <app-page14 class="page" [detailedReport]="detailedReport"></app-page14>
+        <div class="page-break"></div>
+        <app-page15 class="page" [detailedReport]="detailedReport"></app-page15>
+        <div class="page-break"></div>
+        <app-page16 class="page" [detailedReport]="detailedReport"></app-page16>
+        <div class="page-break"></div>
+        <app-page17 class="page" [detailedReport]="detailedReport"></app-page17>
+        <div class="page-break"></div>
+        <app-page18 class="page" [detailedReport]="detailedReport"></app-page18>
+        <div class="page-break"></div>
+        <app-page19 class="page" [detailedReport]="detailedReport"></app-page19>
+    </div>
+
+    <!-- Download Button -->
+    <!-- <div class="custom-button-container download-report-btn floating" id="download-report-btn">
+        <button class="custom-button" (click)="exportPDF()">Download Report</button>
+    </div> -->
+
+
+</div>
+<div *ngIf="reportLoading" class="flex flex-column justify-content-center align-items-center" style="font-size: xx-large !important;
+display: flex;
+height: 100vh;
+width: 100vw;
+align-self: center;
+justify-content: center;
+align-items: anchor-center;">
+    <div class="flex flex-column justify-content-center align-items-center">
+        <p-progressSpinner styleClass="w-4rem h-4rem" strokeWidth="8" fill="var(--surface-ground)"
+            animationDuration=".5s" />
+    </div>
+    <div class="fadeindown animation-duration-1000 animation-delay-500 animation-iteration-infinite flex align-items-center justify-content-center
+    font-bold bg-primary border-round m-2 px-5 py-3">
+        Report is being loaded
+    </div>
+</div>
+<div *ngIf="loading"
+     class="loader-overlay">
+  <div class="loader-content">
+    <p-progressSpinner
+      styleClass="w-4rem h-4rem"
+      strokeWidth="8"
+      fill="var(--surface-ground)"
+      animationDuration=".5s">
+    </p-progressSpinner>
+
+    <div class="fadeindown animation-duration-1000 animation-delay-500 animation-iteration-infinite 
+                font-bold bg-primary border-round m-2 px-5 py-3">
+      Exporting your report...
+    </div>
+  </div>
+</div>

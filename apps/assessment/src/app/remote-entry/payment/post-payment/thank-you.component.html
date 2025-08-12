@@ -1,0 +1,24 @@
+<div class="post-payment-container">
+    <div class="post-payment-container-content shadow-4">
+        <div class="blur blur-1"></div>
+        <div class="blur blur-2"></div>
+
+        <div *ngIf="this.studentDto" style="z-index: 99; position: relative; height: 100%; width: 100%;"
+            class="flex flex-column justify-content-center align-items-center ">
+            <div class="header-text">
+                Thank you {{this.studentDto.studentName ?? ''}}!
+            </div>
+            <br>
+            <div style="font-size: 1.5em; padding: 0 0.75em;">
+                Your payment is successfully received! <br/>
+                Your personalized <strong>SkillSphere Assessment Report</strong> is being prepared and will be delivered to your email shortly.
+                <p>You'll receive a confirmation email with your receipt and next steps. We're excited for you to discover your insights!</p>
+
+                <p style="margin-bottom: 8px;">Regards</p>
+                <p style="margin-bottom: 5px;"><strong>Team Simplifying Skills</strong></p>
+                <p>📞<strong>Support Contact:</strong> 7798283335</p>
+            </div>
+        </div>
+
+    </div>
+</div>

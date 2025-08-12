@@ -1,0 +1,24 @@
+<div class="flex p-2  md:align-content-start align-content-center flex-wrap flex-column gap-4 question-container">
+  <!-- <h3 class="flex font-bold">{{ question.questionText }}</h3> -->
+  <div class="question-text small-text">
+    <span [innerHTML]="sanitizedQuestionText"></span>
+  </div>
+  <img *ngIf="imageSrc" [src]="imageSrc" class="question-img" alt="Question Image" />
+
+  <hr style="height:1px;border:none;color:#A0A0A0;background-color:#A0A0A0; width: 100%;">
+  <div class="options">
+    <label *ngFor="let option of question.options;let i = index" class="option"
+      [class.selected]="option.id === selectedOption" (click)="selectOption(option.id ?? '')">
+      <div class="option-text">
+        <span> {{getOptionLabel(i)
+          }}. <span *ngIf="!(option.pictureData && ['A','B','C','D','E'].includes(option.optionText ?? ''))">{{
+            option.optionText }}</span> </span>
+
+        <img *ngIf="option.pictureData" style="width: 70px;height: 70px;margin-left: 105px;"
+          [src]="'data:image/png;base64,' + option.pictureData" alt="Option Image" />
+      </div>
+      <input type="radio" name="questionOption" [value]="option.id" [checked]="option.id === selectedOption" />
+
+    </label>
+  </div>
+</div>

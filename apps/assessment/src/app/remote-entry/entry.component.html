@@ -1,0 +1,27 @@
+<div *ngIf="studentInfo">
+
+    <div [ngSwitch]="assessmentInstructionSectionToView">
+        
+    </div>
+
+    <!-- Pre-assessment Form -->
+    <app-pre-assessment *ngIf="!(preAssessmentFormSubmitted$ | async)"
+        (formSubmitted)="preAssessmentFormSubmitted($event)" [student_id]="studentInfo.id"></app-pre-assessment>
+
+    <!-- Assessment -->
+    <div *ngIf="(preAssessmentFormSubmitted$ | async)">
+        <app-assessment [studentInfo]="studentInfo" [assessmentInput]="assessment"
+            (assessmentSubmitted)="onAssessmentCompleted()"></app-assessment>
+    </div>
+</div>
+
+<p-dialog header="Header" [(visible)]="showSubmittedModel" [modal]="true"
+    [breakpoints]="{ '1199px': '80vw', '575px': '90vw' }" [style]="{ width: '60vw' }" [draggable]="false"
+    [resizable]="false">
+    <p>You have already attempted the assessment</p>
+    <ng-template pTemplate="footer">
+        <!-- <p-button label="Show Result" [text]="true" severity="secondary" (onClick)="showResult(assessment.id)" /> -->
+        <p-button label="Go To SimplifyingSkill" [outlined]="true" severity="secondary" (onClick)="goBack()" />
+        <p-button label="Go To Dashboard" [outlined]="true" severity="secondary" (onClick)="goToDashboard()" />
+    </ng-template>
+</p-dialog>

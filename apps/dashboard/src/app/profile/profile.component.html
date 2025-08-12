@@ -1,0 +1,97 @@
+<div class="background">
+  <div class="container">
+    <div class="profile-card">
+      <div>
+        <img
+          class="progress-circle"
+          [src]="profileImageSafeUrl"
+          alt="Profile Image"
+        />
+        <!-- <div class="camera-icon">📷</div> -->
+      </div>
+      <!-- <p class="progress-text">Profile 40% Complete</p> -->
+      <h2>About</h2>
+      <p class="info">
+        My name is {{ studentForm.controls['studentName'].value }}.
+      </p>
+      <p class="details">
+        Email: {{ studentForm.controls['emailAddress'].value }}.
+      </p>
+      <p>
+        Phone: {{ studentForm.controls['details'].get('contactNumber')?.value }}
+      </p>
+      <!-- <p>Location:</p> -->
+      <!-- <button class="edit-btn">Edit</button> -->
+    </div>
+
+    <form
+      [formGroup]="studentForm"
+      (ngSubmit)="onSubmit()"
+      class="profile-form"
+    >
+      <div class="form-group">
+        <div>
+          <label>Student Name</label>
+          <input type="text" formControlName="studentName" />
+        </div>
+        <div>
+          <label>Email Address</label>
+          <input type="email" formControlName="emailAddress" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <label>Age Group</label>
+          <input type="text" formControlName="ageGroup" />
+        </div>
+        <div>
+          <label>Student Code</label>
+          <input type="text" formControlName="studentCode" />
+        </div>
+      </div>
+
+      <!-- Nested form group for `details` -->
+      <div formGroupName="details">
+        <div class="form-group">
+          <div>
+            <label>Parent's Name</label>
+            <input type="text" formControlName="parentsName" />
+          </div>
+          <div>
+            <label>Contact Number</label>
+            <input type="text" formControlName="contactNumber" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <label>Class</label>
+            <input type="text" formControlName="class" />
+          </div>
+          <div>
+            <label>School</label>
+            <input type="text" formControlName="school" />
+          </div>
+        </div>
+
+        <!-- <div class="form-group">
+          
+          <div>
+            <label>Find Us (Source)</label>
+            <input type="text" formControlName="findUs" />
+          </div> 
+        </div>-->
+        <div class="form-group">
+          <label>Profile Image</label>
+
+          <input type="file"  (change)="onFileChange($event)" />
+        </div>
+      </div>
+
+      <div class="button-wrapper">
+        <button type="submit" class="update-btn">Update</button>
+      </div>
+    </form>
+  </div>
+</div>

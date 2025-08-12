@@ -1,0 +1,146 @@
+.svg-container {
+  position: relative;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+text {
+  white-space: pre;
+}
+
+.absolute-text {
+  ul {
+    padding-inline-start: 5.5%;
+    li + li {
+      margin-top: 1em;
+    }
+  }
+  .translated-font {
+    ul {
+      padding-inline-start: 5.5%;
+      li + li {
+        margin-top: 1em;
+      }
+    }
+    font-weight: 400;
+    font-size: calc(1.5em + 0.3vw);
+
+    @media (max-width: 400px) {
+      font-size: calc(0.4em + 0.275vw);
+    }
+    @media (min-width: 400px) and (max-width: 500px) {
+      font-size: calc(0.475em + 0.2vw);
+    }
+    @media (min-width: 500px) and (max-width: 600px) {
+      font-size: calc(0.65em + 0.275vw);
+    }
+    @media (min-width: 600px) and (max-width: 768px) {
+      font-size: calc(0.9em + 0.2vw);
+    }
+    @media (min-width: 768px) and (max-width: 850px) {
+      font-size: calc(1.1em + 0.3vw);
+    }
+    @media (min-width: 850px) and (max-width: 1024px) {
+      font-size: calc(1.25em + 0.275vw);
+    }
+    @media (min-width: 1024px) and (max-width: 1280px) {
+      font-size: calc(1.4em + 0.2vw);
+    }
+    @media (min-width: 1280px) and (max-width: 1600px) {
+      font-size: calc(1.6em + 0.25vw);
+    }
+    @media (min-width: 1600px) and (max-width: 1900px) {
+      font-size: calc(1.6em + 0.2vw);
+    }
+    @media (min-width: 1900px) {
+      font-size: calc(1.65em + 0.2vw);
+    }
+  }
+
+  .potential-career {
+    font-weight: 400;
+    position: absolute;
+    top: 37%;
+    left: 2%;
+    fill: rgb(3, 59, 127);
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .reasoning {
+    font-weight: 400;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    fill: rgb(3, 59, 127);
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .skillset {
+    font-weight: 400;
+    position: absolute;
+    top: 55.5%;
+    left: 2%;
+    fill: rgb(3, 59, 127);
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .mastery {
+    font-weight: 400;
+    position: absolute;
+    top: 64.5%;
+    left: 2%;
+    fill: rgb(3, 59, 127);
+    margin: 2%;
+    padding: 2%;
+  }
+}
+
+.absolute-text-1 {
+  position: absolute;
+  top: 13%;
+  left: 0;
+  padding: 4%;
+  margin: 2%;
+  font-weight: 400;
+
+  .translated-font {
+    font-weight: 400;
+
+    @media (max-width: 400px) {
+      font-size: calc(0.35em + 0.22vw);
+    }
+    @media (min-width: 400px) and (max-width: 500px) {
+      font-size: calc(0.415em + 0.21vw);
+    }
+    @media (min-width: 500px) and (max-width: 600px) {
+      font-size: calc(0.525em + 0.2vw);
+    }
+    @media (min-width: 600px) and (max-width: 768px) {
+      font-size: calc(0.6em + 0.275vw);
+    }
+    @media (min-width: 768px) and (max-width: 850px) {
+      font-size: calc(0.8em + 0.2vw);
+    }
+    @media (min-width: 850px) and (max-width: 1024px) {
+      font-size: calc(0.9em + 0.2vw)
+    }
+    @media (min-width: 1024px) and (max-width: 1900px) {
+      font-size: calc(1em + 0.18vw)
+    }
+    @media (min-width: 1900px) {
+      font-size: calc(0.9em + 0.2vw)
+    }
+  }
+}
+ul {
+  padding-inline-start: 3.5%;
+  li + li {
+    margin-top: 1em;
+  }
+}

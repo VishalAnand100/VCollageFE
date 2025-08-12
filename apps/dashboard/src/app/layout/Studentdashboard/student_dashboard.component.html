@@ -1,0 +1,263 @@
+<body>
+    <div class="container">
+
+        <div class="childcontain">
+
+            <div class="upper">
+                <div class="text-content">
+                    <div class="wishcontain">
+                        <div class="morning">
+                            <div class="textgood">Good Morning </div>
+                            <img src=" /assets/image/moring.png" class="wishimg" />
+                        </div>
+
+                        <!-- <div class="morning">
+                        <div class="textgood">Good Evening </div>
+                        <img src=" /assets/image/eve.png" class="wishimg"/>
+                    </div> 
+
+                       <div class="morning">
+                        <div class="textgood">Good Night</div>
+                        <img src=" /assets/image/night 1.png" class="wishimg"/>
+                    </div>-->
+
+                    </div>
+                    <div class="stuname"> {{dashboardData?.studentName}} <svg class="blinking-smiley"
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <!-- Eyes (will blink) -->
+                            <path class="eyes"
+                                d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                            <!-- Mouth (static) -->
+                            <path
+                                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z" />
+                        </svg></div>
+                </div>
+
+                <style>
+                    .blinking-smiley {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 4px;
+                    }
+
+                    .eyes {
+                        animation: blink 4s infinite;
+                        transform-origin: center;
+                    }
+
+                    @keyframes blink {
+
+                        0%,
+                        45%,
+                        55%,
+                        100% {
+                            opacity: 1;
+                            transform: scaleY(1);
+                        }
+
+                        48%,
+                        52% {
+                            opacity: 0.1;
+                            transform: scaleY(0.1);
+                        }
+
+                        50% {
+                            opacity: 0;
+                            transform: scaleY(0);
+                        }
+                    }
+                </style>
+
+                <div class="image-section">
+                    <div class="uppercircle"></div>
+                    <img src="/assets/image/girl.png" alt="Mentor Aditi" class="mentor-img" />
+                </div>
+            </div>
+
+            <div class="summary">
+                <div class="sumtext">Summary</div>
+
+                <div class="card pay-card" *ngIf="!dashboardData?.isSuccess">
+                    <div class="card-text">
+                        <div class="tilename">Complete Your Payment</div>
+                        <div class="tilepara">Please select a plan that suits you best and complete your payment to
+                            unlock the assessment.</div>
+                        <button class="card-button" (click)="goToPlanGrow()">Pay Now</button>
+                    </div>
+                    <img src="/assets/image/wallet.png" alt="Cashback" class="card-img2" />
+                </div>
+
+                <div class="card download-card" *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess">
+                    <div class="card-text">
+                        <div class="tilename">Download Your Report</div>
+                        <div class="tilepara">Your personalized report is ready. </div>
+                        <button class="card-button" (click)="dowwnloadReport()">Download</button>
+                    </div>
+                    <img src="/assets/image/assessment.png" alt="Cashback" class="download-img" />
+                </div>
+
+                <div class="card download-card" *ngIf="!dashboardData?.isSubmitted && dashboardData?.isSuccess">
+                    <div class="card-text">
+                        <div *ngIf="dashboardData?.assessmentId" class="tilename">Continue Your Assessment</div>
+                        <div *ngIf="!dashboardData?.assessmentId" class="tilename">Take Your Assessment Now</div>
+                        <div class="tilepara">Start a science-backed assessment to get your personalized growth
+                            roadmap. </div>
+                        <button class="card-button" *ngIf="!dashboardData?.assessmentId" (click)="startAssessment()">Start Now</button>
+                        <button class="card-button" *ngIf="dashboardData?.assessmentId" (click)="startAssessment()">Continue</button>
+
+                    </div>
+                    <img src="/assets/image/download.png" alt="Cashback" class="card-img2" />
+                </div>
+                <div class="card cashback-card">
+                    <div class="card-text">
+                        <div class="tilename">Earn Per Referral – Invite Your Friends Today!</div>
+                        <!-- <div class="tilepara">T&C Apply</div> -->
+                        <button class="card-button" (click)="showRedeem()">Refer & Earn</button>
+                    </div>
+                    <img src="/assets/image/hand.png" alt="Pay Now" class="card-img2" />
+                </div>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <div class="shcontain">
+                <div class="shtext">Schedule Counselling Session</div> 
+                <!-- <div class="shtext">Unlock Premium Features</div> -->
+
+                <div class="displayCondition" *ngIf="!dashboardData?.isSubmitted">
+                    <img class="shimg" src="/assets/image/boy.png" alt="Counselling Illustration" />
+
+                    <div class="shdes" *ngIf="!dashboardData?.isSuccess">
+                        Complete your payment to unlock the assessment and get started.
+                    </div>
+                    <div class="shdes" *ngIf="dashboardData?.isSuccess && dashboardData?.planName !== 'basic'">
+                        Thank you for completing the payment. Now start with the assessment.
+                    </div>
+
+                    <div class="lock" tabindex="0" role="button" aria-label="Schedule Counselling">
+                        <img class="lockimg" src="/assets/image/Lock.png" alt="Lock Icon" />
+                        <div class="final">Schedule</div>
+                    </div>
+                </div>
+
+                <!-- paste here schedule -->
+
+                <div class="displayCondition"
+                    *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess && dashboardData.planName !== 'basic'">
+                    <!-- Calendar -->
+                    <p-calendar class="full" [(ngModel)]="date" [inline]="true" [showWeek]="false"
+                        [minDate]="minSelectableDate" (onSelect)="onDateSelect($event)">
+                    </p-calendar>
+                    <div>
+                        <!-- Slot Booking Section -->
+                        <div class="slot">
+                            <div class="slottext">Book your slot</div>
+
+                            <!-- No slot message -->
+                            <div *ngIf="availableSlots.length === 0" class="no-slot-msg">
+                                No slots available for this date.
+                            </div>
+
+                            <!-- Slot Slider -->
+                            <div *ngIf="availableSlots.length > 0" class="slotmain">
+                                <div class="slot-nav">
+                                    <!-- <div
+  class="sloticon"
+  (click)="slidePrev()"
+  role="button"
+  aria-label="Previous Slots"
+  [class.disabled]="currentIndex === 0"
+  [attr.aria-disabled]="currentIndex === 0 ? 'true' : 'false'"
+  tabindex="0"
+  (keydown.enter)="slidePrev()"
+>
+    <img src="/assets/image/previous.png" alt="Slide Icon" />
+</div> -->
+
+                                </div>
+
+                                <div class="slot-container">
+                                    <div class="slot-wrapper">
+                                        <button class="slotcard" *ngFor="let card of visibleCards"
+                                            [class.active]="selectedSlot === card.time" (click)="selectSlot(card.time)">
+                                            {{ card.time }}
+                                        </button>
+                                    </div> <!-- ✅ Missing closing div for slot-wrapper -->
+                                </div>
+                                <div class="sloticon" (click)="slideNext()" role="button" aria-label="Next Slots"
+                                    [class.disabled]="currentIndex + cardsToShow >= availableSlots.length"
+                                    [attr.aria-disabled]="currentIndex + cardsToShow >= availableSlots.length ? 'true' : 'false'"
+                                    tabindex="0" (keydown.enter)="slideNext()">
+                                    <img src="/assets/image/slid.png" alt="Slide Icon" />
+                                </div>
+
+
+                                <!-- <div class="sloticon" (click)="slideNext()" role="button" aria-label="Next Slots">
+  </div> -->
+
+
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; margin-top: 40px;">
+                            <button class="btn" (click)="scheduleSession()"
+                                [disabled]="dashboardData.tismeSlot != null && dashboardData.tismeSlot !== ''"
+                                [ngClass]="{ 'disabled-btn': dashboardData.tismeSlot != null && dashboardData.tismeSlot !== '' }">
+                                Schedule
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- CLUBS -->
+                <div class="clubs" *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess && dashboardData.planName == 'basic'">
+
+                    <div class="club1">
+                        <div class="content">
+                            <div class="tilename1">Get Expert Guidance</div>
+                            <div class="pra">Unlock your test results with a 1:1 counselling call and get a personalized growth plan.
+                            </div>
+                            <button  (click)="goToPayment('UpgradeBasic', 1200)">
+  <svg class="lock-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+  </svg>
+  Unlock Session
+</button>
+                        </div>
+                        <div class="uppercircle2"></div>
+                        <img src="/assets/image/club1.png" alt="Child with tablet" class="imgclb"  />
+                    </div>
+
+                    
+                    <div class="club2">
+                        <div class="content">
+                            <div class="tilename">Join Our Clubs</div>
+                            <div class="pra">Discover your interests, learn new skills, and connect with like-minded students by joining a club that fits your passion.
+                            </div>
+                            <button><i class="lock-icon"></i> Explore Now</button>
+                        </div>
+                        <div class="uppercircle22"></div>
+                        <img src="/assets/image/mother.png" alt="Child with tablet" class="imgclb"  />
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>

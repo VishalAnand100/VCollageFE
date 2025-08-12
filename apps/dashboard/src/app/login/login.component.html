@@ -1,0 +1,56 @@
+<div class="login-container">
+  <div class="login-container-content shadow-4">
+    <div class="blur blur-1"></div>
+    <div class="blur blur-2"></div>
+    <div class="background-image"></div>
+    <div class="r-4 shadow-4 login-card">
+      <div class="insider-card">
+        <div class="header">
+          <img alt="Card" src="logo.png" />
+          <div class="header-text">
+            Welcome Back
+          </div>
+          <div class="header-text header-sub-heading">
+            Login to your account
+          </div>
+        </div>
+        <div class="flex flex-column form p-2 m-2 mt-6 justify-content-center">
+          <form [formGroup]="loginForm" (submit)="onSubmit()">
+            <div class="flex flex-column gap-6 justify-content-center pb-6">
+              <p-floatLabel>
+                <input variant="filled" formControlName="email" style="border-radius: 14px; width: 100%;" pInputText id="email" type="email"
+                  autofocus="true" />
+                <label for="email">Your Email</label>
+              </p-floatLabel>
+              <p-floatLabel>
+                <p-password formControlName="password" variant="filled" [style]="{'width': '100%'}"
+                  [inputStyle]="{'border-radius':'14px', 'width': '100%'}" [toggleMask]="true"
+                  [feedback]="false"></p-password>
+                <label for="password">Password</label>
+              </p-floatLabel>
+            </div>
+            <div class="flex flex-column gap-2 justify-content-center" style="align-items: center;">
+              <button pButton pRipple label="Login" [style]="{'height':'3.5em', 'border-radius': '2em', 'width': '60%'}"
+                style="border-radius: 10px;"></button>
+              <p>Or</p>
+              <button pButton pRipple label="Register"  [routerLink]="['/register']" [style]="{'height':'3.5em', 'border-radius': '2em','width': '60%'}"
+                style="border-radius: 10px;"></button>
+                <button pButton pRipple label="Forgot Password"  [routerLink]="['/forget-password']" [style]="{'height':'3em', 'border-radius': '2em','width': '60%'}"
+                style="border-radius: 10px;"></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="footer">
+        <div class="footer-text">
+          By signing up, you confirm that you've read
+        </div>
+        <div class="footer-text">
+          and accepted our User Notice and Privacy Policy.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p-toast position="top-center"></p-toast>

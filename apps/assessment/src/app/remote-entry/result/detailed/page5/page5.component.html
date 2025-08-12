@@ -1,0 +1,55 @@
+<div *ngIf="detailedReport" class="svg-container">
+    <svg viewBox="0 0 793 1123" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <clipPath id="a">
+                <path d="M0 0h793v1123H0z" />
+            </clipPath>
+            <clipPath id="b">
+                <path d="M-9528.92-163.854h7137224v10236336h-7137224z" />
+            </clipPath>
+            <clipPath id="c">
+                <path d="M0 0h10309472v10309472H0z" />
+            </clipPath>
+        </defs>
+        <g clip-path="url(#a)">
+            <path fill="#FFF" d="M0 0h793v1122.8H0z" />
+            <g clip-path="url(#b)" transform="translate(23 24.017)scale(.0001)">
+                <g clip-path="url(#c)" transform="matrix(1.00004 0 0 1 -676226 -75323.3)">
+                </g>
+            </g>
+            <path d="M23 24.017h747V1098.79H23z" stroke="#091E6B" stroke-width="3.998" stroke-linecap="square"
+                stroke-miterlimit="8"  fill="#F3F8FF" />
+            <path
+                d="M27.915 13.6S12.526 16.284 7.157 28.63C1.788 40.979 1.073 51 6.441 62.989c5.369 11.99 22.189 13.6 22.189 13.6l7.158 22.188 6.442-21.473h78.734s16.462-1.074 22.188-13.6 5.905-23.62.716-36.504-21.473-15.032-21.473-15.032L27.912 13.6Z"
+                stroke="#000" stroke-width="1.432" stroke-linejoin="round" fill="none"
+                transform="matrix(1.00358 0 0 1 66.676 249.748)" /><text font-weight="400" font-size="15"
+                transform="matrix(1 0 0 1.00072 96.322 301)">Your
+                Score</text>
+            <path stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" fill="none"
+                d="M61.5 373.768h671v700.502h-671z" />
+            <g *ngFor="let score of aptiCategoryWiseScores; let i = index"
+                [attr.transform]="'translate(460, ' + (400 + i * 41) + ')'">
+                <!-- Scale the polygons to fit inside the rectangle -->
+                <g transform="scale(40, 40)">
+                    <polygon
+                        attr.points="{{0 - score.scoreObject.categoryPercentage/20}},0 {{0 + score.scoreObject.categoryPercentage/20}},0 {{0 + score.scoreObject.categoryPercentage/20}},1 {{0 - score.scoreObject.categoryPercentage/20}},1"
+                        [attr.fill]="getColorByIndex(i)" />
+                </g>
+                <text x="-380" y="29" font-size="11px" fill="black">{{score.scoreObject.categoryDisplayText}}</text>
+                <text x="225" y="29" font-size="11px" fill="black">{{score.scoreObject.categoryPercentage}}%</text>
+            </g>
+        </g>
+    </svg>
+
+    <div class="absolute-text-2">
+        <div class="translated-font">
+            <ul>
+                <!-- <li><strong>Spelling:</strong> This is an important skill in school and college work and in jobs
+                    requiring written reports.</li> -->
+                <li><strong>Language Usage (Grammar):</strong> This test measures how well one can distinguish between
+                    correct and improper grammar, punctuation, and wording of sentences. This is an excellent predictor
+                    of high grades in most school and college courses.</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.a4-size {
+    width: 100%;
+    max-width: 297mm; // A4 width in pixels
+    margin: 0 auto;
+    background: #fff;
+  }
+  
+  .page-break {
+    page-break-after: always;
+    height: 1px;
+    background-color: lightgrey;
+  }
+  
+  .floating {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 10px !important;
+    z-index: 9999 !important;
+  }
+  
+  
+  @media print {
+    .floating{
+      visibility: collapse;
+    }
+    #download-report-btn {
+      visibility: collapse;
+    }
+  
+    .download-report-btn {
+      visibility: collapse;
+    }
+    .a4-size {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .page-break {
+      display: none;
+      height: 0;
+      page-break-after: always;
+    }
+  }
+  
+  /* Custom container styles */
+  .custom-button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+  }
+  
+  /* Custom button styles */
+  .custom-button {
+    background-color: #007bff;
+    border-color: #0056b3;
+    color: white;
+    padding: 12px 24px; /* Add padding for a larger button */
+    font-size: 16px; /* Larger font size */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #0056b3; /* Border styling */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Optional: Hover effect for the button */
+  .custom-button:hover {
+    background-color: #0056b3;
+    border-color: #003f73;
+  }
+  

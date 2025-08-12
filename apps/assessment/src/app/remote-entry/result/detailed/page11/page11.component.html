@@ -1,0 +1,77 @@
+<div *ngIf="detailedReport" class="svg-container">
+    <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 793 1123" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <clipPath id="a">
+                <path d="M0 0h793v1123H0z"/>
+            </clipPath>
+            <clipPath id="clip1">
+                <rect x="-9528.92" y="-163.854" width="7137224" height="10236336" />
+            </clipPath>
+            <clipPath id="clip3">
+                <rect x="0" y="0" width="10309472" height="10309472" />
+            </clipPath>
+        </defs>
+        <g clip-path="url(#a)">
+            <rect x="0" y="0" width="793" height="1122.8" fill="#FFFFFF" />
+            <path d="M23 24.0172 770 24.0172 770 1098.79 23 1098.79 23 24.0172Z" stroke="#091E6B" stroke-width="3.99832"
+                stroke-linecap="square" stroke-miterlimit="8"  fill="#F3F8FF" fill-rule="evenodd" />
+            <g>
+                <g>
+                    <g>
+                        <path
+                            d="M602.223 27.3654 602.223 46.7618C602.223 56.9896 593.929 65.277 583.708 65.277L42.1108 65.277C31.6757 61.2111 24.2845 51.0648 24.2845 39.1854L24.2845 15.8267C24.2845 14.1159 24.7362 12.5088 25.5361 11.1239 28.1726 9.67231 31.2017 8.85024 34.4233 8.85024L583.708 8.85024C593.929 8.85024 602.223 17.1376 602.223 27.3654Z"
+                            fill="#CCDAFF" transform="matrix(1 0 0 1.00179 39.7395 71.9999)" />
+                        <path
+                            d="M52.54 6.2117C61.5546 6.2117 68.8624 13.5195 68.8624 22.5341L68.8624 52.54C68.8624 61.5546 61.5546 68.8624 52.54 68.8624L22.5341 68.8624C13.5195 68.8624 6.21169 61.5546 6.21169 52.54L6.21169 22.5341C6.21169 13.5195 13.5195 6.21169 22.5341 6.21169Z"
+                            fill="#1F4571" transform="matrix(0.699177 -0.715002 0.713727 0.700426 24.209 110.12)" />
+                    </g>
+                </g>
+            </g>
+            <text font-weight="400" font-size="23" transform="matrix(1 0 0 1.00072 128.251 114)">Adversity
+                Quotient</text><text fill="#E3E8FF" font-weight="400" font-size="23"
+                transform="matrix(1 0 0 1.00072 72.1663 114)">4</text>
+        </g>
+    </svg>
+    <div class="absolute-text">
+        <div class="translated-font">
+            Adversity quotient (AQ) is a Score that measures a person's ability to deal with challenges in life. It's
+            also known as the science of resilience. This test uses four dimensions: Control, Ownership, Reach, and
+            Endurance (CORE) to evaluate AQ. <strong> The average ARP Score is 147.5. The higher the better!</strong>
+            <br>
+            <br>
+            <ul>
+                <li><strong>Control:</strong> This dimension measures how much influence you believe you have over a
+                    situation or adversity. People with a high sense of control tend to feel empowered to act, even in
+                    difficult circumstances. Conversely, those with low control may feel overwhelmed or helpless when
+                    faced with challenges.</li>
+                <li><strong>Ownership:</strong> Ownership assesses the extent to which people take responsibility for
+                    improving or resolving challenges. High ownership means holding themselves accountable for dealing
+                    with situations regardless of their cause. It means they actively seek solutions and see yourself as
+                    accountable for outcomes. A lower sense of ownership might lead to deflecting accountability,
+                    feeling victimized and helpless, and blaming external factors.</li>
+                <li><strong>Reach:</strong> Reach evaluates how far you allow adversity to affect other areas of your
+                    life. High reach suggests that you can compartmentalize challenges and prevent them from spilling
+                    over into unrelated aspects of life. It means they can keep setbacks and challenges in their place,
+                    not let them infest the healthy areas of their work and lives. Low reach may result in difficulties
+                    in one area impacting overall mood, relationships, or productivity.</li>
+                <li><strong>Endurance:</strong> Endurance refers to your perception of how long adversity will last.
+                    High endurance is characterized by resilience and optimism, with the belief that challenges are
+                    temporary and solvable. Low endurance may involve feeling stuck or believing difficulties will
+                    persist indefinitely.</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <div style="display: grid;left: 8%;position: absolute;">
+                <div style="align-self: flex-start;
+                transform: scale(1.5);
+                transform-origin: left;">
+                    Your Adversity Response Profile (ARP) = {{detailedReport.adversityScore.aqScore}}
+                    <br>
+                    Your AQ is {{detailedReport.adversityScore.aqLevel}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

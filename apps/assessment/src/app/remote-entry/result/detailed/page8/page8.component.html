@@ -1,0 +1,66 @@
+<div *ngIf="detailedReport" class="svg-container">
+    <svg viewBox="0 0 793 1123" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <clipPath id="a">
+                <path d="M0 0h793v1123H0z" />
+            </clipPath>
+        </defs>
+        <g clip-path="url(#a)">
+            <path fill="#FFF" d="M0 0h793v1122.8H0z" />
+            <path d="M23 24.017h747V1098.79H23z" stroke="#091E6B" stroke-width="3.998" stroke-linecap="square"
+                stroke-miterlimit="8" fill="#F3F8FF" />
+            <path
+                d="M27.915 13.6S12.526 16.284 7.157 28.63C1.788 40.979 1.073 51 6.441 62.989c5.369 11.99 22.189 13.6 22.189 13.6l7.158 22.188 6.442-21.473h78.734s16.463-1.074 22.188-13.6c5.726-12.526 5.905-23.62.716-36.504s-21.473-15.032-21.473-15.032L27.912 13.6Z"
+                stroke="#000" stroke-width="1.432" stroke-linejoin="round" fill="none"
+                transform="matrix(1.00358 0 0 1 66.676 44.6)" />
+            <text font-weight="400" font-size="15" transform="matrix(1 0 0 1.00072 96.199 95)">Your Score</text>
+            <path
+                d="M27.915 13.6S12.526 16.284 7.157 28.63C1.788 40.979 1.073 51 6.441 62.989c5.369 11.99 22.189 13.6 22.189 13.6l7.158 22.188 6.442-21.473h78.734s16.463-1.074 22.188-13.6c5.726-12.526 5.905-23.62.716-36.504s-21.473-15.032-21.473-15.032L27.912 13.6Z"
+                stroke="#000" stroke-width="1.432" stroke-linejoin="round" fill="none"
+                transform="matrix(1.00358 0 0 1 38 505)" />
+            <!--my code-->
+            <text font-weight="400" font-size="15" transform="matrix(1 0 0 1.00072 60 555)">What it
+                means</text>
+            <text fill="#033B7F" font-weight="700" font-size="15" transform="matrix(1 0 0 1.00072 40 505)">Your Interest
+                Code:
+                {{interestAndPreferenceScore[0].scoreObject.categoryLetter}}{{interestAndPreferenceScore[1].scoreObject.categoryLetter}}{{interestAndPreferenceScore[2].scoreObject.categoryLetter}}</text>
+            <g transform="translate(400, 150)">
+                <g transform="scale(2)">
+                    <text x="-5" y="-5">R</text>
+                    <text x="60" y="30">I</text>
+                    <text x="60" y="80">A</text>
+                    <text x="-5" y="120">S</text>
+                    <text x="-65" y="80">E</text>
+                    <text x="-65" y="30">C</text>
+                    <polygon points="0,0 50,25 50,75 0,100 -50,75 -50,25" stroke="#000000" stroke-width="1"
+                        fill="none" />
+                    <polygon [attr.points]="trianglePoints" stroke="#000000" stroke-width="1"
+                        fill="rgba(50, 10, 155, 0.5)" />
+                </g>
+            </g>
+            <!--my code end-->
+        </g>
+    </svg>
+
+    <div class="absolute-text">
+
+        <ul>
+            <li class="translated-font" *ngFor="let item of interestAndPreferenceScore.slice(0,3); let i = index">
+                <span style="font-weight: 600;">
+                    {{item.scoreObject.categoryLetter}} - {{item.scoreObject.categoryDisplayText}}</span>
+                <br>
+                <div>{{item.scoreObject.categoryInterpretation}}</div>
+            </li>
+        </ul>
+    </div>
+    <div class="absolute-text-2">
+        <div class="translated-font">
+            Your results reflect the alignment of your skills and interests with specific areas within the RIASEC model,
+            helping to identify the environments and roles where you are most likely to thrive. It also highlights areas
+            where further development may enhance your effectiveness and satisfaction in your chosen field. This
+            alignment is a valuable tool for making informed decisions about professional growth, education, and career
+            options, as it offers clarity on the types of roles that would best suit your strengths and ambitions.
+        </div>
+
+    </div>
+</div>

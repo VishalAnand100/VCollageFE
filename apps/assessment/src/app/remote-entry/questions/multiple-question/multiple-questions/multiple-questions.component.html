@@ -1,0 +1,29 @@
+<body>
+    <div class="quiz-container">
+        <main class="question-section">
+            <div class="questions-grid">
+                <div *ngFor="let question of questions; let i = index" class="question-card">
+                    <h3>Question {{ i + 1 }}</h3>
+                    <h2>{{ question.questionText }}</h2>
+                    <div class="options">
+                        <label 
+                            *ngFor="let option of question.options; let i = index"
+                            class="option"
+                            [class.selected]="option.id === selectedOptions[question.id]"
+                            (click)="selectOption(question.id, option.id)"
+                        >
+                        <span class="option-text">  {{getOptionLabel(i) }}. {{ option.optionText }}
+                        </span>
+
+                            <input type="radio" 
+                                   name="questionOption{{ question.id }}" 
+                                   [value]="option.id" 
+                                   [checked]="option.id === selectedOptions[question.id]" 
+                            />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>

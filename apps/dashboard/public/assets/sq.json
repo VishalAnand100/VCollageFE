@@ -1,0 +1,3751 @@
+{
+  "id": "id",
+  "title": "Skill Assessment",
+  "questions": [
+    {
+      "id": "94F32BD5-DADB-11AC-D4B9-D89FA5274D44",
+      "text": "What excites you the most about building or fixing things?",
+      "options": [
+        {
+          "text": "Solving problems",
+          "id": "BDAE74E4-EAA5-096F-230F-6ECB94187431"
+        },
+        {
+          "text": "Using tools",
+          "id": "025EF0A6-E9A5-2A97-597B-AF5064DF7C76"
+        },
+        {
+          "text": "Understanding how things work",
+          "id": "5F3AC6C8-7100-ADAE-56B1-AABFEFE11C28"
+        },
+        {
+          "text": "Inventing new devices",
+          "id": "783B59DE-17C6-E7FC-78D2-964F802BFBEA"
+        }
+      ],
+      "correctOption": "BDAE74E4-EAA5-096F-230F-6ECB94187431",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "DBBB2CAA-6F34-FED3-F0A1-36C78B61A679",
+      "text": "If you were to design a bridge, what would you focus on?",
+      "options": [
+        {
+          "text": "Strength and stability",
+          "id": "71FA5990-4DC9-7B59-3322-F74A43E95009"
+        },
+        {
+          "text": "How cool it looks",
+          "id": "1CE7C312-52BD-266D-5198-8743FA3C5962"
+        },
+        {
+          "text": "How fast it can be built",
+          "id": "3151555B-0FEC-3BF6-F469-FAD639BF1F04"
+        },
+        {
+          "text": "Using innovative materials",
+          "id": "D558E4EA-F1BC-2B84-1FDE-2DFEE418AF4F"
+        }
+      ],
+      "correctOption": "71FA5990-4DC9-7B59-3322-F74A43E95009",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D867F425-3E0C-BC4B-D72E-49A05FA9BC2E",
+      "text": "When your toy breaks, what do you do?",
+      "options": [
+        {
+          "text": "Try to fix it",
+          "id": "5FEC2C7B-46C6-72FA-C055-EAC0B3DA5BF1"
+        },
+        {
+          "text": "Think of a better version",
+          "id": "E166EFC0-65C9-45E3-B21D-DA2772EABA4D"
+        },
+        {
+          "text": "Check how it works",
+          "id": "41EC5B66-E31F-4EC9-F6F1-DB7E108CDA83"
+        },
+        {
+          "text": "Look for instructions",
+          "id": "EE5C27FE-BD4F-4B04-54CF-0930A7CC5B16"
+        }
+      ],
+      "correctOption": "5FEC2C7B-46C6-72FA-C055-EAC0B3DA5BF1",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "B7AD5119-F080-A5C8-E8BE-CD99B989FBB6",
+      "text": "What kind of puzzles do you like?",
+      "options": [
+        {
+          "text": "Building blocks",
+          "id": "FD2D31CA-16D3-72CA-B2E1-8E399E6D1CDB"
+        },
+        {
+          "text": "Maze puzzles",
+          "id": "6023E0D0-62C5-D5B0-AD14-549327CC5EFA"
+        },
+        {
+          "text": "Logic problems",
+          "id": "81BB1ECD-6898-FE99-D206-CA7D3A2E714D"
+        },
+        {
+          "text": "All of the above",
+          "id": "B4069A3A-962D-B4EF-B0F5-14B4EA6E2DD0"
+        }
+      ],
+      "correctOption": "B4069A3A-962D-B4EF-B0F5-14B4EA6E2DD0",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "CFF36AA9-C7A3-C7DB-6314-6301EADCD666",
+      "text": "Which invention do you admire the most?",
+      "options": [
+        {
+          "text": "Airplanes",
+          "id": "75DF2551-4B45-5E51-DA42-F12E88C08505"
+        },
+        {
+          "text": "Robots",
+          "id": "A0500573-51AA-7E2B-4B07-5AFA8FDA927F"
+        },
+        {
+          "text": "Smartphones",
+          "id": "60C5665A-2D8D-A89A-01CC-DB570C7B3921"
+        },
+        {
+          "text": "Spacecraft",
+          "id": "838E472F-0EC8-486B-9082-70DC34917603"
+        }
+      ],
+      "correctOption": "A0500573-51AA-7E2B-4B07-5AFA8FDA927F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C27CB1F7-5339-5E29-17DC-85FACDC27C53",
+      "text": "What would you build for your community?",
+      "options": [
+        {
+          "text": "A playground",
+          "id": "1D7B83CC-2EF2-EC2A-16B4-9D25689DD769"
+        },
+        {
+          "text": "A water purification system",
+          "id": "E96FC65F-0F3A-F106-7BA1-F6AD41BF154F"
+        },
+        {
+          "text": "A library with innovative designs",
+          "id": "37E6A2B5-F541-153D-2438-5D1D914AA87A"
+        },
+        {
+          "text": "A solar-powered energy station",
+          "id": "A5E5F1C6-AEDB-CA24-1915-D6B24E5E76F1"
+        }
+      ],
+      "correctOption": "A5E5F1C6-AEDB-CA24-1915-D6B24E5E76F1",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "2EE966F5-971B-2D71-40B7-83270D652B13",
+      "text": "What do you enjoy most in a group project?",
+      "options": [
+        {
+          "text": "Leading the team",
+          "id": "4777A1D7-7E5F-3280-7665-3F433676E0E5"
+        },
+        {
+          "text": "Coming up with creative ideas",
+          "id": "101ECECE-B8A7-8DE5-26A2-FA2DA33E3447"
+        },
+        {
+          "text": "Managing resources",
+          "id": "1382DCEB-3797-D9E3-F480-5B5CAE09EE41"
+        },
+        {
+          "text": "Ensuring everyone works together",
+          "id": "CC85B1F1-65DE-0519-34C5-B67D631E3710"
+        }
+      ],
+      "correctOption": "4777A1D7-7E5F-3280-7665-3F433676E0E5",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "B2D68D1B-FFCD-D1A5-C947-D7BA2260E53D",
+      "text": "If you had $100, what would you do?",
+      "options": [
+        {
+          "text": "Start a lemonade stand",
+          "id": "3984BBF0-39D6-679B-45E8-B9C9D1FEEDA7"
+        },
+        {
+          "text": "Buy supplies to make products",
+          "id": "E8E8DCBC-1A0C-0D0F-45DA-1626FFA13D1E"
+        },
+        {
+          "text": "Save for a big idea",
+          "id": "25CFA13E-BD95-00F9-7F10-B15DAF01C011"
+        },
+        {
+          "text": "Invest in a friend's idea",
+          "id": "CA8C9BC0-DC99-3988-D7DD-26DC0D960458"
+        }
+      ],
+      "correctOption": "3984BBF0-39D6-679B-45E8-B9C9D1FEEDA7",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "315CF6EA-9450-A6F2-8F88-E60B6CEBF6A7",
+      "text": "What would you create to solve a common problem?",
+      "options": [
+        {
+          "text": "A gadget",
+          "id": "2235A892-28B0-3C85-C005-16EAA0046251"
+        },
+        {
+          "text": "A new app",
+          "id": "D011BFD5-62A5-8E7D-3DFA-61E6BC771E5F"
+        },
+        {
+          "text": "A cool service",
+          "id": "51B18CCA-8D35-AA69-2834-6D4E1DA02FB6"
+        },
+        {
+          "text": "A better way to do something",
+          "id": "62ABA5E2-961B-A07E-C658-0DA18D97C371"
+        }
+      ],
+      "correctOption": "D011BFD5-62A5-8E7D-3DFA-61E6BC771E5F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "5EF77642-B101-2365-BDEA-65AB04ECD2AD",
+      "text": "What type of event would you organize?",
+      "options": [
+        {
+          "text": "A fun fair",
+          "id": "2A421BFA-5414-33CB-B1BB-74B825ABB9DD"
+        },
+        {
+          "text": "A competition",
+          "id": "1E3847F9-A255-4ED6-5F4D-42ABF55CF1C0"
+        },
+        {
+          "text": "A fundraiser",
+          "id": "6A5CFAD0-2C81-6705-8820-E1575A9EFADD"
+        },
+        {
+          "text": "A learning workshop",
+          "id": "C3EACF0C-304C-7A74-B37C-31D1EDA8B67D"
+        }
+      ],
+      "correctOption": "6A5CFAD0-2C81-6705-8820-E1575A9EFADD",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "EB2450BA-A328-4EB4-1D40-108C5CEEE2E3",
+      "text": "How do you approach challenges?",
+      "options": [
+        {
+          "text": "By thinking outside the box",
+          "id": "30A2C34E-FC0A-413A-C114-46177CA7B906"
+        },
+        {
+          "text": "By analyzing options",
+          "id": "E40E77D8-0411-19D6-1561-79DD4341F72D"
+        },
+        {
+          "text": "By testing ideas",
+          "id": "10EE400F-2A89-E123-580D-25D44A1B46C9"
+        },
+        {
+          "text": "By asking for help",
+          "id": "B08F6740-D97F-2A0D-2C8C-DF9CE422A4C8"
+        }
+      ],
+      "correctOption": "30A2C34E-FC0A-413A-C114-46177CA7B906",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "2A580502-B0BC-057B-54E1-E6881E12B799",
+      "text": "What inspires you to start something new?",
+      "options": [
+        {
+          "text": "Seeing an unmet need",
+          "id": "9844FB9B-1BB6-94F4-0850-D8C4CFC94CAD"
+        },
+        {
+          "text": "Learning from role models",
+          "id": "950AD221-0E7F-05BA-85A5-130349A8940D"
+        },
+        {
+          "text": "Working with a team",
+          "id": "0775C53B-439E-3DF4-D33E-4C9FF40C272B"
+        },
+        {
+          "text": "Making a profit",
+          "id": "75DA7ABD-D3B4-CF1A-2A94-8A40EFCA4457"
+        }
+      ],
+      "correctOption": "9844FB9B-1BB6-94F4-0850-D8C4CFC94CAD",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "CEA3E23F-16CA-AF7B-6509-4D533A0A8ADF",
+      "text": "What would you do with your pocket money?",
+      "options": [
+        {
+          "text": "Save it for later",
+          "id": "E02F3EB3-372E-010B-88EA-8D59ED3E65E1"
+        },
+        {
+          "text": "Spend it on essentials",
+          "id": "E06D78E1-E2E3-92FC-7953-F9938D7F992C"
+        },
+        {
+          "text": "Invest it in a small project",
+          "id": "56FB1DE2-1F1A-C389-42AD-F83274DAA82F"
+        },
+        {
+          "text": "Share it with friends",
+          "id": "48156C40-A462-6500-EF44-08C327A66405"
+        }
+      ],
+      "correctOption": "E02F3EB3-372E-010B-88EA-8D59ED3E65E1",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6B0125EA-203C-1315-4A5C-C8EB7BCC8DF3",
+      "text": "What do you enjoy solving the most?",
+      "options": [
+        {
+          "text": "Math problems",
+          "id": "F73956C3-DE50-64A8-02FC-7A9A7261B77D"
+        },
+        {
+          "text": "Budget puzzles",
+          "id": "00971482-C2DE-81C0-8807-3E7590074716"
+        },
+        {
+          "text": "Business games",
+          "id": "A17C18C1-3B51-3387-ECE3-830235CAA8EC"
+        },
+        {
+          "text": "Investment simulations",
+          "id": "72DF0E91-70D7-506F-71DD-6E447AA2BAA0"
+        }
+      ],
+      "correctOption": "00971482-C2DE-81C0-8807-3E7590074716",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "874EC902-6A4F-2BA8-92D0-332E41CFF577",
+      "text": "If you were to track something, what would it be?",
+      "options": [
+        {
+          "text": "Daily expenses",
+          "id": "8D9D2B7C-D309-694A-770D-65686C13ABAF"
+        },
+        {
+          "text": "Stock market trends",
+          "id": "0C9B539F-1ED1-B42C-229B-ECC3248E3613"
+        },
+        {
+          "text": "Sales of a product",
+          "id": "1755AC2D-3EBE-BF62-E5A0-7B3289AA264A"
+        },
+        {
+          "text": "How much you save over time",
+          "id": "B479DF53-6707-BB93-B54D-EFB0BD355B7D"
+        }
+      ],
+      "correctOption": "B479DF53-6707-BB93-B54D-EFB0BD355B7D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "751DA46B-BAC3-FE7C-2DB3-6BE556D1F5F0",
+      "text": "Which subject do you like the most?",
+      "options": [
+        {
+          "text": "Math",
+          "id": "E017F91A-33D0-4640-E35F-09BB2FF5D815"
+        },
+        {
+          "text": "Economics",
+          "id": "A4FD35C0-4758-F814-49F0-2E442ADFDC02"
+        },
+        {
+          "text": "Accounting",
+          "id": "59D80BE6-C98C-8AAB-EE2A-42980EE82949"
+        },
+        {
+          "text": "Business studies",
+          "id": "E4C1EE33-1CDE-C1ED-0F31-129C268C5F72"
+        }
+      ],
+      "correctOption": "E017F91A-33D0-4640-E35F-09BB2FF5D815",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D663B1E5-3C00-86C6-5055-66D05F7B4807",
+      "text": "If you had to plan a class party budget, how would you do it?",
+      "options": [
+        {
+          "text": "List all expenses",
+          "id": "A846FBD7-7C49-9BF1-4325-6B7ADCAFC093"
+        },
+        {
+          "text": "Compare prices",
+          "id": "AC7525EC-4E0B-7020-ADFE-1FC8599B92D3"
+        },
+        {
+          "text": "Find discounts and offers",
+          "id": "1A1900EA-8278-20A7-2304-E379004182EA"
+        },
+        {
+          "text": "Ensure savings",
+          "id": "FF288DF8-139D-76D7-B8EA-E0D7E238A529"
+        }
+      ],
+      "correctOption": "1A1900EA-8278-20A7-2304-E379004182EA",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "3CEAAF98-2EEE-3ED4-A685-C38C70AA8CE7",
+      "text": "What would you create for a school fair?",
+      "options": [
+        {
+          "text": "A financial game",
+          "id": "DE15B3FA-9058-3A04-9B62-C4A215C9A81F"
+        },
+        {
+          "text": "A money-saving guide",
+          "id": "8244D465-0503-634D-F52B-3E1C34003B2A"
+        },
+        {
+          "text": "A business pitch competition",
+          "id": "5FE0EAE6-C798-EB8C-D320-C09F01515145"
+        },
+        {
+          "text": "A budgeting workshop",
+          "id": "ED2E1FF0-1E25-523C-A6BA-60B026B6C00E"
+        }
+      ],
+      "correctOption": "DE15B3FA-9058-3A04-9B62-C4A215C9A81F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "56E6BE4C-0855-D714-EEC0-3B34629A3818",
+      "text": "What do you do when someone gets hurt?",
+      "options": [
+        {
+          "text": "Help immediately",
+          "id": "E7EDB9DE-17B9-1764-3772-BAAB716714E2"
+        },
+        {
+          "text": "Stay calm and ask for help",
+          "id": "120BEF3C-E6B9-620E-E311-AAF4A4F09DCB"
+        },
+        {
+          "text": "Observe what happened",
+          "id": "1B3BD72C-F457-1802-E588-5C0469A65E0D"
+        },
+        {
+          "text": "Look for a solution",
+          "id": "A6B009F5-1637-748C-4733-89399427F62A"
+        }
+      ],
+      "correctOption": "E7EDB9DE-17B9-1764-3772-BAAB716714E2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "CC74EFFF-F147-C5B6-1B37-E4E687063F07",
+      "text": "What interests you the most about biology?",
+      "options": [
+        {
+          "text": "How the human body works",
+          "id": "D6C41782-AE8B-D34B-0A44-B940C0615DC6"
+        },
+        {
+          "text": "Different diseases and cures",
+          "id": "E6904C69-2E8E-91CB-F764-52604161C3F1"
+        },
+        {
+          "text": "Nature and its connection to life",
+          "id": "8FE91298-E7D6-6A4A-27FB-9B9099B7C974"
+        },
+        {
+          "text": "How medicine is made",
+          "id": "C9DCED2D-9933-06E6-CE42-C061B1261A70"
+        }
+      ],
+      "correctOption": "D6C41782-AE8B-D34B-0A44-B940C0615DC6",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "966B53D7-DAAA-F502-102D-574378E8CC59",
+      "text": "If you were a doctor, what kind would you be?",
+      "options": [
+        {
+          "text": "Surgeon",
+          "id": "576A5C27-8D53-B5EA-3BD3-1A0933E5C36A"
+        },
+        {
+          "text": "Pediatrician",
+          "id": "811907F8-9F70-34C2-E3D0-84AA9D972B15"
+        },
+        {
+          "text": "Dentist",
+          "id": "B805D077-7BB0-172F-3DB6-8D245FBB7B10"
+        },
+        {
+          "text": "Scientist researching cures",
+          "id": "00AAD2CF-A511-930C-E58D-B189352264C0"
+        }
+      ],
+      "correctOption": "811907F8-9F70-34C2-E3D0-84AA9D972B15",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "E79268F7-3B14-3318-85DD-BCA3A3EDAAFC",
+      "text": "How do you react when you see medical equipment?",
+      "options": [
+        {
+          "text": "Curious to learn more",
+          "id": "DD6AF0FB-365C-CFCE-DDB8-5F93E8A0CB17"
+        },
+        {
+          "text": "Excited to use them",
+          "id": "080F5404-EFD8-93CE-9E86-BD67277E521D"
+        },
+        {
+          "text": "Want to understand how they work",
+          "id": "E2085D03-E385-B32A-9185-791FA08824A3"
+        },
+        {
+          "text": "Inspired to help people",
+          "id": "33A548FE-55CC-AF42-2B71-C4010870FFE6"
+        }
+      ],
+      "correctOption": "33A548FE-55CC-AF42-2B71-C4010870FFE6",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6D9CB0AD-0CFC-5FB4-F5BB-0DF581698C53",
+      "text": "What would you enjoy studying the most?",
+      "options": [
+        {
+          "text": "Anatomy",
+          "id": "CE4AB740-FA39-842C-ED01-215E35877F4A"
+        },
+        {
+          "text": "Pathology",
+          "id": "BA5BB0CC-817B-1230-A6FE-4041AAA69D60"
+        },
+        {
+          "text": "Pharmacology",
+          "id": "8C1B18F0-EE21-DD64-3EA8-3FF29E707EEE"
+        },
+        {
+          "text": "Public health",
+          "id": "039505BE-AEAC-0DD0-49AC-621D993AC181"
+        }
+      ],
+      "correctOption": "CE4AB740-FA39-842C-ED01-215E35877F4A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "EE0B4CE1-2B5E-762F-C9D1-35FDF449491E",
+      "text": "If you had to solve a health problem, what would it be?",
+      "options": [
+        {
+          "text": "Reducing diseases",
+          "id": "BBB915C2-8302-8FFE-4CBF-A05698CB6FC1"
+        },
+        {
+          "text": "Creating affordable treatments",
+          "id": "E3724922-0D44-680B-F018-F21B9A766F74"
+        },
+        {
+          "text": "Improving hospitals",
+          "id": "656731D7-9B6E-163B-14F5-94A07D9B53D9"
+        },
+        {
+          "text": "Raising awareness",
+          "id": "25F9FC6B-12C8-645F-47F5-39DF483F0EAF"
+        }
+      ],
+      "correctOption": "E3724922-0D44-680B-F018-F21B9A766F74",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D3C8933D-6DF5-341A-9025-9B5EF93D2737",
+      "text": "How do you settle disagreements?",
+      "options": [
+        {
+          "text": "Find the truth",
+          "id": "C88CFA9B-E229-3EFF-A79C-6616F71649F6"
+        },
+        {
+          "text": "Suggest fair solutions",
+          "id": "26A5520B-1689-C344-7693-605291B929ED"
+        },
+        {
+          "text": "Listen to both sides",
+          "id": "3B4DADB8-0AD2-2E76-54B8-2EB9B07C5DF9"
+        },
+        {
+          "text": "Create rules everyone agrees on",
+          "id": "40B1EB64-349F-0774-5A31-C83414E73779"
+        }
+      ],
+      "correctOption": "26A5520B-1689-C344-7693-605291B929ED",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "EB98038E-49DA-D1F7-2175-A20426DC1478",
+      "text": "What interests you about history or civics?",
+      "options": [
+        {
+          "text": "Laws and their purpose",
+          "id": "6DF1B662-D24B-97D5-894D-AD6E9067CEEC"
+        },
+        {
+          "text": "How leaders resolve conflicts",
+          "id": "118D758C-911A-BD41-CCF1-F1E73B9C04A9"
+        },
+        {
+          "text": "Rights and responsibilities",
+          "id": "7713FB1C-9E2D-B2C2-D156-066CB5F016CA"
+        },
+        {
+          "text": "Government policies",
+          "id": "1F80EBCE-FD10-E7D2-7F0F-8C99E5D8F24E"
+        }
+      ],
+      "correctOption": "6DF1B662-D24B-97D5-894D-AD6E9067CEEC",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "0587D97E-B638-1077-EEF8-FFC578DC4DF6",
+      "text": "What do you like about debates?",
+      "options": [
+        {
+          "text": "Making strong arguments",
+          "id": "D2E8145B-E5A6-5B78-6541-888396FCA9AF"
+        },
+        {
+          "text": "Listening to other opinions",
+          "id": "2F0D968B-E06D-54F7-5D52-3C976F38BC42"
+        },
+        {
+          "text": "Finding fair solutions",
+          "id": "53DB6474-E98D-29FA-3E8D-7C88C2E1F368"
+        },
+        {
+          "text": "Presenting your case",
+          "id": "0240B166-C39C-B348-BCDC-4CA29B4997F7"
+        }
+      ],
+      "correctOption": "D2E8145B-E5A6-5B78-6541-888396FCA9AF",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "9ECF67AC-00F4-7B30-5E46-1CDCBC5D32C2",
+      "text": "What do you do when someone breaks a rule?",
+      "options": [
+        {
+          "text": "Explain the rule",
+          "id": "F931C47F-E9E0-B87F-9280-BB0948C4B523"
+        },
+        {
+          "text": "Ensure fair consequences",
+          "id": "F273F3E0-CD38-FF9E-72F0-700ED4CAF0F8"
+        },
+        {
+          "text": "Ask why they broke it",
+          "id": "3E68EA70-878E-5DC3-6663-3EFB1094A660"
+        },
+        {
+          "text": "Make sure it doesn't happen again",
+          "id": "E4A31901-9CE5-80C1-992B-FC047B22C062"
+        }
+      ],
+      "correctOption": "F273F3E0-CD38-FF9E-72F0-700ED4CAF0F8",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "11038872-8C96-5B86-20C9-33AAEAD52FC7",
+      "text": "If you had to create a new rule, what would it be about?",
+      "options": [
+        {
+          "text": "Fairness",
+          "id": "976FA44A-8DB7-4797-0D0D-9596BE4203B5"
+        },
+        {
+          "text": "Safety",
+          "id": "B87C8EBE-ED77-ACF8-B3B1-4FAF1D448E0D"
+        },
+        {
+          "text": "Teamwork",
+          "id": "FEFD450D-6144-73A3-E8C8-F16F1B070BB2"
+        },
+        {
+          "text": "Discipline",
+          "id": "E15D55EF-3FA1-A4B1-7026-56270A72A139"
+        }
+      ],
+      "correctOption": "976FA44A-8DB7-4797-0D0D-9596BE4203B5",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "F3B3D208-F148-C618-D79C-8D5C23BC5E6E",
+      "text": "What would you do as a student leader?",
+      "options": [
+        {
+          "text": "Ensure everyone follows the rules",
+          "id": "CDF9C109-872A-2C3B-E60F-475E2D4641D2"
+        },
+        {
+          "text": "Solve disputes fairly",
+          "id": "74249A0C-2A08-7155-E1E4-F0E57B2486F3"
+        },
+        {
+          "text": "Make sure all voices are heard",
+          "id": "D5725026-48DB-BCAE-EE31-97B52689C32A"
+        },
+        {
+          "text": "Lead by example",
+          "id": "E43BF832-B64B-DEEA-17BA-3797D0BB8EF5"
+        }
+      ],
+      "correctOption": "D5725026-48DB-BCAE-EE31-97B52689C32A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "705D358E-1209-73BC-8A07-BF67220F7B67",
+      "text": "How would you sell lemonade to your classmates?",
+      "options": [
+        {
+          "text": "By making it tasty and unique",
+          "id": "EC4445B5-0C9E-0E0A-C3F8-731739201E2E"
+        },
+        {
+          "text": "Offering discounts",
+          "id": "7EA5134B-3DC7-FC60-91A3-137925ED0B56"
+        },
+        {
+          "text": "Advertising creatively",
+          "id": "4B656672-F720-CB3E-A36B-A94A2DB7A48F"
+        },
+        {
+          "text": "Sharing free samples",
+          "id": "208628FD-BC36-7A1D-662A-4EC9D25600E9"
+        }
+      ],
+      "correctOption": "4B656672-F720-CB3E-A36B-A94A2DB7A48F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "BA4DC09F-E8F0-8168-9DFC-64DDF8B97926",
+      "text": "What do you like about advertisements?",
+      "options": [
+        {
+          "text": "Their creativity",
+          "id": "9AFBDC53-7195-E66C-F18F-5CD15F8534F2"
+        },
+        {
+          "text": "How they attract people",
+          "id": "CAED3AF3-5EE6-6F5E-CF47-E175259B4615"
+        },
+        {
+          "text": "The catchy slogans",
+          "id": "2C98D9A2-1DBA-E406-E8B3-CDCE85F9DA3C"
+        },
+        {
+          "text": "The fun ideas",
+          "id": "FDE31BC3-B7D2-D427-F8CA-44ED29B97FDC"
+        }
+      ],
+      "correctOption": "9AFBDC53-7195-E66C-F18F-5CD15F8534F2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "2F1E6032-5BB5-C7F4-AB95-C8279722D43A",
+      "text": "If you had a product to sell, what would it be?",
+      "options": [
+        {
+          "text": "A new gadget",
+          "id": "31AB4EF7-6C3F-55A2-7B9B-F7060FDE11A1"
+        },
+        {
+          "text": "A delicious snack",
+          "id": "9B828C22-6D35-E201-60EF-FDCC31C3FBA7"
+        },
+        {
+          "text": "A creative toy",
+          "id": "D342A3BC-2DA7-F8C7-4441-17AC819C625F"
+        },
+        {
+          "text": "A cool app",
+          "id": "707F7B4E-E379-30C9-F447-90DE7FF8F2FF"
+        }
+      ],
+      "correctOption": "9B828C22-6D35-E201-60EF-FDCC31C3FBA7",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D2C379D9-8AEA-5EE4-AE40-8D9C9A4B8114",
+      "text": "How do you convince someone to try something new?",
+      "options": [
+        {
+          "text": "Talk about its benefits",
+          "id": "D8EDB77A-3B69-552D-259B-D090BD226E64"
+        },
+        {
+          "text": "Give them a demo",
+          "id": "20CFF0F4-41E6-1EE6-A580-91D87F1FEF74"
+        },
+        {
+          "text": "Use creative ideas",
+          "id": "6082BC84-73AF-21FE-A588-95EA83FD5178"
+        },
+        {
+          "text": "Share your excitement",
+          "id": "F9C8D522-E3C8-7548-36F4-4B0DF676CE7C"
+        }
+      ],
+      "correctOption": "D8EDB77A-3B69-552D-259B-D090BD226E64",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "EC91E11A-9A3E-33C0-2C4C-FC133DA94E4D",
+      "text": "What would you enjoy the most?",
+      "options": [
+        {
+          "text": "Designing a product",
+          "id": "715242C6-0E16-38B8-935D-72928A15D80F"
+        },
+        {
+          "text": "Promoting a product",
+          "id": "253D7DCE-9266-F6FA-861A-CC2F9ED3E858"
+        },
+        {
+          "text": "Selling to customers",
+          "id": "5EE918E3-7CAC-E8A8-4BEF-C2F6AD6392EB"
+        },
+        {
+          "text": "Making deals",
+          "id": "768936BE-06D6-4951-7416-42ECAEC88BB0"
+        }
+      ],
+      "correctOption": "253D7DCE-9266-F6FA-861A-CC2F9ED3E858",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "A0B52B4D-E18E-78A7-5C74-4819FB86D300",
+      "text": "If you had to create an ad, what would you focus on?",
+      "options": [
+        {
+          "text": "Fun visuals",
+          "id": "230F8FC6-56A8-F699-B411-8C0F12346A35"
+        },
+        {
+          "text": "A catchy tagline",
+          "id": "92AD2B02-C437-5B53-590A-B108E690CC2C"
+        },
+        {
+          "text": "The product’s uniqueness",
+          "id": "96D47967-8881-D4BF-0A82-CF02AA509A88"
+        },
+        {
+          "text": "Connecting with the audience",
+          "id": "36198BC5-E55C-AB9D-3BCC-F9A14173A405"
+        }
+      ],
+      "correctOption": "36198BC5-E55C-AB9D-3BCC-F9A14173A405",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "3D0061B7-92A7-EE2E-1A85-E41F6719E333",
+      "text": "What do you enjoy the most in your free time?",
+      "options": [
+        {
+          "text": "Drawing or painting",
+          "id": "F53BEEEF-2E4B-E65B-3AD4-10EC2BC3572D"
+        },
+        {
+          "text": "Writing stories or poems",
+          "id": "5CEF59C3-F33A-DDE4-E96E-4984E994C884"
+        },
+        {
+          "text": "Designing cool stuff",
+          "id": "51EE15C9-E76A-7182-E316-EEF37C9BE3E4"
+        },
+        {
+          "text": "Crafting creative things",
+          "id": "0269D7B6-4B63-8642-F134-654AB4F64B37"
+        }
+      ],
+      "correctOption": "5CEF59C3-F33A-DDE4-E96E-4984E994C884",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D2F5D829-8531-9349-4957-A09429B50721",
+      "text": "What inspires you to create?",
+      "options": [
+        {
+          "text": "Nature",
+          "id": "B5383D07-9485-BD4D-1D5C-C5CEB9923DB5"
+        },
+        {
+          "text": "Emotions",
+          "id": "5F541548-FB07-5875-2392-1D2A41508D7A"
+        },
+        {
+          "text": "People around you",
+          "id": "CCD326E5-7D05-673F-CBA9-63F1A5D6498D"
+        },
+        {
+          "text": "Stories",
+          "id": "8609CC9C-F09A-E212-4198-4C3D529F7735"
+        }
+      ],
+      "correctOption": "B5383D07-9485-BD4D-1D5C-C5CEB9923DB5",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "0A0141FD-3EB4-F9DE-6877-0C461DD6111C",
+      "text": "If you could write a book, what would it be about?",
+      "options": [
+        {
+          "text": "Adventures",
+          "id": "75F57752-1EBB-8EA7-09DA-63C2C4386F06"
+        },
+        {
+          "text": "Fantasy worlds",
+          "id": "2EC10BC7-5B9A-1948-BCE4-6B356E041B9D"
+        },
+        {
+          "text": "Mystery",
+          "id": "BCA56C35-3AD6-35F0-5E72-FCBF12B9647C"
+        },
+        {
+          "text": "Real-life events",
+          "id": "68D0237D-F088-38DC-A222-ADFE69B00192"
+        }
+      ],
+      "correctOption": "2EC10BC7-5B9A-1948-BCE4-6B356E041B9D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "B89DBA7D-3EF0-6CEC-C583-4F16EE6B226D",
+      "text": "Which project would you love the most?",
+      "options": [
+        {
+          "text": "Making a comic book",
+          "id": "0F0A90D4-82EA-35F4-090D-12CB87AE63FB"
+        },
+        {
+          "text": "Designing a cool logo",
+          "id": "560B26F3-8998-F6D0-69AD-E7974EB5DD6C"
+        },
+        {
+          "text": "Writing a blog",
+          "id": "EBF5E8E4-2A14-7E60-4537-9EC9E7CF3BDD"
+        },
+        {
+          "text": "Painting a mural",
+          "id": "98301398-AFD3-B26D-87D0-7A73A3C600F7"
+        }
+      ],
+      "correctOption": "0F0A90D4-82EA-35F4-090D-12CB87AE63FB",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "EC62BC99-37FC-A4E1-424A-6863714E9A42",
+      "text": "What kind of art excites you the most?",
+      "options": [
+        {
+          "text": "Digital art",
+          "id": "2913B092-93C8-8E04-1CCB-F3AE5B1BA9F8"
+        },
+        {
+          "text": "Abstract designs",
+          "id": "A6EE410D-CF67-CEC0-3AE0-09E4DD91BCF0"
+        },
+        {
+          "text": "Realistic sketches",
+          "id": "F8CA74A4-4A1F-06FE-3A70-70ADE5B10D36"
+        },
+        {
+          "text": "Crafts and sculptures",
+          "id": "0B4F81F7-50C8-E6AF-8BE1-F8183A2C075E"
+        }
+      ],
+      "correctOption": "F8CA74A4-4A1F-06FE-3A70-70ADE5B10D36",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "91D7F168-978C-0B68-0325-0DDECA045C74",
+      "text": "How do you like to express your feelings?",
+      "options": [
+        {
+          "text": "Through colors",
+          "id": "B6B03400-8696-C2B3-1BC6-7823398CE671"
+        },
+        {
+          "text": "Through words",
+          "id": "D5D9BAC8-69E5-32D6-7D79-E461061FDAE2"
+        },
+        {
+          "text": "Through creative projects",
+          "id": "AF89EBAC-20C8-3A72-F8CC-6B516491ECDD"
+        },
+        {
+          "text": "Through storytelling",
+          "id": "90706FB0-7FF9-83F0-6F57-F12657D157C6"
+        }
+      ],
+      "correctOption": "D5D9BAC8-69E5-32D6-7D79-E461061FDAE2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "508FBE6B-BCBB-135D-6806-A8836AC9C3B3",
+      "text": "What’s your favorite thing about movies or plays?",
+      "options": [
+        {
+          "text": "Characters",
+          "id": "A5E079E6-BE13-A3AE-B6F2-86B545B67745"
+        },
+        {
+          "text": "Dialogues",
+          "id": "FA5DE10A-97A1-B2F0-C864-FE97D943B23F"
+        },
+        {
+          "text": "Emotions",
+          "id": "AAF0AC42-3243-9069-7917-B389BF37C696"
+        },
+        {
+          "text": "Action scenes",
+          "id": "4EFD039A-5D38-3535-937F-E6EF4F89CDEF"
+        }
+      ],
+      "correctOption": "A5E079E6-BE13-A3AE-B6F2-86B545B67745",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "4E2B281E-75A2-51F8-3768-BF07F3A01A60",
+      "text": "If you were in a play, which role would you pick?",
+      "options": [
+        {
+          "text": "Lead character",
+          "id": "F7C9A3E1-DF40-D8D9-B5BE-359C85D91340"
+        },
+        {
+          "text": "Comic relief",
+          "id": "C2398EAD-3B5A-8B55-C883-D2F083433381"
+        },
+        {
+          "text": "Villain",
+          "id": "B873D955-E90F-F25B-9602-2B0F6B83746B"
+        },
+        {
+          "text": "Director",
+          "id": "CE5DEFB1-0C13-5C73-DA20-1CBFB3238566"
+        }
+      ],
+      "correctOption": "F7C9A3E1-DF40-D8D9-B5BE-359C85D91340",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D2A26E49-EABE-06C8-AF1A-65342D472EB9",
+      "text": "How do you react to performing in front of an audience?",
+      "options": [
+        {
+          "text": "Excited",
+          "id": "03E17E92-1267-308C-3C53-58C6E05A13BA"
+        },
+        {
+          "text": "Nervous but eager",
+          "id": "30579C03-9979-5CC8-7B64-595A304879F5"
+        },
+        {
+          "text": "Confident",
+          "id": "25541ABE-DD52-D232-89FA-2D41AF5194AB"
+        },
+        {
+          "text": "Curious",
+          "id": "4648D923-6703-99A2-39CF-97C3E8CE9FE9"
+        }
+      ],
+      "correctOption": "25541ABE-DD52-D232-89FA-2D41AF5194AB",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7B8E8121-6A65-F8CC-F896-FCBE986F5D83",
+      "text": "What kind of performance excites you the most?",
+      "options": [
+        {
+          "text": "Drama",
+          "id": "5CE2D298-D63F-6082-F35D-C6993EED5268"
+        },
+        {
+          "text": "Comedy",
+          "id": "3FF9E613-9E4F-CEFA-5D92-D2FEAE8EA71C"
+        },
+        {
+          "text": "Action-packed scenes",
+          "id": "B4AF944D-76AB-228F-E6D2-990AAA76A9F9"
+        },
+        {
+          "text": "Musical",
+          "id": "0BA85A6A-07DD-F852-BA2B-53FA0F082E9D"
+        }
+      ],
+      "correctOption": "3FF9E613-9E4F-CEFA-5D92-D2FEAE8EA71C",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "E0130555-E259-9502-3F45-85ABF831AE6B",
+      "text": "If you were to make a short video, what would it be about?",
+      "options": [
+        {
+          "text": "A funny story",
+          "id": "D29D0B3A-E233-7762-AF5A-33A8A03D3A79"
+        },
+        {
+          "text": "An emotional tale",
+          "id": "5F2CDB51-DFA8-1CDF-F2E6-09765313BEA9"
+        },
+        {
+          "text": "A dramatic event",
+          "id": "CA63CB10-8E8B-1C97-FA1E-BAC1727568D6"
+        },
+        {
+          "text": "A dance or song",
+          "id": "506D760A-DDAB-236C-9DC9-B3D0EFBB001E"
+        }
+      ],
+      "correctOption": "D29D0B3A-E233-7762-AF5A-33A8A03D3A79",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "FAF2FBA5-63D4-653C-1F6A-0AA1C8E03496",
+      "text": "How do you practice expressions?",
+      "options": [
+        {
+          "text": "By copying my favorite actors",
+          "id": "2A28DD90-1A51-4370-27F7-58AC129F0D55"
+        },
+        {
+          "text": "By standing in front of a mirror",
+          "id": "7A8D1844-BBBB-1113-9207-C57DB7B368C6"
+        },
+        {
+          "text": "By trying different scenarios",
+          "id": "79F549AE-EA95-3558-2FD7-F89B6E9A0350"
+        },
+        {
+          "text": "By recording myself",
+          "id": "F222D0AF-287F-ADCA-152B-49CF8BD57F3C"
+        }
+      ],
+      "correctOption": "7A8D1844-BBBB-1113-9207-C57DB7B368C6",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "3CFF45FF-D99B-EADC-95B2-9DBB252BA01C",
+      "text": "What would you post on your social media account?",
+      "options": [
+        {
+          "text": "Tutorials or tips",
+          "id": "27CA1AF8-B478-ACC3-6CEA-E9D1F2F51DE5"
+        },
+        {
+          "text": "Funny videos",
+          "id": "E651A30F-9B9F-13C1-795C-6837BAE5E240"
+        },
+        {
+          "text": "Creative content",
+          "id": "4B0BDEE0-459A-BC41-2164-96ECD3A33DED"
+        },
+        {
+          "text": "ersonal experiences",
+          "id": "CBC20F75-4C97-46E8-2678-D0FA4D79FF0A"
+        }
+      ],
+      "correctOption": "4B0BDEE0-459A-BC41-2164-96ECD3A33DED",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "92FFB3A0-ABD4-39BC-AEF9-45F7DFDB9F06",
+      "text": "What do you love about popular influencers?",
+      "options": [
+        {
+          "text": "Their creativity",
+          "id": "D9F73C2E-E8A4-AE62-CC17-4476AFF16D7C"
+        },
+        {
+          "text": "Their confidence",
+          "id": "7077FBEF-27AF-1FDF-DD1E-6AEB410151CD"
+        },
+        {
+          "text": "Their connection with the audience",
+          "id": "5C98E672-D76F-F220-BCEB-B4797B4C9E62"
+        },
+        {
+          "text": "Their ability to inspire",
+          "id": "A41ABB7F-5FCE-A90D-7ADD-D629C920FEC9"
+        }
+      ],
+      "correctOption": "5C98E672-D76F-F220-BCEB-B4797B4C9E62",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "2859905D-AB3D-20FD-F7A1-AD6B484A63FE",
+      "text": "If you had a YouTube channel, what would it be about?",
+      "options": [
+        {
+          "text": "DIY projects",
+          "id": "8186CDB4-DE59-3AD6-6A0A-2A5DAD0E88E8"
+        },
+        {
+          "text": "Gaming",
+          "id": "647CF15B-C9E3-4904-BC17-F582C2E87EB9"
+        },
+        {
+          "text": "Life hacks",
+          "id": "5CF47405-BD01-9281-CD4C-C15866725C1F"
+        },
+        {
+          "text": "Travel vlogs",
+          "id": "CE776649-39DA-E7C1-CE30-943512FFCDA6"
+        }
+      ],
+      "correctOption": "8186CDB4-DE59-3AD6-6A0A-2A5DAD0E88E8",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "971E3237-FE71-469C-D7F7-93CDBFB31FA4",
+      "text": "How do you connect with others online?",
+      "options": [
+        {
+          "text": "Through relatable posts",
+          "id": "2AFF2DF5-0C82-E485-3CB8-3D9051ECA42D"
+        },
+        {
+          "text": "By sharing stories",
+          "id": "99F4C669-9344-DED6-F864-D68B03546012"
+        },
+        {
+          "text": "By responding to comments",
+          "id": "A08CCA1A-B749-53FD-13A4-1D00FDEADEA3"
+        },
+        {
+          "text": "By collaborating with friends",
+          "id": "C97EFCA8-6013-3886-0B48-1ECC5206FEBD"
+        }
+      ],
+      "correctOption": "2AFF2DF5-0C82-E485-3CB8-3D9051ECA42D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "5980D83B-809C-49A3-77BD-3E7D62F8A92C",
+      "text": "What would you create to inspire others?",
+      "options": [
+        {
+          "text": "Motivational videos",
+          "id": "CB640E64-4BEA-688B-9CFA-E68AF465CC8F"
+        },
+        {
+          "text": "Tutorials for fun activities",
+          "id": "13A16140-4229-2E6D-806B-38EA6BA1CCBE"
+        },
+        {
+          "text": "A day-in-the-life vlog",
+          "id": "0A764AA6-BA8E-F96B-5F8F-3CACC9CD85BC"
+        },
+        {
+          "text": "Interesting facts",
+          "id": "5DE6BA49-F6EE-7C41-040A-7E983968815E"
+        }
+      ],
+      "correctOption": "13A16140-4229-2E6D-806B-38EA6BA1CCBE",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "FB4B69AF-48A8-CB03-3A70-04E6286437AD",
+      "text": "What makes a good influencer?",
+      "options": [
+        {
+          "text": "Creativity",
+          "id": "E4D5D560-F6B7-9FC9-F3A1-62597CD48DE9"
+        },
+        {
+          "text": "Consistency",
+          "id": "7B8F01CD-EDDF-84D5-0190-048B347B6A7D"
+        },
+        {
+          "text": "Relatability",
+          "id": "02BC140A-503F-3C7C-08CB-576E04EDE778"
+        },
+        {
+          "text": "All of the above",
+          "id": "ADCB6F7D-FCAC-3135-8237-3B75330D3136"
+        }
+      ],
+      "correctOption": "ADCB6F7D-FCAC-3135-8237-3B75330D3136",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "F5F14CCA-1418-9B34-3405-E38F40603B0E",
+      "text": "What do you enjoy most about helping friends?",
+      "options": [
+        {
+          "text": "Explaining concepts",
+          "id": "A814490E-16FB-14A2-142D-379A52A7DA5A"
+        },
+        {
+          "text": "Organizing group studies",
+          "id": "7829E74A-CC93-23FA-A29D-E67147F403FC"
+        },
+        {
+          "text": "Motivating them to do their best",
+          "id": "405883D8-678A-AD4E-302F-C0F6112696E2"
+        },
+        {
+          "text": "Sharing notes and resources",
+          "id": "AC9C06AF-CE31-DA47-8945-8DF4A76AC904"
+        }
+      ],
+      "correctOption": "A814490E-16FB-14A2-142D-379A52A7DA5A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "98DD1776-E9FF-EE6A-8150-93DEA1D5EEC6",
+      "text": "How would you teach someone a new skill?",
+      "options": [
+        {
+          "text": "Step by step",
+          "id": "713EA662-9193-57DB-BFA0-76D8162DFA7A"
+        },
+        {
+          "text": "Using examples",
+          "id": "29B24162-AB64-B4E2-B870-31C782272515"
+        },
+        {
+          "text": "Through fun activities",
+          "id": "C6613A43-0F1D-8747-DC76-29FDE3E1DA45"
+        },
+        {
+          "text": "With lots of practice",
+          "id": "87056CEB-528E-D707-3995-9D4EFDD910B4"
+        }
+      ],
+      "correctOption": "29B24162-AB64-B4E2-B870-31C782272515",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "770A78BE-E822-3DA0-BF00-D7D0BE104BEE",
+      "text": "What do you enjoy about learning?",
+      "options": [
+        {
+          "text": "Gaining knowledge",
+          "id": "AA94659C-E511-8302-90CC-3E96330EDBF2"
+        },
+        {
+          "text": "Sharing it with others",
+          "id": "363C2C6B-9E79-02D7-CF69-D1C68E915C91"
+        },
+        {
+          "text": "Discovering new methods",
+          "id": "376C8C32-0597-0EF6-1B27-C6DD132172F4"
+        },
+        {
+          "text": "Problem-solving",
+          "id": "21863C45-7CD7-1141-2B58-5B457BF6645A"
+        }
+      ],
+      "correctOption": "363C2C6B-9E79-02D7-CF69-D1C68E915C91",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "707326EA-D0F5-DC1A-36E5-D3AAB1717C46",
+      "text": "How would you help younger students in your school?",
+      "options": [
+        {
+          "text": "By tutoring them",
+          "id": "3F85667C-A3E4-295F-03F1-E68490C1A544"
+        },
+        {
+          "text": "By creating fun lessons",
+          "id": "C9CB325B-96F3-1ED9-D5A6-59504E0B5840"
+        },
+        {
+          "text": "By motivating them",
+          "id": "044DABB9-7A71-62D0-3566-935E115FAFE3"
+        },
+        {
+          "text": "By organizing study sessions",
+          "id": "CBA5F5FD-2062-A181-BF15-016542F61F7B"
+        }
+      ],
+      "correctOption": "3F85667C-A3E4-295F-03F1-E68490C1A544",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "EEFE3017-B8A8-9936-BD8E-3060C7F7174A",
+      "text": "What’s your favorite subject to explain?",
+      "options": [
+        {
+          "text": "Science",
+          "id": "D19CDECD-8C36-2D2C-EB3D-BFE7FD195654"
+        },
+        {
+          "text": "Math",
+          "id": "621D5682-A256-8239-363B-F3AFF95E5882"
+        },
+        {
+          "text": "Literature",
+          "id": "669AA667-98BF-2114-1A98-EC765B042CED"
+        },
+        {
+          "text": "History",
+          "id": "DA5F22AC-A4B3-7B6B-AEB2-1D2792BB4760"
+        }
+      ],
+      "correctOption": "D19CDECD-8C36-2D2C-EB3D-BFE7FD195654",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7056677C-EE18-7A54-D885-549E50CCC0B2",
+      "text": "What kind of classroom environment would you create?",
+      "options": [
+        {
+          "text": "Fun and interactive",
+          "id": "D77DACCC-5039-952A-00EF-DD8A78F15044"
+        },
+        {
+          "text": "Focused and disciplined",
+          "id": "0991D265-F990-3FA2-DD29-FD761361CF45"
+        },
+        {
+          "text": "Supportive and encouraging",
+          "id": "A746CA9C-B257-AD5A-82AE-CCD0D5FE3D42"
+        },
+        {
+          "text": "Creative and resourceful",
+          "id": "A53D4532-3572-788F-7436-B4427B9D8B41"
+        }
+      ],
+      "correctOption": "A746CA9C-B257-AD5A-82AE-CCD0D5FE3D42",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "9CF6645B-DE16-1C82-D3D3-980E4AA47A0F",
+      "text": "What do you like most about numbers?",
+      "options": [
+        {
+          "text": "Solving puzzles with them",
+          "id": "D0CBA40F-A077-69A9-B50D-A3C3A76D308D"
+        },
+        {
+          "text": "Finding patterns",
+          "id": "A8551268-7D3F-D70F-1C70-C0BECE07F4C2"
+        },
+        {
+          "text": "Analyzing trends",
+          "id": "01A497BD-3D3B-B7C9-14DF-78777E138C51"
+        },
+        {
+          "text": "Using them to make decisions",
+          "id": "DCCDD2BE-53D9-D862-1C67-F5D1BC84C983"
+        }
+      ],
+      "correctOption": "A8551268-7D3F-D70F-1C70-C0BECE07F4C2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "515F8096-9882-D0DF-2696-F124A7F2CD11",
+      "text": "If you had a large amount of data, what would you do with it?",
+      "options": [
+        {
+          "text": "Organize it neatly",
+          "id": "2073F324-7677-7EF4-74F3-703B8B129DBF"
+        },
+        {
+          "text": "Analyze it for trends",
+          "id": "B15DD3B3-511E-6721-5400-48E455A6944C"
+        },
+        {
+          "text": "Create charts and graphs",
+          "id": "50B4C6D2-2AEF-4220-6A5C-5D017F9367BC"
+        },
+        {
+          "text": "Use it to solve problems",
+          "id": "057B18E7-5150-54B1-F7A9-9B7276ABEFF7"
+        }
+      ],
+      "correctOption": "057B18E7-5150-54B1-F7A9-9B7276ABEFF7",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "FFAD5E9D-88EC-26B1-1008-BA0F3BE5D5EE",
+      "text": "What excites you about technology?",
+      "options": [
+        {
+          "text": "Its power to solve problems",
+          "id": "51001030-1C92-30EA-99FC-96A219A6F3D7"
+        },
+        {
+          "text": "The data it generates",
+          "id": "697F8C3E-DAF0-C845-8AE5-1FF1A435DF02"
+        },
+        {
+          "text": "Creating digital tools",
+          "id": "EE32D872-4044-4B66-5120-201F0AD5CC6A"
+        },
+        {
+          "text": "Exploring new software",
+          "id": "AE07B613-9B69-222E-831D-FF2163FB0683"
+        }
+      ],
+      "correctOption": "697F8C3E-DAF0-C845-8AE5-1FF1A435DF02",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "9A39A33E-2C8E-7FD7-EAB5-3166837A5E7C",
+      "text": "How do you approach a math problem?",
+      "options": [
+        {
+          "text": "Break it into parts",
+          "id": "CEE61741-9E60-A5CC-0284-E411CA250D1D"
+        },
+        {
+          "text": "Find a pattern",
+          "id": "9EB4B549-24C5-306C-A8E7-AE526FB89BDA"
+        },
+        {
+          "text": "Look for logical connections",
+          "id": "115BE9D4-7175-BCB3-7EC9-CFD67D9C5ACC"
+        },
+        {
+          "text": "Test solutions",
+          "id": "3C51C55F-7549-4B14-835C-3ADFECC14AD8"
+        }
+      ],
+      "correctOption": "CEE61741-9E60-A5CC-0284-E411CA250D1D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D7B7BB32-5A9B-B920-2DCC-545739DF483F",
+      "text": "What would you create with data?",
+      "options": [
+        {
+          "text": "A weather forecast app",
+          "id": "EC165C80-124B-5F7A-D7D5-D14534C9170D"
+        },
+        {
+          "text": "A fun quiz",
+          "id": "6E50F89E-C704-2C3E-CBAB-C807EA28337E"
+        },
+        {
+          "text": "A report on school activities",
+          "id": "0950F623-120D-2CBD-7707-8265787D5166"
+        },
+        {
+          "text": "A game with numbers",
+          "id": "FDCFF08B-1B5E-E5EC-5A66-44BB22B86EF6"
+        }
+      ],
+      "correctOption": "EC165C80-124B-5F7A-D7D5-D14534C9170D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7E2754FC-43F8-F27D-6081-177DCE372828",
+      "text": "What’s the most interesting use of data you can think of?",
+      "options": [
+        {
+          "text": "Predicting outcomes",
+          "id": "2C37A640-1838-05FD-A350-778ECBB3FC07"
+        },
+        {
+          "text": "Solving real-world problems",
+          "id": "6F9D0315-1914-055D-9791-A3906AC97883"
+        },
+        {
+          "text": "Creating visualizations",
+          "id": "DD7FF24C-0764-4F13-06B7-2CEBA0D9AE66"
+        },
+        {
+          "text": "Understanding people better",
+          "id": "E5966C3C-8E4B-14F8-D6A9-397A735B9C02"
+        }
+      ],
+      "correctOption": "6F9D0315-1914-055D-9791-A3906AC97883",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "B788226D-BE89-F947-341F-1A4CEBBFE49A",
+      "text": "What do you enjoy the most about computers?",
+      "options": [
+        {
+          "text": "Solving problems with them",
+          "id": "E7129862-519D-6FE2-2852-88425CACEC66"
+        },
+        {
+          "text": "Coding and creating programs",
+          "id": "B241308A-959C-7F08-2AF0-E4AC240509AD"
+        },
+        {
+          "text": "Designing apps",
+          "id": "837022BA-909E-708F-02A1-B6B3BEA90A71"
+        },
+        {
+          "text": "Exploring how they work",
+          "id": "6B7AE0F0-AE5D-7A69-4A02-44A19E59D043"
+        }
+      ],
+      "correctOption": "B241308A-959C-7F08-2AF0-E4AC240509AD",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "B5A5C7FF-8FB1-38FB-6F41-DCBBC340BF6A",
+      "text": "What would you build with code?",
+      "options": [
+        {
+          "text": "A game",
+          "id": "E0AF3A0E-88D5-EC87-9F31-263DF5A27E66"
+        },
+        {
+          "text": "A calculator",
+          "id": "4D7056C1-D282-B5AB-3856-B791CD28C8E0"
+        },
+        {
+          "text": "A fun app",
+          "id": "286E4FE7-E380-C84E-6361-E6DADE5D03F6"
+        },
+        {
+          "text": "A website",
+          "id": "D7B08A73-04CC-478F-A58A-51B1BD3D683C"
+        }
+      ],
+      "correctOption": "E0AF3A0E-88D5-EC87-9F31-263DF5A27E66",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "0C489321-4BB5-EAB7-1D5D-13AB23425C1C",
+      "text": "What excites you about coding?",
+      "options": [
+        {
+          "text": "Writing new programs",
+          "id": "42FC1C81-AE85-9D79-0FCC-8CF8D29FF732"
+        },
+        {
+          "text": "Fixing bugs",
+          "id": "6837772B-E6E6-733B-1E70-211114EAAC58"
+        },
+        {
+          "text": "Automating tasks",
+          "id": "CB77220B-0A4F-158D-A7FF-97C4FE4C72E9"
+        },
+        {
+          "text": "Learning new languages",
+          "id": "1A2CCEE8-A956-0A40-DB3E-6DB927F804CD"
+        }
+      ],
+      "correctOption": "CB77220B-0A4F-158D-A7FF-97C4FE4C72E9",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7B911B2F-9963-EF26-BADE-01BCD15F64D0",
+      "text": "How do you handle technical challenges?",
+      "options": [
+        {
+          "text": "Break them into smaller problems",
+          "id": "C24BB422-E8AA-0183-BE0A-28BB4C6DCE8F"
+        },
+        {
+          "text": "Look for patterns or solutions online",
+          "id": "D95A4053-C3DB-CC39-7A4A-B17B3CF10D51"
+        },
+        {
+          "text": "Experiment with different approaches",
+          "id": "72265E79-A110-2A2E-8275-116B1B4FB255"
+        },
+        {
+          "text": "Collaborate with others",
+          "id": "00D156C8-0E34-CFB5-5DE0-1CB3690B1DDF"
+        }
+      ],
+      "correctOption": "C24BB422-E8AA-0183-BE0A-28BB4C6DCE8F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "87818B63-9F53-2FA7-080F-CCB7BB8BAACD",
+      "text": "What’s your favorite kind of problem to solve?",
+      "options": [
+        {
+          "text": "Logical puzzles",
+          "id": "4CDBEB88-520D-B4EF-B368-6B697F0104B6"
+        },
+        {
+          "text": "Building something new",
+          "id": "1AF433A3-390E-47D0-10F9-3B9AEAA4F4D8"
+        },
+        {
+          "text": "Debugging errors",
+          "id": "96A1B128-7CC8-669E-31A6-6E529A7FECD7"
+        },
+        {
+          "text": "Optimizing solutions",
+          "id": "A31CDC63-D9C2-8AC4-CA70-E00243E879A6"
+        }
+      ],
+      "correctOption": "1AF433A3-390E-47D0-10F9-3B9AEAA4F4D8",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "5B5A8B77-A9C5-2FD9-49B5-53746165F4C9",
+      "text": "What would you love to learn in programming?",
+      "options": [
+        {
+          "text": "Game development",
+          "id": "D0F2D4CA-8774-C50B-4859-1BD4349928DE"
+        },
+        {
+          "text": "App design",
+          "id": "AD9E81FE-CAD0-0FBA-B7AF-C6D81AD3BF8B"
+        },
+        {
+          "text": "AI and machine learning",
+          "id": "6143FBDA-0FFE-906B-C3D0-C9E89A65F334"
+        },
+        {
+          "text": "Web development",
+          "id": "E10CE783-795F-E6C4-739D-8D5E41ECDD8B"
+        }
+      ],
+      "correctOption": "E10CE783-795F-E6C4-739D-8D5E41ECDD8B",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "55B736DD-8569-1CA6-05D1-C747FB4792C2",
+      "text": "What do you enjoy building the most?",
+      "options": [
+        {
+          "text": "Creative structures with blocks",
+          "id": "B3B23387-A21C-C1BB-46B2-BF65CA3CEBE4"
+        },
+        {
+          "text": "Unique designs on paper",
+          "id": "B203A41C-1E6C-85F5-9223-BB193D6258B0"
+        },
+        {
+          "text": "Virtual models",
+          "id": "A3B41242-07EE-3006-135A-C782D412DF1F"
+        },
+        {
+          "text": "Practical structures for daily use",
+          "id": "3A96060D-208F-BACE-BA12-52B422F3C17F"
+        }
+      ],
+      "correctOption": "B3B23387-A21C-C1BB-46B2-BF65CA3CEBE4",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "694BC229-72FA-5358-34F2-D2BC2D6AA35B",
+      "text": "What inspires you in buildings?",
+      "options": [
+        {
+          "text": "Shapes and designs",
+          "id": "64096E7E-7173-3AA1-A0D9-E5A7E462DF9A"
+        },
+        {
+          "text": "Functionality",
+          "id": "FF1AC93F-200F-C557-0A38-EFBA5298B4EC"
+        },
+        {
+          "text": "Use of space",
+          "id": "E69D8463-F438-B3B3-4DC7-0FE7D6CE795B"
+        },
+        {
+          "text": "Their history",
+          "id": "BE04E807-6D86-03BA-637E-A88649975398"
+        }
+      ],
+      "correctOption": "64096E7E-7173-3AA1-A0D9-E5A7E462DF9A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "F8B0A9FC-0083-C156-D590-80724C8A280F",
+      "text": "What’s your favorite part of a project?",
+      "options": [
+        {
+          "text": "Planning",
+          "id": "937A54EA-5192-F603-FC7B-ADD048D01853"
+        },
+        {
+          "text": "Designing",
+          "id": "CD80675A-98DE-AAA7-3322-08BB3C426F88"
+        },
+        {
+          "text": "Creating models",
+          "id": "F79FE2C3-93E9-F4FF-BF2B-3D6205B3A69D"
+        },
+        {
+          "text": "Presenting ideas",
+          "id": "788E115F-FC1A-B968-68AF-E27916DC4328"
+        }
+      ],
+      "correctOption": "CD80675A-98DE-AAA7-3322-08BB3C426F88",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "A3E34FFA-6E27-2FB2-963D-DA536553E6A4",
+      "text": "How would you create a dream house?",
+      "options": [
+        {
+          "text": "Add unique designs",
+          "id": "4A52AAE1-FF7C-968B-701B-5098896B0DA0"
+        },
+        {
+          "text": "Make it eco-friendly",
+          "id": "8B2FFC86-7E13-792E-3F98-4E28A60CD6A4"
+        },
+        {
+          "text": "Use smart technology",
+          "id": "D74952C4-8020-AF55-5A55-FDAF647251F0"
+        },
+        {
+          "text": "Combine comfort and beauty",
+          "id": "85F15534-0E39-2247-06B3-66DEC06F0827"
+        }
+      ],
+      "correctOption": "8B2FFC86-7E13-792E-3F98-4E28A60CD6A4",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "9E4771F7-242F-AA23-CF2C-87108CD433EB",
+      "text": "What do you notice first about a building?",
+      "options": [
+        {
+          "text": "Its design",
+          "id": "9C44DCC9-0BB6-3839-9F4B-BFC6A2A1A1E3"
+        },
+        {
+          "text": "The materials used",
+          "id": "E9B66FAE-B146-F3A0-EBB4-3C0A8F0F8A0E"
+        },
+        {
+          "text": "The way it’s constructed",
+          "id": "9B994F07-4A91-5D64-0814-67E90EC2DB04"
+        },
+        {
+          "text": "How it blends with surroundings",
+          "id": "86D29F53-DB52-51E0-A5B7-814FE68F5916"
+        }
+      ],
+      "correctOption": "9C44DCC9-0BB6-3839-9F4B-BFC6A2A1A1E3",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "DB6E40F9-7CAD-D09A-437B-B2D1F79EDD7A",
+      "text": "If you could design a public space, what would it be?",
+      "options": [
+        {
+          "text": "A park",
+          "id": "D9119C77-1A06-19D7-4985-D5FAF5FA14EC"
+        },
+        {
+          "text": "A community center",
+          "id": "4BDD7F9A-58D5-AC5D-CE02-83A6DA8DE203"
+        },
+        {
+          "text": "A library",
+          "id": "6CAADE73-9DB3-1601-E6AE-E2ABB99BD880"
+        },
+        {
+          "text": "A museum",
+          "id": "53259034-2265-EF96-B023-AA0176B589AF"
+        }
+      ],
+      "correctOption": "D9119C77-1A06-19D7-4985-D5FAF5FA14EC",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "35BB142D-89D2-BC7D-8EE4-C7070D621D80",
+      "text": "What do you enjoy most about talking to people?",
+      "options": [
+        {
+          "text": "Understanding their feelings",
+          "id": "90C57E31-2F3E-BE25-9089-1851CFD49B45"
+        },
+        {
+          "text": "Helping them solve problems",
+          "id": "6BA3AC74-F032-224F-AE62-C297517B6D94"
+        },
+        {
+          "text": "Learning their stories",
+          "id": "69C77BEA-3551-6189-AB02-33D9255213E5"
+        },
+        {
+          "text": "Supporting them",
+          "id": "0FDD9A89-AA53-419F-F197-3723FFD79136"
+        }
+      ],
+      "correctOption": "90C57E31-2F3E-BE25-9089-1851CFD49B45",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C1F931D9-4031-39A9-70C1-A3BF14AA2229",
+      "text": "What do you observe when meeting someone new?",
+      "options": [
+        {
+          "text": "Their expressions",
+          "id": "C0E8AD0B-F881-1635-5769-B37BF6B525B2"
+        },
+        {
+          "text": "Their tone of voice",
+          "id": "1F0AA3E5-BCFF-C5FE-5116-539C4886D286"
+        },
+        {
+          "text": "Their body language",
+          "id": "E3F0A941-0DCF-21D6-96A4-055AA96F7CCE"
+        },
+        {
+          "text": "Their words",
+          "id": "6404A017-BA15-CE6A-75BE-3233086E8CD1"
+        }
+      ],
+      "correctOption": "E3F0A941-0DCF-21D6-96A4-055AA96F7CCE",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "BFAF9A10-6A9A-DF09-ED03-45C997035BE2",
+      "text": "How do you help a friend who’s feeling down?",
+      "options": [
+        {
+          "text": "Listen to them",
+          "id": "CFCFE92A-973E-CABC-9153-A18EC9689573"
+        },
+        {
+          "text": "Offer advice",
+          "id": "C26C5899-60F7-535B-AA58-7CEC15833081"
+        },
+        {
+          "text": "Cheer them up",
+          "id": "5A564E69-3926-F51F-67CD-49DFFC95CF73"
+        },
+        {
+          "text": "Find the cause of their feelings",
+          "id": "7D7B46CD-C0EC-67D0-0E33-68773C0B7E33"
+        }
+      ],
+      "correctOption": "CFCFE92A-973E-CABC-9153-A18EC9689573",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "E3BF2095-181E-2FCF-1EFB-5D2371374597",
+      "text": "What fascinates you about human behavior?",
+      "options": [
+        {
+          "text": "Why people act a certain way",
+          "id": "800DB6D6-1188-9B50-53B5-43F075E440C7"
+        },
+        {
+          "text": "How emotions work",
+          "id": "A6C00AC8-D2E3-6A37-A396-8731AB95D745"
+        },
+        {
+          "text": "How people solve problems",
+          "id": "744C326E-585E-23EF-3339-B00AEA6EC0B5"
+        },
+        {
+          "text": "How thoughts influence actions",
+          "id": "DDD74FCD-2B11-F6C8-DDC2-CFD01D8CCCEE"
+        }
+      ],
+      "correctOption": "A6C00AC8-D2E3-6A37-A396-8731AB95D745",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "BBCE776E-DE24-D8C0-0B4B-4C597272893B",
+      "text": "If you were to study the brain, what would you focus on?",
+      "options": [
+        {
+          "text": "Memory",
+          "id": "FE4B06BC-7257-28EA-3568-894E7EDA4820"
+        },
+        {
+          "text": "Emotions",
+          "id": "3CD99A57-5CEB-B60C-EC20-8BDB59EF8AF1"
+        },
+        {
+          "text": "Decision-making",
+          "id": "FFD561AE-83EA-90A4-2C0E-A0231EBBC67B"
+        },
+        {
+          "text": "Stress",
+          "id": "2640B523-8B5A-08B8-87D8-CB1E42B7D271"
+        }
+      ],
+      "correctOption": "FE4B06BC-7257-28EA-3568-894E7EDA4820",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "45078C54-96E2-B7D1-B95D-92F3021BCF66",
+      "text": "What kind of experiments would you design?",
+      "options": [
+        {
+          "text": "Personality tests",
+          "id": "9C41983A-A4A5-4B34-FB0B-2A6FAFFA879B"
+        },
+        {
+          "text": "Stress management techniques",
+          "id": "B9F68C69-C072-0DF2-1EB6-80E44AC0F187"
+        },
+        {
+          "text": "Behavior observation studies",
+          "id": "5D1CF9C2-FD16-4085-B616-F23CD9389F8A"
+        },
+        {
+          "text": "Problem-solving challenges",
+          "id": "9ECD2432-54B2-4054-A793-B9A83CBACA90"
+        }
+      ],
+      "correctOption": "5D1CF9C2-FD16-4085-B616-F23CD9389F8A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6DE2E413-353D-2B35-77AF-07BCE9156ED6",
+      "text": "What do you like most about nature?",
+      "options": [
+        {
+          "text": "Its beauty",
+          "id": "72A60A9C-D377-F8A8-426A-D91E8B5DCAF9"
+        },
+        {
+          "text": "Its role in keeping life balanced",
+          "id": "AB6BF196-301E-81A6-14C1-62CA5F82E384"
+        },
+        {
+          "text": "Exploring forests and rivers",
+          "id": "C3DDB6CC-C5A7-8271-2731-6A4F038258A2"
+        },
+        {
+          "text": "Protecting it from harm",
+          "id": "C529F291-D5AD-72B9-902E-5014F8D9990C"
+        }
+      ],
+      "correctOption": "C529F291-D5AD-72B9-902E-5014F8D9990C",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "65FDCD76-FF6F-CBF2-6BC6-248C17FFACD3",
+      "text": "What would you do to reduce pollution?",
+      "options": [
+        {
+          "text": "Create awareness",
+          "id": "3B99BC30-3E15-07FD-B688-2983E3D670EB"
+        },
+        {
+          "text": "Design eco-friendly solutions",
+          "id": "840DE3B3-CA59-87CC-6E2A-F6423A1D7A84"
+        },
+        {
+          "text": "Research ways to stop it",
+          "id": "DDE236C9-26E3-30EA-5D65-C63DD7BBA456"
+        },
+        {
+          "text": "Encourage recycling",
+          "id": "112AA2D5-14F9-D15D-A011-8B8EB82C4BBE"
+        }
+      ],
+      "correctOption": "840DE3B3-CA59-87CC-6E2A-F6423A1D7A84",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "16E3C1BB-EDD5-19B0-C980-CC765332512D",
+      "text": "If you could study one natural phenomenon, what would it be?",
+      "options": [
+        {
+          "text": "Climate change",
+          "id": "4A532D9A-B5A2-B20E-EA49-0E5A084A6D40"
+        },
+        {
+          "text": "The water cycle",
+          "id": "07120050-2FED-7DE9-D647-6503F95F874C"
+        },
+        {
+          "text": "Plant growth",
+          "id": "18B1AE9E-FDA9-A3D3-DD4B-9B4D056395B8"
+        },
+        {
+          "text": "Animal behavior",
+          "id": "2DA1C7B3-163C-08DE-1833-533A6734D2E4"
+        }
+      ],
+      "correctOption": "4A532D9A-B5A2-B20E-EA49-0E5A084A6D40",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "62324023-711D-C3EA-9BCB-2351F721AF45",
+      "text": "What do you observe most in your surroundings?",
+      "options": [
+        {
+          "text": "Trees and plants",
+          "id": "F030B3AC-F142-4179-D787-FE2B5249B627"
+        },
+        {
+          "text": "Weather patterns",
+          "id": "B32DD6F1-3B73-3578-F596-6ED80ABCD55A"
+        },
+        {
+          "text": "Cleanliness",
+          "id": "AA3DBF10-03D1-554F-2446-F0D7B00D7876"
+        },
+        {
+          "text": "Wildlife",
+          "id": "4958F4B0-28BF-43AA-52D3-1651FC7954B6"
+        }
+      ],
+      "correctOption": "F030B3AC-F142-4179-D787-FE2B5249B627",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C5E970A0-0F13-5720-DE41-74A316871844",
+      "text": "What project would you enjoy the most?",
+      "options": [
+        {
+          "text": "Creating a sustainable garden",
+          "id": "7B4EEDCC-9A4B-F3C5-2CD5-068587A3151C"
+        },
+        {
+          "text": "Tracking weather changes",
+          "id": "AA5A8F58-750B-CA62-90BD-514D65970C49"
+        },
+        {
+          "text": "Cleaning a polluted area",
+          "id": "6449F646-03A8-4422-D710-40A73D7A3BBC"
+        },
+        {
+          "text": "Raising awareness",
+          "id": "91F23F04-3812-FEC1-E017-FF66C9727975"
+        }
+      ],
+      "correctOption": "6449F646-03A8-4422-D710-40A73D7A3BBC",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "ECDBFCAF-82BE-6E00-7C13-627C7B854833",
+      "text": "How would you spread awareness about environmental issues?",
+      "options": [
+        {
+          "text": "Through social media campaigns",
+          "id": "4ACF4B7B-6DAE-BB4C-FFC0-534BBD99D9C9"
+        },
+        {
+          "text": "By organizing events",
+          "id": "55B31DB4-7482-0705-A31D-8861FAD6DE2B"
+        },
+        {
+          "text": "By teaching others",
+          "id": "3575FDDE-0DE5-D824-ACA7-2F192581D3D1"
+        },
+        {
+          "text": "By leading by example",
+          "id": "B8CE598A-AC19-6454-A2E2-C0F809894C61"
+        }
+      ],
+      "correctOption": "4ACF4B7B-6DAE-BB4C-FFC0-534BBD99D9C9",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "310253B1-9F33-E9A0-4796-CC16A0F4532F",
+      "text": "What do you enjoy most about working with people?",
+      "options": [
+        {
+          "text": "Solving conflicts",
+          "id": "DF43872E-82CB-B30D-D5BC-797B881D0982"
+        },
+        {
+          "text": "Helping them achieve their goals",
+          "id": "6D87521D-FE7B-4912-9B4D-34E57A6A01B6"
+        },
+        {
+          "text": "Organizing group activities",
+          "id": "D4B0787F-217A-0B79-3427-0359794D6119"
+        },
+        {
+          "text": "Understanding their strengths",
+          "id": "21E71C82-5FA0-3055-7070-D277A016C0C2"
+        }
+      ],
+      "correctOption": "21E71C82-5FA0-3055-7070-D277A016C0C2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6C5834AC-30E3-8681-1EE3-291A11A5505F",
+      "text": "If you were to lead a team, what would you focus on?",
+      "options": [
+        {
+          "text": "Team harmony",
+          "id": "FB7B8C62-C04B-0AD9-1960-5797FBB15484"
+        },
+        {
+          "text": "Assigning the right roles",
+          "id": "578666F6-A383-1DBF-789D-0428E9E8C89C"
+        },
+        {
+          "text": "Motivating members",
+          "id": "6A46B23D-028C-2F3F-2B34-A81A8D2269E7"
+        },
+        {
+          "text": "Setting goals",
+          "id": "0834CB4B-C193-B805-72F6-19DAD61C5B15"
+        }
+      ],
+      "correctOption": "578666F6-A383-1DBF-789D-0428E9E8C89C",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "8E42B5BC-B47E-62AC-1BF5-7E319A0A916B",
+      "text": "How would you welcome a new student to your class?",
+      "options": [
+        {
+          "text": "Introduce them to others",
+          "id": "63CD640C-C1B9-9704-8680-ECAB89194149"
+        },
+        {
+          "text": "Explain class rules",
+          "id": "DC1B7D9F-1121-38C9-4BD6-82373CCE13D4"
+        },
+        {
+          "text": "Make them feel included",
+          "id": "8C19A432-1D1F-5998-594D-C8350E21369D"
+        },
+        {
+          "text": "Help them adjust",
+          "id": "504D0741-8C82-C86B-74C7-566350DA5EE9"
+        }
+      ],
+      "correctOption": "8C19A432-1D1F-5998-594D-C8350E21369D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "614311DF-4444-3578-3CB1-BC5770FF3EFA",
+      "text": "What’s the best way to handle disagreements?",
+      "options": [
+        {
+          "text": "Listen to both sides",
+          "id": "B8EAF255-946B-3550-299C-36D07E7501BF"
+        },
+        {
+          "text": "Suggest a compromise",
+          "id": "428852CA-63E2-E703-F219-FABA3B69B318"
+        },
+        {
+          "text": "Find common ground",
+          "id": "40ECF4D7-42E8-C80E-53A6-8AFCEE80406C"
+        },
+        {
+          "text": "Avoid taking sides",
+          "id": "CC4849CD-1DC5-F792-21CE-8B95714E6A0D"
+        }
+      ],
+      "correctOption": "B8EAF255-946B-3550-299C-36D07E7501BF",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "003CE550-A097-935E-E40E-3E33186CAA0F",
+      "text": "What makes a great leader?",
+      "options": [
+        {
+          "text": "Communication skills",
+          "id": "76C88AD9-ABC9-4363-AE47-342C515B6F6A"
+        },
+        {
+          "text": "Fair decision-making",
+          "id": "00CF7B25-6690-805E-91E9-F911F6D738DB"
+        },
+        {
+          "text": "Empathy for team members",
+          "id": "6CD843E6-039A-FBBA-BC87-A7376E87F5F7"
+        },
+        {
+          "text": "All of the above",
+          "id": "ADD45E44-9A5D-3867-8AB0-E2DAE5FEF721"
+        }
+      ],
+      "correctOption": "ADD45E44-9A5D-3867-8AB0-E2DAE5FEF721",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "198AD610-AFAC-B223-E475-301BBB3A702E",
+      "text": "How would you motivate a team to complete a project?",
+      "options": [
+        {
+          "text": "Encourage collaboration",
+          "id": "673A84BD-1598-FF10-D3AA-0893727927BB"
+        },
+        {
+          "text": "Set a fun challenge",
+          "id": "3BABCE52-572C-D1D9-927A-B539E77EA184"
+        },
+        {
+          "text": "Offer rewards",
+          "id": "FB6A0D9B-58A3-E7F4-FF8D-8DDF62FA77C9"
+        },
+        {
+          "text": "Lead by example",
+          "id": "19CD560B-7047-3A5C-B59A-91EE7AC24956"
+        }
+      ],
+      "correctOption": "673A84BD-1598-FF10-D3AA-0893727927BB",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "1B342C52-2E41-B88E-7A6F-20FF434172AC",
+      "text": "What do you enjoy most about news or stories?",
+      "options": [
+        {
+          "text": "Learning new facts",
+          "id": "87B69846-26B4-81A6-937D-2B3F191614E6"
+        },
+        {
+          "text": "Understanding different perspectives",
+          "id": "34809210-6310-ABC2-4064-744D20276268"
+        },
+        {
+          "text": "Sharing them with others",
+          "id": "D68F38FE-9905-91ED-C411-8D2B2EC4888D"
+        },
+        {
+          "text": "Exploring current events",
+          "id": "B8B63FB7-7703-756E-B372-CE9DB4AD19F0"
+        }
+      ],
+      "correctOption": "D68F38FE-9905-91ED-C411-8D2B2EC4888D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7F914841-5C06-580F-DAC3-20B4174F95BA",
+      "text": "How would you gather information about an event?",
+      "options": [
+        {
+          "text": "Interview people",
+          "id": "725B31A1-9919-DF66-10A5-199AE6A33BD1"
+        },
+        {
+          "text": "Research online",
+          "id": "C3031B9E-0B52-96A3-ABE7-08DF714F457F"
+        },
+        {
+          "text": "Visit the place",
+          "id": "7E1FDF53-5904-BBFE-6C02-0583108F37E3"
+        },
+        {
+          "text": "Observe and take notes",
+          "id": "7FFDEF12-B09C-A18E-13B3-6FF1CAA529F3"
+        }
+      ],
+      "correctOption": "725B31A1-9919-DF66-10A5-199AE6A33BD1",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "D65278BD-65D7-6170-E2F1-AF92C6535790",
+      "text": "If you were a reporter, what would you cover?",
+      "options": [
+        {
+          "text": "Sports",
+          "id": "797BDA8A-D602-05D8-6F90-53527F320DED"
+        },
+        {
+          "text": "Nature and environment",
+          "id": "FBCBC3EE-0212-A083-1B15-6A21CB12096F"
+        },
+        {
+          "text": "Community events",
+          "id": "DB26D9B8-7C5A-4A98-6C8C-497996B24F70"
+        },
+        {
+          "text": "Technology",
+          "id": "FEF9598F-7987-D3B6-20C4-D477D6F37E26"
+        }
+      ],
+      "correctOption": "FBCBC3EE-0212-A083-1B15-6A21CB12096F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "49B6C283-8795-54B1-74A8-CDF001E75FF3",
+      "text": "How would you make your article interesting?",
+      "options": [
+        {
+          "text": "Add real-life examples",
+          "id": "CA36154F-3E8A-335D-C120-6BEEB5734FDA"
+        },
+        {
+          "text": "Use catchy headlines",
+          "id": "15A159B0-36C4-EDB1-221F-29966C4A7D44"
+        },
+        {
+          "text": "Include visuals",
+          "id": "0844B7C7-BD7C-5B91-FF6D-8EE46C9E8750"
+        },
+        {
+          "text": "Make it easy to read",
+          "id": "0EE643CE-57C8-49BA-5B53-A4FD65E62F17"
+        }
+      ],
+      "correctOption": "15A159B0-36C4-EDB1-221F-29966C4A7D44",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "5A1D4D22-5E07-AA38-A07F-99C186EE4EC5",
+      "text": "What do you notice most in newspapers or magazines?",
+      "options": [
+        {
+          "text": "Headlines",
+          "id": "B9BA5C01-27CE-9E48-9A80-BFABDA60C62D"
+        },
+        {
+          "text": "Pictures",
+          "id": "C77C3D78-57CC-7BB4-787D-2555E615F8F2"
+        },
+        {
+          "text": "Stories",
+          "id": "C719F75B-454A-D35F-5186-3E8B2A803788"
+        },
+        {
+          "text": "Layout",
+          "id": "0C102068-B019-BD66-3B18-194A942260FC"
+        }
+      ],
+      "correctOption": "B9BA5C01-27CE-9E48-9A80-BFABDA60C62D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "B4110365-68FF-5643-3DDF-CAD3722CC5F8",
+      "text": "How would you handle a tough interview?",
+      "options": [
+        {
+          "text": "Prepare good questions",
+          "id": "84E2181A-46D8-86FE-5E2D-1B0E7B22DBC1"
+        },
+        {
+          "text": "Stay calm and polite",
+          "id": "8D077264-53EA-8FE1-21A3-AF6C2E433EFF"
+        },
+        {
+          "text": "Listen carefully",
+          "id": "72AF9B6D-F3CE-F417-8E67-A852C11087EA"
+        },
+        {
+          "text": "Ask for clarity when needed",
+          "id": "FF88FC32-3096-5FEB-89DF-68C8783A760D"
+        }
+      ],
+      "correctOption": "72AF9B6D-F3CE-F417-8E67-A852C11087EA",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "F73451DC-37A5-E48A-2C7C-BBE1D6D1D33C",
+      "text": "How do you help people see the best in something?",
+      "options": [
+        {
+          "text": "By sharing its benefits",
+          "id": "00B0DD44-8F3F-CAD5-333C-4A73249A21BC"
+        },
+        {
+          "text": "By explaining clearly",
+          "id": "302C3F03-488D-25C1-0EFC-A68D9278152D"
+        },
+        {
+          "text": "By using creative visuals",
+          "id": "A17918EA-A261-4455-2B62-3163BBE0A65D"
+        },
+        {
+          "text": "By making it relatable",
+          "id": "643DE602-A203-E579-601D-CB74DB8357C5"
+        }
+      ],
+      "correctOption": "00B0DD44-8F3F-CAD5-333C-4A73249A21BC",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "A1346893-7E06-AEDB-E662-C3460CF8A311",
+      "text": "If you were organizing an event, what would you focus on?",
+      "options": [
+        {
+          "text": "The theme and setup",
+          "id": "F53D73A6-610D-C5CA-86C1-2078037D82DB"
+        },
+        {
+          "text": "Inviting the right people",
+          "id": "4D493B94-A65E-4BB8-302C-1151F1D55E7A"
+        },
+        {
+          "text": "Promoting the event",
+          "id": "711C5214-DD15-66D4-9773-FDFC344DFF6F"
+        },
+        {
+          "text": "Managing the schedule",
+          "id": "61210499-537A-34E8-29AB-3CCA7C62C7CE"
+        }
+      ],
+      "correctOption": "711C5214-DD15-66D4-9773-FDFC344DFF6F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "DF3F07D7-C1F2-25A2-5FA2-4E3DCB220A25",
+      "text": "How do you respond to feedback?",
+      "options": [
+        {
+          "text": "Listen carefully",
+          "id": "592C4376-7703-2838-656B-5D42A3AD49BC"
+        },
+        {
+          "text": "Take notes for improvement",
+          "id": "0720409D-903D-56FD-A40B-04F1E37339BC"
+        },
+        {
+          "text": "Address concerns immediately",
+          "id": "02307DC1-8F30-9C58-8EC3-372C594474A8"
+        },
+        {
+          "text": "Appreciate constructive ideas",
+          "id": "25367543-C568-56D7-4BD4-1B97C4CB91C6"
+        }
+      ],
+      "correctOption": "25367543-C568-56D7-4BD4-1B97C4CB91C6",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C38E7394-FFC2-BE44-E229-9D2566ED1EE6",
+      "text": "What makes a good promotional campaign?",
+      "options": [
+        {
+          "text": "Creative ideas",
+          "id": "FE8FF97F-EF56-18AD-4D46-55D7F1C90BF2"
+        },
+        {
+          "text": "Clear communication",
+          "id": "2DDE0313-9CC8-D7AC-8AC2-2C7F22BD9CAE"
+        },
+        {
+          "text": "Understanding the audience",
+          "id": "9CAD5296-C773-3F2F-C705-825C24BA9EAD"
+        },
+        {
+          "text": "All of the above",
+          "id": "984134DA-295B-42A7-C259-1FDCD8257683"
+        }
+      ],
+      "correctOption": "984134DA-295B-42A7-C259-1FDCD8257683",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "FE671ACC-A403-98E7-F48D-2BDAD05589B4",
+      "text": "How would you share exciting news with a group?",
+      "options": [
+        {
+          "text": "Write a catchy message",
+          "id": "04EF60D5-F396-48C1-FFF0-3D809F0BE850"
+        },
+        {
+          "text": "Design a fun announcement",
+          "id": "EC84C868-44E8-3C90-E485-EF91A6EC5473"
+        },
+        {
+          "text": "Use social media",
+          "id": "6A7BC46B-5A50-BD03-11BA-78E37C767849"
+        },
+        {
+          "text": "Host a small event",
+          "id": "704A1B5B-693D-3A96-C725-DD27B1979F18"
+        }
+      ],
+      "correctOption": "6A7BC46B-5A50-BD03-11BA-78E37C767849",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "95595258-6B8A-CF2E-7F13-C0B63BEE9311",
+      "text": "What do you enjoy about communicating ideas?",
+      "options": [
+        {
+          "text": "Sharing information",
+          "id": "3C9F292B-D625-36C1-728F-C078F3356D60"
+        },
+        {
+          "text": "Inspiring people",
+          "id": "CFBA6FCF-2B88-2737-38E3-59FC6A26F4E5"
+        },
+        {
+          "text": "Connecting with others",
+          "id": "69601802-A6CA-F649-7983-3D64DCB0D57C"
+        },
+        {
+          "text": "Presenting creatively",
+          "id": "3CF7EB58-FA53-648F-EF26-884CE5DE8E26"
+        }
+      ],
+      "correctOption": "CFBA6FCF-2B88-2737-38E3-59FC6A26F4E5",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "231F6DD5-CD90-5287-8081-083283A4998F",
+      "text": "What do you enjoy most about computers?",
+      "options": [
+        {
+          "text": "Solving problems",
+          "id": "D84143BE-876D-2D57-A8E7-2E8FED4E6B6D"
+        },
+        {
+          "text": "Exploring how they work",
+          "id": "4FA74A37-BD83-F724-9F90-DCCC916D443A"
+        },
+        {
+          "text": "Keeping them secure",
+          "id": "9BE321B0-AFC0-229B-3937-967BBF329C22"
+        },
+        {
+          "text": "Learning new tools",
+          "id": "9F7CBE7B-79E9-19EE-BE47-B5F3290FE8AE"
+        }
+      ],
+      "correctOption": "9BE321B0-AFC0-229B-3937-967BBF329C22",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "DA2BB894-1F25-7AFE-1363-B9E9EEAF800F",
+      "text": "What would you do if you found a security problem?",
+      "options": [
+        {
+          "text": "Report it immediately",
+          "id": "3D98B75E-203E-F71A-D934-20E42CEECDF4"
+        },
+        {
+          "text": "Investigate its cause",
+          "id": "0841D1EE-F731-265A-FACC-AAACB20DAB00"
+        },
+        {
+          "text": "Fix it with tools",
+          "id": "01CFAD78-2DA8-A642-04E2-9E640704C1AA"
+        },
+        {
+          "text": "Test its impact",
+          "id": "1A06A977-A7F7-11A1-2C91-4E434154B63B"
+        }
+      ],
+      "correctOption": "3D98B75E-203E-F71A-D934-20E42CEECDF4",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "4D208FB3-FF8A-1CEF-99F9-5FA8F9E4CAF8",
+      "text": "What’s the best way to protect online accounts?",
+      "options": [
+        {
+          "text": "Use strong passwords",
+          "id": "FF093800-D39B-44CD-6288-2B4DEF367F8C"
+        },
+        {
+          "text": "Enable two-factor authentication",
+          "id": "9D2EEC80-EDF8-6CC3-F296-29D33426B341"
+        },
+        {
+          "text": "Avoid sharing details",
+          "id": "8C787968-81B0-DE7B-8312-210385F8E090"
+        },
+        {
+          "text": "All of the above",
+          "id": "864A2E79-23AA-18B7-274C-214DC4C2E7C6"
+        }
+      ],
+      "correctOption": "864A2E79-23AA-18B7-274C-214DC4C2E7C6",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "605BF526-5D4C-C73C-39A6-56424A8570AE",
+      "text": "How do you handle technical challenges?",
+      "options": [
+        {
+          "text": "Break them into parts",
+          "id": "2F541D15-7BAA-F87E-75A7-89A31B3B0E04"
+        },
+        {
+          "text": "Research solutions",
+          "id": "5396E1EA-3462-C395-EC1F-AB4158EA5526"
+        },
+        {
+          "text": "Test different approaches",
+          "id": "6873E4A1-99FD-1F1F-24A6-E4205B6A0476"
+        },
+        {
+          "text": "Collaborate with others",
+          "id": "C3331A81-E8F4-8411-6ED7-BB6A0E1A3BD6"
+        }
+      ],
+      "correctOption": "2F541D15-7BAA-F87E-75A7-89A31B3B0E04",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "08E8AD42-3518-A407-41EC-43A1EDAA6945",
+      "text": "What excites you about cybersecurity?",
+      "options": [
+        {
+          "text": "Catching hackers",
+          "id": "FD845D5B-5F07-87E9-FE3E-28EFFC13CAB0"
+        },
+        {
+          "text": "Solving mysteries",
+          "id": "28366804-A612-2EAF-F630-95738C7494E7"
+        },
+        {
+          "text": "Building safe systems",
+          "id": "0677E96A-4C3F-2E5C-FB89-A6F0EB584A1D"
+        },
+        {
+          "text": "Protecting data",
+          "id": "89E30A6B-7753-D686-36DD-0223C3023076"
+        }
+      ],
+      "correctOption": "89E30A6B-7753-D686-36DD-0223C3023076",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "98E12D5D-5F92-6054-AF81-E4D12B83A568",
+      "text": "If you designed a security tool, what would it do?",
+      "options": [
+        {
+          "text": "Protect passwords",
+          "id": "A7809F34-FCB1-735F-43B1-97E58FF26FE0"
+        },
+        {
+          "text": "Detect threats",
+          "id": "3ED368D3-C80C-CADA-53CF-EA76D25C2BA2"
+        },
+        {
+          "text": "Secure networks",
+          "id": "3ED77905-8F64-364E-650D-64BB295823E0"
+        },
+        {
+          "text": "Monitor activities",
+          "id": "54234714-DBF7-921B-02A5-517FB0C4C1B2"
+        }
+      ],
+      "correctOption": "3ED368D3-C80C-CADA-53CF-EA76D25C2BA2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "FDBB6143-965E-3F50-E641-A4F0477CF4D1",
+      "text": "How do you organize tasks for a big project?",
+      "options": [
+        {
+          "text": "List them step by step",
+          "id": "59F6DCBD-451A-7958-6617-1D2319C7FD26"
+        },
+        {
+          "text": "Prioritize what’s important",
+          "id": "2E803369-B9EC-4FCD-F55F-21A172CA480A"
+        },
+        {
+          "text": "Delegate tasks",
+          "id": "C3973FC4-572F-55F2-C60E-70D7BCE4706C"
+        },
+        {
+          "text": "Track progress",
+          "id": "ED0B1896-C541-F129-B5E6-D8FB4D38DB39"
+        }
+      ],
+      "correctOption": "59F6DCBD-451A-7958-6617-1D2319C7FD26",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "467DCD02-8903-0053-B7F3-3DCD26586FD3",
+      "text": "What’s your favorite part of working on a project?",
+      "options": [
+        {
+          "text": "Planning it",
+          "id": "B026EE5A-288D-7FC7-777D-A8911AA657DA"
+        },
+        {
+          "text": "Managing teamwork",
+          "id": "3C832CD9-E84F-E547-FAF5-BDBDCCC1108B"
+        },
+        {
+          "text": "Tracking deadlines",
+          "id": "6E671088-9BCF-11D0-70EB-2C84499D3A20"
+        },
+        {
+          "text": "Presenting results",
+          "id": "D7F1E147-EBD8-FAE0-2A8B-AD059229D252"
+        }
+      ],
+      "correctOption": "3C832CD9-E84F-E547-FAF5-BDBDCCC1108B",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "1FD023C4-3490-A5CB-A0AD-475625A0C36E",
+      "text": "How do you make sure everyone works well together?",
+      "options": [
+        {
+          "text": "Assign clear roles",
+          "id": "FA8C15C7-A350-A80C-23C6-A2E750784C91"
+        },
+        {
+          "text": "Communicate openly",
+          "id": "778A0C97-CDD1-C895-2F69-9DE5A5DC951A"
+        },
+        {
+          "text": "Motivate the team",
+          "id": "D0C7F5DF-E940-CA8F-D71F-8FCFD9109CBC"
+        },
+        {
+          "text": "Solve conflicts quickly",
+          "id": "A2BD579F-4AB3-82FC-5C33-1162DCE73856"
+        }
+      ],
+      "correctOption": "778A0C97-CDD1-C895-2F69-9DE5A5DC951A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "FD37A9EA-A506-AE15-79C4-802CC57E661E",
+      "text": "What would you do if a project faced delays?",
+      "options": [
+        {
+          "text": "Find the reason",
+          "id": "D2365C21-11FF-FF40-13DB-5AE7A4815852"
+        },
+        {
+          "text": "Adjust timelines",
+          "id": "E1E650B7-48DF-3495-22C2-0564ABA868E3"
+        },
+        {
+          "text": "Reassign tasks",
+          "id": "B259CC28-8F40-5E64-8F25-CD2F0E5594EA"
+        },
+        {
+          "text": "Work harder",
+          "id": "C93AAEB0-44FC-615E-ACAD-13C73E1188FA"
+        }
+      ],
+      "correctOption": "D2365C21-11FF-FF40-13DB-5AE7A4815852",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "4802794C-1F13-610B-9077-9C777A4BE6C9",
+      "text": "What’s the most important part of managing a project?",
+      "options": [
+        {
+          "text": "Good planning",
+          "id": "BBF042ED-BDC6-794A-9835-E00402D79545"
+        },
+        {
+          "text": "Team communication",
+          "id": "09241879-401D-0DF1-E131-080324EA9CC9"
+        },
+        {
+          "text": "Meeting deadlines",
+          "id": "AFDD23D6-21E3-7723-755D-88B09C528D7D"
+        },
+        {
+          "text": "All of the above",
+          "id": "498E522E-D4BC-41BF-4C7E-17728A2F2D73"
+        }
+      ],
+      "correctOption": "498E522E-D4BC-41BF-4C7E-17728A2F2D73",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "CD6E17F1-E1CD-BC92-BD99-B98BEDC1E844",
+      "text": "How do you celebrate finishing a project?",
+      "options": [
+        {
+          "text": "Share the results",
+          "id": "9182FD31-0E5F-BAF7-6BA3-A6A3A926C807"
+        },
+        {
+          "text": "Thank the team",
+          "id": "8972E53A-6B85-4663-12CC-31C98B1E2A49"
+        },
+        {
+          "text": "Learn from the experience",
+          "id": "9F57C360-62E9-1C15-FEF1-B59CD91CBB9F"
+        },
+        {
+          "text": "Host a fun celebration",
+          "id": "8D34F3AC-7F9F-484F-CD60-5DA5688B3F66"
+        }
+      ],
+      "correctOption": "8972E53A-6B85-4663-12CC-31C98B1E2A49",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "E21038A0-7A18-DCB5-B0F5-224A09D3488B",
+      "text": "What excites you about experiments?",
+      "options": [
+        {
+          "text": "Discovering something new",
+          "id": "E3A45D6B-D9AC-6D00-6531-8FC3627AED16"
+        },
+        {
+          "text": "Testing your ideas",
+          "id": "16C8C3E8-A0A2-5AB3-3FAF-9A49260A8959"
+        },
+        {
+          "text": "Finding answers to problems",
+          "id": "C357E9F7-7B48-DE4E-DC41-287C688A4644"
+        },
+        {
+          "text": "Working with tools and equipment",
+          "id": "A57AC216-59FF-F13A-97D2-38FEFEAF1383"
+        }
+      ],
+      "correctOption": "E3A45D6B-D9AC-6D00-6531-8FC3627AED16",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "1C0B3ED1-B308-EFC2-E250-20EE8D64CEEA",
+      "text": "How do you approach solving a complex problem?",
+      "options": [
+        {
+          "text": "Break it into smaller steps",
+          "id": "84B9E717-D155-38DC-E7D8-9FE0847BC590"
+        },
+        {
+          "text": "Research existing solutions",
+          "id": "A5E22FF6-3B7D-CB8D-7540-7888D9273594"
+        },
+        {
+          "text": "Test multiple approaches",
+          "id": "04518E20-C2F3-8A93-BE45-C45B892EA012"
+        },
+        {
+          "text": "Ask for expert advice",
+          "id": "B4D17794-A773-432B-572A-9CF8822BBE05"
+        }
+      ],
+      "correctOption": "84B9E717-D155-38DC-E7D8-9FE0847BC590",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C938CB74-3D22-B778-38B0-3474DCEE9D36",
+      "text": "What’s your favorite part of science?",
+      "options": [
+        {
+          "text": "Conducting experiments",
+          "id": "3CDABB34-C7E5-9EC3-93A4-A989648A9069"
+        },
+        {
+          "text": "Learning how things work",
+          "id": "E704ADC3-77DB-8D78-2A04-D50BB2BFDDF4"
+        },
+        {
+          "text": "Asking big questions",
+          "id": "51FE3DFB-68BF-3357-48E5-A3945150E794"
+        },
+        {
+          "text": "Using advanced tools",
+          "id": "36C4337E-BB85-5E25-BFB7-9BD27B230E21"
+        }
+      ],
+      "correctOption": "51FE3DFB-68BF-3357-48E5-A3945150E794",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "5ED11CC1-C996-A44D-A2EB-700F1E089E21",
+      "text": "What would you most enjoy researching?",
+      "options": [
+        {
+          "text": "Space exploration",
+          "id": "4C1D6DD9-93DC-7CF5-A249-41152520A298"
+        },
+        {
+          "text": "New medicines",
+          "id": "EC59BC89-7513-6106-2AAA-1118DAA54DDE"
+        },
+        {
+          "text": "Environmental changes",
+          "id": "F98EC4BE-3774-8DF5-A2F8-8A9E9FB7E98B"
+        },
+        {
+          "text": "Advanced technologies",
+          "id": "98833732-C179-6C46-CC86-DE082AE9D19E"
+        }
+      ],
+      "correctOption": "EC59BC89-7513-6106-2AAA-1118DAA54DDE",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "9CF3BFC7-DE54-B0E1-76D4-C8BC1BAEED3B",
+      "text": "If an experiment fails, what would you do?",
+      "options": [
+        {
+          "text": "Check for mistakes",
+          "id": "DEA65BAC-8D10-38D2-A255-CCFC5F4C400F"
+        },
+        {
+          "text": "Try a new approach",
+          "id": "D83C1715-F326-F862-9652-4E74B8F30A36"
+        },
+        {
+          "text": "Learn from the failure",
+          "id": "0DC528E5-C58D-016C-14E5-677F525B601C"
+        },
+        {
+          "text": "Start over patiently",
+          "id": "BD492B2A-462B-D7E4-1627-68BBDEB0EE03"
+        }
+      ],
+      "correctOption": "0DC528E5-C58D-016C-14E5-677F525B601C",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "A9320F6A-9025-A98D-9723-A5A5DB5290C8",
+      "text": "How do you record your observations?",
+      "options": [
+        {
+          "text": "In a detailed notebook",
+          "id": "B4FF0898-A79E-9C52-B56B-A655995B959B"
+        },
+        {
+          "text": "Using graphs and charts",
+          "id": "555D1AC7-1BB6-EF3A-5A40-45AA8ABADA7D"
+        },
+        {
+          "text": "By taking photos or videos",
+          "id": "A2703D9C-4F88-DCFE-B81A-E3CBEBF5BDA9"
+        },
+        {
+          "text": "Through regular discussions",
+          "id": "38FE68C1-3A08-B81B-174D-68A6C10DF17F"
+        }
+      ],
+      "correctOption": "B4FF0898-A79E-9C52-B56B-A655995B959B",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "BA3CB5EC-62AA-7DBE-86B7-C7A870B0153D",
+      "text": "What do you enjoy creating?",
+      "options": [
+        {
+          "text": "Posters and flyers",
+          "id": "3CCE1463-2EE8-6E6A-FD9D-E78E1BF14879"
+        },
+        {
+          "text": "Digital art",
+          "id": "5EDFEDAD-527D-641E-0A0A-A900A0A0089D"
+        },
+        {
+          "text": "Logos and symbols",
+          "id": "2FCDE54F-7009-6318-E46C-41212E21EA08"
+        },
+        {
+          "text": "Magazine layouts",
+          "id": "983B693D-A1C6-5E01-34C3-59E45592CA0C"
+        }
+      ],
+      "correctOption": "5EDFEDAD-527D-641E-0A0A-A900A0A0089D",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "1DAE8ED8-2B6A-BB8F-B8D5-074B37E12D90",
+      "text": "How do you make your designs stand out?",
+      "options": [
+        {
+          "text": "Use vibrant colors",
+          "id": "30014A78-853C-FFDC-2FD8-83C3F05AFD8F"
+        },
+        {
+          "text": "Add unique patterns",
+          "id": "CC5D23A9-AC14-FB40-74EC-91848B46D394"
+        },
+        {
+          "text": "Experiment with layouts",
+          "id": "DB768EAB-991C-32A4-7D59-67FC517E16DB"
+        },
+        {
+          "text": "Keep it simple and clear",
+          "id": "64C40E7B-B001-4E6D-D31D-CA6ECE40191A"
+        }
+      ],
+      "correctOption": "DB768EAB-991C-32A4-7D59-67FC517E16DB",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "18296B29-0A6E-4ED9-487E-2350AD1F3B46",
+      "text": "What’s your favorite tool for art or design?",
+      "options": [
+        {
+          "text": "Drawing apps",
+          "id": "D736700F-5B3A-D28D-F76E-E52ED37252B8"
+        },
+        {
+          "text": "Graphic design software",
+          "id": "0F988678-6D07-1F29-5657-32AF70C51FF9"
+        },
+        {
+          "text": "Traditional pencils and markers",
+          "id": "BF20B3C9-E2CF-46C1-D8E3-00D208D40E6A"
+        },
+        {
+          "text": "Photography tools",
+          "id": "A4142131-E6E8-25E6-E81E-7F7550548AB1"
+        }
+      ],
+      "correctOption": "0F988678-6D07-1F29-5657-32AF70C51FF9",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "2EE11D44-BDEC-3817-6057-6590021361DF",
+      "text": "If you were to design a website, what would you focus on?",
+      "options": [
+        {
+          "text": "Eye-catching visuals",
+          "id": "EE20A2FF-E962-02B6-734F-84D2DFD7F729"
+        },
+        {
+          "text": "Easy navigation",
+          "id": "C42895BD-7379-62A2-1F66-31EB8E8112D3"
+        },
+        {
+          "text": "Creative fonts",
+          "id": "DA2F61E2-7EF6-9C5F-B847-EDF6DCDA90B6"
+        },
+        {
+          "text": "A cohesive theme",
+          "id": "E558D859-5EAD-A1FA-2383-1DFC3DDD3944"
+        }
+      ],
+      "correctOption": "EE20A2FF-E962-02B6-734F-84D2DFD7F729",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "A70E7A32-9BBB-841F-8229-ABB421FD9C78",
+      "text": "What inspires your creativity?",
+      "options": [
+        {
+          "text": "Nature",
+          "id": "BF2A74B0-15BB-85ED-4E9C-8A2FE143A0F6"
+        },
+        {
+          "text": "Other artists' work",
+          "id": "72AE422A-3EB4-56C1-DBB4-DB3239C3AFBE"
+        },
+        {
+          "text": "Daily life",
+          "id": "C064AD51-172F-462E-3CBC-57C17BE572D7"
+        },
+        {
+          "text": "New technology",
+          "id": "4255194F-90D2-373A-6F4F-4067C7EBF51F"
+        }
+      ],
+      "correctOption": "72AE422A-3EB4-56C1-DBB4-DB3239C3AFBE",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "91B9162A-B7C9-19E3-CE3B-FB4B2CCB87E8",
+      "text": "What would you design for your school?",
+      "options": [
+        {
+          "text": "A creative banner",
+          "id": "60FF9037-C5AC-491C-0989-7CFFF51076F2"
+        },
+        {
+          "text": "A school newsletter",
+          "id": "5CBE415A-46F1-ED45-A3F4-233C49C1DE86"
+        },
+        {
+          "text": "An interactive website",
+          "id": "9F167824-AAE9-A18E-ADBF-5A45FEEAF8F5"
+        },
+        {
+          "text": "A logo for a school event",
+          "id": "CAB66E31-A59E-7410-14CE-931B8F1204B4"
+        }
+      ],
+      "correctOption": "CAB66E31-A59E-7410-14CE-931B8F1204B4",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "63A2F821-657E-9442-1F1A-C4345513455B",
+      "text": "How do you help people in need?",
+      "options": [
+        {
+          "text": "Listen to their problems",
+          "id": "349475FB-1E81-8968-3447-7681060CF78B"
+        },
+        {
+          "text": "Find ways to support them",
+          "id": "F6FF3E28-16B2-B4C3-0657-94557DAE97DF"
+        },
+        {
+          "text": "Organize group activities",
+          "id": "0E5387F2-5450-F00E-CAA4-6207FD2A1C0D"
+        },
+        {
+          "text": "Share helpful information",
+          "id": "DD0BD18F-B284-744E-4F21-0E3756B2E986"
+        }
+      ],
+      "correctOption": "F6FF3E28-16B2-B4C3-0657-94557DAE97DF",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "23B3A29B-6650-5F72-56B7-AE8130B2F903",
+      "text": "What inspires you to help others?",
+      "options": [
+        {
+          "text": "Seeing positive change",
+          "id": "D97B036B-E031-4E33-3988-26F157BCFE19"
+        },
+        {
+          "text": "Building stronger communities",
+          "id": "DB148830-014C-440A-9C22-5F91A00A5547"
+        },
+        {
+          "text": "Making people happy",
+          "id": "FC803943-FAD0-B8DD-1A52-F76DC0849D19"
+        },
+        {
+          "text": "Learning from their experiences",
+          "id": "BDE6E0DA-F16D-E799-9D84-5BBC2B316C6E"
+        }
+      ],
+      "correctOption": "D97B036B-E031-4E33-3988-26F157BCFE19",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "98F22FE0-F813-DFE0-8413-981B24682B8F",
+      "text": "What’s the most important part of helping someone?",
+      "options": [
+        {
+          "text": "Understanding their needs",
+          "id": "01876F77-1D37-D9DC-1B48-3247EE55D5DA"
+        },
+        {
+          "text": "Being patient",
+          "id": "45F173C6-3D82-A5CE-886F-160D3E65B215"
+        },
+        {
+          "text": "Offering the right solutions",
+          "id": "8D938C19-0DA2-594F-89BD-95A7B4E3CF32"
+        },
+        {
+          "text": "Following up on their progress",
+          "id": "1370DE08-9959-9292-F53F-99F88844E149"
+        }
+      ],
+      "correctOption": "01876F77-1D37-D9DC-1B48-3247EE55D5DA",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "4E1F5172-8D46-CAC4-AD57-5A52FC45D554",
+      "text": "How would you assist a group of students with different problems?",
+      "options": [
+        {
+          "text": "Organize a group discussion",
+          "id": "C50BAD41-1240-262C-38C8-F2E675F34FAA"
+        },
+        {
+          "text": "Provide individual support",
+          "id": "90C544F1-041A-4EE8-8A15-DE063E362753"
+        },
+        {
+          "text": "Find resources for them",
+          "id": "7E3C8DAA-20F9-26B5-7056-0ABCC0AF99E7"
+        },
+        {
+          "text": "Teach problem-solving skills",
+          "id": "20895F50-F124-9B41-D7C7-FA4812DBFAAD"
+        }
+      ],
+      "correctOption": "7E3C8DAA-20F9-26B5-7056-0ABCC0AF99E7",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "4F3D8562-8F07-D10D-AC37-64EFC879FAF6",
+      "text": "What kind of project would you start for your community?",
+      "options": [
+        {
+          "text": "A clean-up drive",
+          "id": "07941674-27F1-2925-6578-B237D40A0AC9"
+        },
+        {
+          "text": "A donation campaign",
+          "id": "4BB03E0C-C32D-89E3-8105-66272A344332"
+        },
+        {
+          "text": "A skill-training program",
+          "id": "203892F0-F4C6-A345-C259-70D52F80E404"
+        },
+        {
+          "text": "A support group",
+          "id": "5F6C84FD-3921-344E-0D76-1A6819A163DC"
+        }
+      ],
+      "correctOption": "07941674-27F1-2925-6578-B237D40A0AC9",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "13D0D26D-FB71-29BC-9FEF-84B2219B117C",
+      "text": "How do you feel after helping someone?",
+      "options": [
+        {
+          "text": "Inspired",
+          "id": "FB6678A6-4222-BF7C-6404-DC4FA3F6AC95"
+        },
+        {
+          "text": "Proud",
+          "id": "8E11D886-A243-E7DF-095E-5686E934AFDA"
+        },
+        {
+          "text": "Fulfilled",
+          "id": "2E478608-5ACE-0822-EAC6-15C77B8BD33A"
+        },
+        {
+          "text": "Motivated to do more",
+          "id": "E035BB42-36A3-EB38-43E5-6FF6149C5E1D"
+        }
+      ],
+      "correctOption": "2E478608-5ACE-0822-EAC6-15C77B8BD33A",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6D3A87CF-0FC7-C8EF-D28B-6FFFEEB8EE6B",
+      "text": "What’s your favorite part of organizing an event?",
+      "options": [
+        {
+          "text": "Planning the schedule",
+          "id": "E582D967-FBE1-C7DD-43DE-B3262C9AE7D1"
+        },
+        {
+          "text": "Decorating the venue",
+          "id": "EBB85AFF-9576-49F9-91A2-20468C72BA90"
+        },
+        {
+          "text": "Coordinating with people",
+          "id": "6CEDA761-33E8-C793-D70D-96A3F1256A3E"
+        },
+        {
+          "text": "Making the event memorable",
+          "id": "D2B00E56-52D0-8D94-6923-7EDC8B433322"
+        }
+      ],
+      "correctOption": "D2B00E56-52D0-8D94-6923-7EDC8B433322",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "5BD5A000-7736-BD3E-E2FA-D83CF5913923",
+      "text": "How do you handle last-minute changes?",
+      "options": [
+        {
+          "text": "Stay calm and adjust",
+          "id": "62FA90BC-403B-2302-DFFB-00A74E1BEE6F"
+        },
+        {
+          "text": "Think of creative solutions",
+          "id": "DA46E030-63F6-D0B1-50A7-AF563743D1F8"
+        },
+        {
+          "text": "Prioritize the most important things",
+          "id": "2C01843B-9034-4833-4564-39E292131312"
+        },
+        {
+          "text": "Delegate tasks to others",
+          "id": "D416DEF3-863E-E3A6-7684-3894E55C241D"
+        }
+      ],
+      "correctOption": "62FA90BC-403B-2302-DFFB-00A74E1BEE6F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "4066A652-6D5B-9461-4C29-84B512F9C71B",
+      "text": "What kind of event would you love to plan?",
+      "options": [
+        {
+          "text": "A birthday party",
+          "id": "E9BE4ADF-4D8F-2E01-1947-88CEAA78EA22"
+        },
+        {
+          "text": "A school function",
+          "id": "0C8E20CA-F55F-B09E-DF9C-CEEEA9CB8327"
+        },
+        {
+          "text": "A community festival",
+          "id": "05DC3FE3-5640-349D-EBBF-F8C230CBB406"
+        },
+        {
+          "text": "A sports competition",
+          "id": "777657D2-6F89-2F73-B5FD-BCCC26F6A530"
+        }
+      ],
+      "correctOption": "05DC3FE3-5640-349D-EBBF-F8C230CBB406",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7ABB1D92-A41D-7709-9806-9429886CBDD8",
+      "text": "How do you make an event exciting?",
+      "options": [
+        {
+          "text": "Add fun activities",
+          "id": "BFC9855E-908E-F28F-A9AE-284B1F4669DD"
+        },
+        {
+          "text": "Have a clear theme",
+          "id": "96D214BE-3641-2533-163E-7C6752D54E52"
+        },
+        {
+          "text": "Use creative decorations",
+          "id": "0ECBB243-A6E2-5B89-3629-1EBC0E2F102D"
+        },
+        {
+          "text": "Offer engaging entertainment",
+          "id": "636E1C57-1155-EA7B-26D3-EB371FC5B6B8"
+        }
+      ],
+      "correctOption": "BFC9855E-908E-F28F-A9AE-284B1F4669DD",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6AADDEE3-7F36-5321-D224-5885820F0001",
+      "text": "What’s the first step in planning an event?",
+      "options": [
+        {
+          "text": "Setting a budget",
+          "id": "0E40F609-E621-0E5A-1B75-2CEC5C87F5DE"
+        },
+        {
+          "text": "Choosing a theme",
+          "id": "B619094D-F92B-6766-BA3A-2B2E28944D32"
+        },
+        {
+          "text": "Listing tasks",
+          "id": "6E4F8248-CF00-4B69-1156-6A2F75B89CAC"
+        },
+        {
+          "text": "Finding a venue",
+          "id": "7D45F5E6-5C58-9A13-1547-B786DC81D92C"
+        }
+      ],
+      "correctOption": "6E4F8248-CF00-4B69-1156-6A2F75B89CAC",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "732B4ACC-5780-3CFD-8642-8B30450ECE49",
+      "text": "How would you ensure everything goes smoothly during an event?",
+      "options": [
+        {
+          "text": "Double-check arrangements",
+          "id": "78BB35EB-3F3F-1E75-8649-4E26B5F9CE65"
+        },
+        {
+          "text": "Have a backup plan",
+          "id": "BF815CB7-53E0-1813-C316-0DF014608DA1"
+        },
+        {
+          "text": "Stay organized",
+          "id": "8C295DCD-D048-781F-AE89-3855F02EC24D"
+        },
+        {
+          "text": "Keep everyone informed",
+          "id": "990B8458-08B9-7508-CC5E-A125891D1514"
+        }
+      ],
+      "correctOption": "BF815CB7-53E0-1813-C316-0DF014608DA1",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "889C3D2C-8EC5-9CFF-A291-4CCB840156F7",
+      "text": "What fascinates you about science and biology?",
+      "options": [
+        {
+          "text": "Discovering how life works",
+          "id": "5FB01795-EE45-B34F-440B-C689D2C2CEF0"
+        },
+        {
+          "text": "Learning about genes and DNA",
+          "id": "C66C18AC-44AF-54E4-BD42-6C31B89CBA16"
+        },
+        {
+          "text": "Learning about genes and DNA",
+          "id": "DB51E889-E996-6A0D-AAEE-1B239DD4445E"
+        },
+        {
+          "text": "Understanding plant and animal growth",
+          "id": "07124037-1BB8-7A5F-9FE4-C92C66AA9C9E"
+        }
+      ],
+      "correctOption": "C66C18AC-44AF-54E4-BD42-6C31B89CBA16",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "8212FA53-BE21-24B5-F7D3-34F83FC67330",
+      "text": "How would you use science to solve a problem?",
+      "options": [
+        {
+          "text": "Research the issue deeply",
+          "id": "E08F8C3C-3339-F72E-2787-EAFC9135A5F3"
+        },
+        {
+          "text": "Test ideas in a lab",
+          "id": "F276B87F-E380-1EED-B04D-3DC5072414DC"
+        },
+        {
+          "text": "Collaborate with scientists",
+          "id": "EFBB46EC-92CA-BEFC-3422-3958B4CC1CF4"
+        },
+        {
+          "text": "Develop innovative solutions",
+          "id": "3F23A36F-ED4C-0708-F797-6EBCF3594DA6"
+        }
+      ],
+      "correctOption": "E08F8C3C-3339-F72E-2787-EAFC9135A5F3",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "3E254B8D-B29B-D95F-AD1F-D2EB32520A78",
+      "text": "What’s your favorite field of biology?",
+      "options": [
+        {
+          "text": "Genetics",
+          "id": "48C52CF2-2E87-2624-A6E0-E432E508762F"
+        },
+        {
+          "text": "Microbiology",
+          "id": "4288BFAB-24B6-F41E-9E20-13EC9745D6EF"
+        },
+        {
+          "text": "Biotechnology",
+          "id": "3FDCAE54-1E27-45CA-8680-0F3A9C2444E2"
+        },
+        {
+          "text": "Environmental biology",
+          "id": "02C5CA1A-C6B0-C6B3-98C3-B383EB41272D"
+        }
+      ],
+      "correctOption": "3FDCAE54-1E27-45CA-8680-0F3A9C2444E2",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "A9288FB8-C596-F2C9-C786-A09ED14BB8CB",
+      "text": "If you worked on a lab project, what would it be?",
+      "options": [
+        {
+          "text": "Finding cures for diseases",
+          "id": "F5D78928-305B-5067-0D75-B8F0CB36B3DE"
+        },
+        {
+          "text": "Improving crop growth",
+          "id": "C303F4BA-AF60-DCED-A5AE-1B1868270293"
+        },
+        {
+          "text": "Creating eco-friendly products",
+          "id": "E5B4C6B7-0354-CAF0-CB82-0B4AE28132F6"
+        },
+        {
+          "text": "Studying microorganisms",
+          "id": "16C8DEB9-D585-9016-4559-18144A71306D"
+        }
+      ],
+      "correctOption": "F5D78928-305B-5067-0D75-B8F0CB36B3DE",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "7F92BD42-2A60-B39D-C328-57BAD8241E01",
+      "text": "What’s the most exciting part of biotechnology?",
+      "options": [
+        {
+          "text": "Making groundbreaking discoveries",
+          "id": "B9C69594-2B7C-3300-B7A7-FE0392C7D59E"
+        },
+        {
+          "text": "Helping people through science",
+          "id": "FAA9EB44-35D2-0DF8-5B9C-C83A5453EDA4"
+        },
+        {
+          "text": "Using cutting-edge tools",
+          "id": "AB5DB391-D1C4-B9B8-816D-3F28192DB99B"
+        },
+        {
+          "text": "Improving the environment",
+          "id": "F6ED9BF4-FD63-D9BA-A375-483A8874589A"
+        }
+      ],
+      "correctOption": "FAA9EB44-35D2-0DF8-5B9C-C83A5453EDA4",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "6A63E09A-0DC8-9A87-94EC-AFD506A372DC",
+      "text": "What would you focus on if you worked with DNA?",
+      "options": [
+        {
+          "text": "Fixing genetic disorders",
+          "id": "87A1ADAA-E026-8792-A85F-DC43D5E09A05"
+        },
+        {
+          "text": "Studying how genes work",
+          "id": "C84C4485-2412-2392-DBFE-5BB816AE3607"
+        },
+        {
+          "text": "Creating genetically modified organisms",
+          "id": "3397A464-A2C6-D5E1-285C-4B61836586B3"
+        },
+        {
+          "text": "Improving medicine production",
+          "id": "4CCE4DA8-DA27-14C8-7985-0DE72B24F622"
+        }
+      ],
+      "correctOption": "87A1ADAA-E026-8792-A85F-DC43D5E09A05",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C85EEA4E-A18A-0FA3-45C8-F5BCBB0634BF",
+      "text": "How do you make guests feel welcome?",
+      "options": [
+        {
+          "text": "Greet them with a smile",
+          "id": "AABCB04E-0CC8-FAE0-C311-B4F1E9B27A1F"
+        },
+        {
+          "text": "Offer help whenever needed",
+          "id": "5ABD54C5-42B2-D0FC-89FA-0AC308F1A089"
+        },
+        {
+          "text": "Ensure everything runs smoothly",
+          "id": "51D00411-5A89-5B9C-EF02-8873CA553714"
+        },
+        {
+          "text": "Create a friendly environment",
+          "id": "90C45417-055B-EF74-9145-CA9D71B3F530"
+        }
+      ],
+      "correctOption": "AABCB04E-0CC8-FAE0-C311-B4F1E9B27A1F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "62B150BC-F9C8-D312-2F45-9831D433C15A",
+      "text": "What excites you about managing events or accommodations?",
+      "options": [
+        {
+          "text": "Meeting new people",
+          "id": "0533266B-AC6D-9E09-F4BB-5F38D9803AF0"
+        },
+        {
+          "text": "Planning every detail",
+          "id": "F57A2F88-AF62-E53A-E4E9-F71496118710"
+        },
+        {
+          "text": "Solving unexpected challenges",
+          "id": "4225A376-A31F-A256-0B3C-AE3BA13DBE60"
+        },
+        {
+          "text": "Delivering great experiences",
+          "id": "66ECD8DA-F7E2-2AEA-9268-8A38A143149F"
+        }
+      ],
+      "correctOption": "66ECD8DA-F7E2-2AEA-9268-8A38A143149F",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "E1FE65F6-1AC1-51BE-2CC6-E16747810CCE",
+      "text": "How do you handle feedback from guests?",
+      "options": [
+        {
+          "text": "Listen carefully",
+          "id": "71CC69E8-083E-DC6A-D34F-072BC45EB060"
+        },
+        {
+          "text": "Apologize and improve",
+          "id": "FF979D92-D555-E4E8-68C1-3775FFBCEE87"
+        },
+        {
+          "text": "Implement their suggestions",
+          "id": "CFEB1197-9348-ACB7-1F58-42C760F17676"
+        },
+        {
+          "text": "Appreciate their input",
+          "id": "AAAB07C9-09CE-C5E9-842D-E1D003B0D4AC"
+        }
+      ],
+      "correctOption": "CFEB1197-9348-ACB7-1F58-42C760F17676",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "02CF88EF-5FD9-08B3-E751-F2A3FF13F27D",
+      "text": "What’s the most important aspect of hospitality?",
+      "options": [
+        {
+          "text": "Excellent service",
+          "id": "5E7B6E34-4FCA-9BAB-4E85-B6B9352FB738"
+        },
+        {
+          "text": "Comfortable spaces",
+          "id": "844CEF80-854E-2564-942B-C08C6671FD7B"
+        },
+        {
+          "text": "Timely responses",
+          "id": "7EC1AEC6-6AC3-4F3A-F847-7B82A5CB4BB6"
+        },
+        {
+          "text": "Memorable experiences",
+          "id": "A64E6423-A265-1E52-3FAA-0EAA18998446"
+        }
+      ],
+      "correctOption": "5E7B6E34-4FCA-9BAB-4E85-B6B9352FB738",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "2EE80316-BFB5-EE5B-6706-1123A942FEF0",
+      "text": "If you managed a hotel, what would you prioritize?",
+      "options": [
+        {
+          "text": "Cleanliness and comfort",
+          "id": "3FF27D48-B965-1BC1-04A5-6AA0AC40DB89"
+        },
+        {
+          "text": "Customer satisfaction",
+          "id": "3FD77B65-D2F4-BAA0-AEDA-52C846FB7F82"
+        },
+        {
+          "text": "Team coordination",
+          "id": "952F027D-9C92-7E28-7E75-AEFA4E6AC01A"
+        },
+        {
+          "text": "Unique services",
+          "id": "767EB51A-2141-5BDD-7E4D-05F971C67794"
+        }
+      ],
+      "correctOption": "3FD77B65-D2F4-BAA0-AEDA-52C846FB7F82",
+      "questionType": "social-quotient"
+    },
+    {
+      "id": "C3083D6D-6D3B-C34E-44F0-69001F5F333E",
+      "text": "How would you improve a guest’s stay?",
+      "options": [
+        {
+          "text": "Offer personalized services",
+          "id": "1EB25A8D-4592-1E1A-D988-B6833AC7A1DE"
+        },
+        {
+          "text": "Plan surprise upgrades",
+          "id": "E65E627A-CA31-F4D2-9AC6-67A61B2228EE"
+        },
+        {
+          "text": "Respond to their preferences",
+          "id": "CAB498C8-BFA0-C85A-7B50-CD6549B88331"
+        },
+        {
+          "text": "Create engaging activities",
+          "id": "2E53B336-8DB3-6BBE-175E-03CAA7FB3C9C"
+        }
+      ],
+      "correctOption": "1EB25A8D-4592-1E1A-D988-B6833AC7A1DE",
+      "questionType": "social-quotient"
+    }
+  ],
+  "timeLimitInMinutes": 60
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  height: 534px;
+  max-width: 980px;
+  background: rgb(211, 211, 211);
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.13);
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.progress-container {
+  flex: 1;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 0 15px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #0062ff;
+}
+
+.btn {
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.review-btn {
+  background: #aaa;
+  color: white;
+}
+
+.flag-btn {
+  background: #ddd;
+  color: black;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Timer */
+.timer {
+  font-size: 14px;
+  color: #333;
+}
+
+.question-section {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #888;
+  font-size: 16px;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.options {
+  margin-top: 15px;
+}
+
+.option {
+  display: flex;
+  background: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: #3b3b3b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.option-text {
+  flex-grow: 1; /* Ensures the text takes available space */
+}
+input[type="radio"] {
+  margin-left: auto; /* Pushes the radio button to the right */
+}
+.option:hover {
+  background: #e1e8f0;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background: #0062ff;
+  color: white;
+}

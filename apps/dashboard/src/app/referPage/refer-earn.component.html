@@ -1,0 +1,105 @@
+
+<div class="container"  *ngIf="!isRedeemVisible">
+  
+  <h1>Invite & Earn</h1>
+
+  <div class="earnings-box">
+    <img src="/assets/image/user.png" alt="Avatar" class="avatar" />
+    <div>
+      <div class="earnings-container">Your total earnings</div>
+      <div class="earnings-amount">{{totalBonus}}</div>
+     <button class="redeem-button" (click)="showRedeem()">Click to Redeem</button>
+
+    </div>
+  </div>
+
+  <div class="referral-box">
+    <div class="referral-text">
+      <p>Share your unique code</p>
+      <h3>Your friends get up to 20% off on their first assessment!</h3>
+
+      <div class="code-box">
+        <span class="code" #promoCode>BUDDY20</span>
+        <div class="copy-group">
+          <button class="copy-btn"  (click)="copyCode(promoCode)">Tap to copy</button>
+          <img class="copy-icon" src="/assets/image/copy.png" alt="Copy Icon" />
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button (click)="copyLink()"  class="copy-link-btn">COPY LINK</button>
+ <div *ngIf="referralLink">
+            <!-- <p>Share this link with your friends:</p> -->
+            <input type="text" [value]="referralLink" hidden />
+          </div>        
+        <!-- <button class="share-btn">
+          <img class="share-icon" src="/assets/image/share.png" /> SHARE NOW
+        </button> -->
+      </div>
+    </div>
+    <img src="/assets/image/refer.png" alt="Invite Graphic" class="graphic" />
+  </div>
+
+  <div class="how-it-works">
+    <div class="how-it-works-heading">How it works</div>
+    <div class="how-it-works-subheading">
+      Your friends get up to 20% off on their first assessment!
+    </div>
+    <div class="steps">
+      <div class="step">
+        <img src="/assets/image/icon1.png" alt="Share Icon" />
+        <p class="step-text">
+          <strong >Share Link</strong><br />Share your referral link with
+          friends.
+        </p>
+      </div>
+      <div class="step">
+        <img src="/assets/image/icon2.png" alt="Enroll Icon" />
+        <p class="step-text">
+          <strong>Friend Enrolls</strong><br />Friend enrolls & gets up to 20%
+          off
+        </p>
+      </div>
+      <div class="step">
+        <img src="/assets/image/icon3.png" alt="Reward Icon" />
+        <p class="step-text"><strong>Get Rewarded</strong><br />You both get amazing rewards!</p>
+      </div>
+    </div>
+    <!-- <div class="refer-btn">Start Referring</div> -->
+  </div>
+
+
+</div>
+
+
+  <div class="background" *ngIf="isRedeemVisible">
+  <div class="redeem-section" >
+
+    <img src="/assets/image/gift_Box.png" alt="Gifts" class="redeemimg">
+
+    <h2>Redeem Your Points</h2>
+    <p>You have <strong>{{ totalBonus }}</strong> bonus points.</p>
+
+   
+      <div class="form-group">
+
+      <label for="redeemAmount">Enter amount to redeem:</label>
+      <input type="number" id="redeemAmount" [(ngModel)]="redeemAmount"  placeholder="Enter amount"/>
+    </div>
+    <div class="message" *ngIf="message">{{ message }}</div>
+    <div class="current-bonus" *ngIf="totalBonus">Current Bonus: {{ totalBonus }}</div>
+    
+    <div class="lastbtn">
+      <div (click)="showRefer()" class="refer-btn">Back to Refer & Earn</div>
+      <div class="refer-btn" (click)="onRedeemClick()">Redeem Now</div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+</div>
+

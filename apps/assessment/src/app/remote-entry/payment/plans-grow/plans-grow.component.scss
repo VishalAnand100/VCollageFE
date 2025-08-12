@@ -1,0 +1,218 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  margin: 0;
+  color: #0a0a23;
+}
+
+.container {
+  max-width: 1200px;
+     margin: -5px auto;
+  padding: 20px;
+}
+.table-heading {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.table-heading h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color:#fff;
+  text-transform: capitalize;
+}
+
+
+.plans-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.plan-column {
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.plan-column:last-child {
+  border-right: none;
+}
+
+.plan-card {
+  padding: 30px 20px;
+}
+
+.plan-card img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.plan-card h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.plan-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.plan-card h2 {
+  font-size: 26px;
+  color: #000020;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #0a0a23;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 16px 12px;
+  font-size: 15px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+}
+
+.plan-column.features {
+  max-width: 300px;
+  background-color: #f9fbff;
+  border-right: 1px solid #e0e0e0;
+}
+
+.plan-column.features .plan-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 49.4px 20px;
+}
+
+.plan-column.features .feature-list li {
+  font-weight: 500;
+  justify-content: flex-start;
+  background-color: #f9fbff;
+}
+
+/* Hover Effects */
+.plans-table:hover .plan-column:not(.features) {
+  opacity: 0.6;
+  transform: scale(1);
+}
+
+.plans-table .plan-column:not(.features):hover {
+  background-color: #f1f6ff;
+  opacity: 1;
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.plans-table .plan-column:not(.features):hover .btn {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+/* Checkmark and label styling */
+.check {
+  width: 24px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #007bff; /* Blue ✔ */
+}
+
+.check.cross {
+  color: red; /* Red ✖ */
+}
+
+.label {
+  display: none;
+  font-size: 14px;
+  color: #333;
+  margin-left: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .plans-table {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .plan-column {
+    max-width: 90%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 16px;
+  }
+
+  .plan-column.features {
+    display: none;
+  }
+
+  .plan-card img {
+    display: none;
+  }
+
+  .plan-card h2 {
+    font-size: 22px;
+  }
+
+  .plan-card h3 {
+    font-size: 14px;
+  }
+
+  .plan-card p {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  /* Show text labels in mobile view */
+  .label {
+    display: inline;
+  }
+
+  .feature-list li {
+    justify-content: flex-start;
+  }
+}

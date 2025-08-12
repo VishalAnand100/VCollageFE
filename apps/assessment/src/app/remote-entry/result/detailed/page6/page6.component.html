@@ -1,0 +1,46 @@
+<div *ngIf="detailedReport && aptiCategoryWiseScores.length>0" class="svg-container">
+    <svg viewBox="0 0 793 1123" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <clipPath id="a">
+                <path d="M0 0h793v1123H0z" />
+            </clipPath>
+            <clipPath id="b">
+                <path d="M-9528.92-163.854h7137224v10236336h-7137224z" />
+            </clipPath>
+            <clipPath id="c">
+                <path d="M0 0h10309472v10309472H0z" />
+            </clipPath>
+
+        </defs>
+        <g clip-path="url(#a)">
+            <path fill="#FFF" d="M0 0h793v1122.8H0z" />
+            <g clip-path="url(#b)" transform="translate(23 24.017)scale(.0001)">
+                <g clip-path="url(#c)" transform="matrix(1.00004 0 0 1 -676226 -75323.3)">
+
+                </g>
+            </g>
+            <path d="M23 24.017h747V1098.79H23z" stroke="#091E6B" stroke-width="3.998" stroke-linecap="square"
+                stroke-miterlimit="8" fill="#F3F8FF" />
+            <path
+                d="M27.829 13.557S12.486 16.233 7.134 28.542 1.07 50.84 6.42 62.792 28.54 76.35 28.54 76.35l7.135 22.12 6.422-21.407h78.489s16.412-1.07 22.12-13.558 5.887-23.547.713-36.391-21.406-14.984-21.406-14.984l-94.189 1.427Z"
+                stroke="#000" stroke-width="1.427" stroke-linejoin="round" fill="none"
+                transform="matrix(1 0 0 1.00312 56.678 46.602)" /><text font-family="4,4_MSFontService,sans-serif"
+                font-weight="400" font-size="14" transform="matrix(1 0 0 1.00072 80.644 96)">What it means</text>
+        </g>
+    </svg>
+    <div class="absolute-text">
+
+        <ul>
+            @for (item of aptiCategoryWiseScores; track $index) {
+            <li class="translated-font">
+                <span style="font-family:Lora,Lora_MSFontService,sans-serif; font-weight: 600;">You have scored
+                    {{item.scoreObject.categoryPercentage}}% in {{item.scoreObject.categoryDisplayText}} which is a
+                    {{item.scoreObject.categoryScoreLevel}} score</span>
+                <br>
+                <div>{{item.scoreObject.categoryInterpretation}}</div>
+            </li>
+            }
+
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+.question-container {
+  width: 100%;
+  .question-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5; /* Improve readability */
+    word-wrap: break-word;
+    white-space: pre-line; /* Ensures line breaks appear properly */
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) { 
+        font-size: 1.8rem; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 360px) { 
+        font-size: 1.5rem; /* Further reduce for very small devices */
+    }
+}
+
+
+  .options {
+    margin-top: 15px;
+  }
+  .small-text {
+    font-size: 20px; /* Adjust as needed */
+  }
+  .option {
+    display: flex;
+    background: #ffffff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: #3b3b3b;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .option-text {
+    flex-grow: 1; /* Ensures the text takes available space */
+  }
+  input[type='radio'] {
+    margin-left: auto; /* Pushes the radio button to the right */
+  }
+  .option:hover {
+    background: #e1e8f0;
+  }
+
+  .option input {
+    margin-right: 10px;
+  }
+  .question-img {
+    max-height: 256px;
+    height: 256px;
+    object-fit: contain;
+    width: 100%;
+    margin-left: 10px;
+    max-width: 40vw;
+
+    @media screen and (max-width: 768px) {
+      max-height: 192px;
+      height: 192px;
+      object-fit: contain;
+      width: 100%;
+      max-width: 80vw;
+    }
+  }
+  .option-img {
+    height: 128px;
+    width: 128px;
+    margin-right: 406px;
+    object-fit: contain;
+  }
+}

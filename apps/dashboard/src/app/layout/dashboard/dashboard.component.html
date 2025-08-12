@@ -1,0 +1,129 @@
+<div *ngIf="showTable" class="container">
+    <div class="subcontainer">
+        <div class="card">
+            <p-table [resizableColumns]="true" class="table" [value]="studentAssessmentDetails" [scrollable]="true" scrollHeight="75vh">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Student Name</th>
+                        <th>Assessment Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-student_info let-i="rowIndex">
+                    <tr>
+                        <td>{{ i + 1 }}</td>
+                        <td><div class="font-semibold">{{ student_info.student.studentName }}</div><br> <div class="font-light">{{student_info.student.emailAddress}}</div> </td>
+                        <td>{{ student_info.assessmentDateTime ?? "Assessment Not Attempted" }}</td>
+                        <td>
+                            <div class="actions-container">
+                                <button *ngIf="student_info.assessmentDateTime && student_info.isSubmitted" pButton pRipple raised="true"
+                                    class="custom-button" type="button"
+                                    (click)="viewAssessment(student_info.assessmentId)">View</button>
+                                <button *ngIf="!student_info.assessmentDateTime" pButton pRipple raised="true"
+                                    class="custom-button" type="button"
+                                    (click)="startAssessment(student_info.student.id)">Start</button>
+                                    <button *ngIf="student_info.assessmentDateTime && !student_info.isSubmitted" pButton pRipple raised="true"
+                                    class="custom-button" type="button"
+                                    (click)="startAssessment(student_info.student.id)">Resume</button>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+            <div class="footer">
+                <!-- <div class="flex flex-wrap align-items-center justify-content-between gap-3">
+                    <div class="flex justify-content-end">
+                        <button pButton pRipple raised="true" label="Add Student" icon="pi pi-plus" class="p-button-success"
+                            (click)="showAddStudent=true;"></button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+</div>
+<div *ngIf="!showTable && (!studentAssessmentDetails || studentAssessmentDetails.length === 0)" class="p-fluid p-2 m-2">
+    <p-panel header="Dashboard">
+        <p>No students found</p>
+        <div class="flex justify-content-end">
+            <button pButton pRipple raised="true" label="Add Student" icon="pi pi-plus" class="p-button-success"
+            (click)="showAddStudent=true;"></button>
+        </div>
+    </p-panel>
+</div>
+
+<p-dialog header="Add Student" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [visible]="showAddStudent"
+    [modal]="true" [closable]="false" [style]="{width: '40vw', minHeight: '50vh' }">
+    <form [formGroup]="studentForm">
+        <div class="p-fluid m-1 p-1">
+            <div class="p-field m-1 p-1">
+                <label for="studentName">Student Name</label>
+                <input id="studentName" type="text" pInputText formControlName="studentName" />
+                <small class="p-error" *ngIf="studentForm.get('studentName')?.invalid && studentForm.get('studentName')?.touched">
+                    Student Name is required.
+                </small>
+            </div>
+
+            <div class="p-field m-1 p-1">
+                <label for="emailAddress">Email Address</label>
+                <input id="emailAddress" type="email" pInputText formControlName="emailAddress" />
+                
+                <small class="p-error" *ngIf="studentForm.get('emailAddress')?.invalid && studentForm.get('emailAddress')?.touched">
+                    Valid Email is required.
+                </small>
+            </div>
+          
+            <div class="p-field m-1 p-1">
+                <label for="ageGroup">Age Group</label>
+                <p-dropdown id="ageGroup" [options]="ageGroupOptions" formControlName="ageGroup"
+                    optionLabel="label" optionValue="value" placeholder="Select Age Group" appendTo="body"></p-dropdown>
+                <small class="p-error" *ngIf="studentForm.get('ageGroup')?.invalid && studentForm.get('ageGroup')?.touched">
+                    Age Group is required.
+                </small>
+            </div>
+            <div formGroupName="details">
+                <div class="p-field m-1 p-1">
+                    <label for="parentsName">Parents Name</label>
+                    <input id="parentsName" type="text" pInputText formControlName="parentsName" />
+                    <small class="p-error" *ngIf="studentForm.get('details.parentsName')?.invalid && studentForm.get('details.parentsName')?.touched">
+                        Parents Name is required.
+                    </small>
+                </div>
+    
+                <div class="p-field m-1 p-1">
+                    <label for="contactNumber">Parent Contact Number</label>
+                    <input id="contactNumber" type="text" pInputText formControlName="contactNumber" />
+                    <small class="p-error" *ngIf="studentForm.get('details.contactNumber')?.invalid && studentForm.get('details.contactNumber')?.touched">
+                        Contact number must be 10 digits and valid number.
+                    </small>
+                </div>
+                <div class="p-field m-1 p-1">
+                    <label for="class">Class</label>
+                    <p-dropdown id="class" [options]="classOptions" formControlName="class"
+                        optionLabel="label" optionValue="value" placeholder="Select Class" appendTo="body"></p-dropdown>
+                    <small class="p-error" *ngIf="studentForm.get('details.class')?.invalid && studentForm.get('details.class')?.touched">
+                        Class is required.
+                    </small>
+                </div>
+
+                <div class="p-field m-1 p-1">
+                    
+                    <label for="school">School</label>
+                    <input id="school" type="text" pInputText formControlName="school" />
+                    <small class="p-error" *ngIf="studentForm.get('details.school')?.invalid && studentForm.get('details.school')?.touched">
+                        School Name is required.
+                    </small>
+                </div>
+              
+            </div>
+        </div>
+    </form>
+    <p-footer>
+        <button pButton pRipple label="Cancel" icon="pi pi-times" (click)="showAddStudent=false"
+            class="p-button-text"></button>
+        <button pButton pRipple label="Save" icon="pi pi-check" (click)="addStudent()"
+            class="p-button-primary" [disabled]="studentForm.invalid"></button>
+
+    </p-footer>
+</p-dialog>

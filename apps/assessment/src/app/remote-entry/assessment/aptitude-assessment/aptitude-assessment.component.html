@@ -1,0 +1,241 @@
+<div class="aptitude-container">
+  <div *ngIf="!showAssessment">
+    <div style="padding-top:5px">
+      <div class="container">
+        <div class="header">
+          <img src="logo.png" alt="Simplifying Skills Logo" class="logo" />
+          <div class="header-text">
+            <h1>Simplifying Skills Skillsphere Assessment - Instructions</h1>
+            <img src="assets/image/1.png" class="img" alt="Add a heading" />
+          </div>
+          <div class="wel">
+            Welcome to the Simplifying Skills Skillsphere Assessment. Please
+            read the following instructions carefully before you begin the test.
+          </div>
+        </div>
+        <div class="instructions">
+          <div class="sections">
+            <h4>Instructions for Assessment</h4>
+            <ol>
+              <li>
+                The assessment is of 50 mins and is divided into 2 sections –
+                <strong>Aptitude – 30 mins</strong> and
+                <strong>Behavioural – 20 mins</strong>.
+              </li>
+              <li>You have to complete the assessment in one sitting.</li>
+              <li>
+                Use a laptop, tablet, or mobile device with a stable internet
+                connection to avoid disruptions.
+              </li>
+              <li>
+                Choose a quiet and distraction-free environment to stay focused.
+              </li>
+              <li>
+                Detailed guidelines of each section are provided at the
+                beginning of each section. Go through those carefully before
+                starting each section.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="instructions">
+          <div class="sections">
+            <h4>Guidelines for Aptitude Section:</h4>
+            <ol>
+              <li>
+                This Section has questions to test your reasoning and cognitive
+                ability.
+              </li>
+              <li>
+                Manage your time wisely — this section will stop on its own
+                after 30 minutes.
+              </li>
+              <li>Keep a pen and paper ready for rough work.</li>
+              <li>
+                This is a self-assessment. Do not take external help to ensure a
+                fair evaluation.
+              </li>
+              <li>Attempt all questions as there is no negative marking.</li>
+              <li>
+                Use logical reasoning and avoid guesswork to maximize your
+                accuracy.
+              </li>
+              <li>Read each question carefully before answering.</li>
+            </ol>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          pButton
+          label="Start Assessment"
+          (click)="startSections()"
+          class="start-btn"
+        ></button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showAssessment" class="assessment-page">
+    <div>
+      <div class="assessment-question-container">
+        <div class="assessment-question-top-bar">
+          <div class="assessment-question-progress-bar">
+            <p-progressBar [value]="getProgressBarValue()" />
+          </div>
+          <div class="flex flex-row gap-2">
+            <button
+              pButton
+              severity="secondary"
+              label="Review"
+              rounded="true"
+              (click)="this.showSidebar = !this.showSidebar"
+            ></button>
+            <div>
+              <button
+                pRipple
+                pButton
+                [rounded]="true"
+                [ngClass]="
+                  isQuestionFlagged(currentQuestionId)
+                    ? ''
+                    : 'p-button-outlined'
+                "
+                severity="secondary"
+                label="{{
+                  isQuestionFlagged(currentQuestionId) ? 'Unflag' : 'Flag'
+                }}"
+                (click)="toggleFlagForLater()"
+              ></button>
+            </div>
+            <p-divider layout="vertical" />
+            <div class="assessment-question-timer">
+              <div class="assessment-question-timer-icon">
+                <i
+                  class="pi pi-clock"
+                  style="font-size: xx-large; color: #000"
+                ></i>
+              </div>
+              <div class="assessment-question-timer-text">
+                <div>{{ timerDisplay }} Min</div>
+                <div class="assessment-question-timer-subtext">
+                  Time Remaining
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="assessment-question-and-answer">
+          <div class="question-number-text">
+            {{ this.questions[this.selectedPage].displayQuestionType }}
+            <br />
+            {{ 'Question ' + (selectedPage + 1) }}
+          </div>
+          <p-dataView
+            [value]="questions"
+            [rows]="1"
+            [paginator]="true"
+            [first]="selectedPage"
+            [paginatorStyleClass]="'height:0px'"
+          >
+            <ng-template pTemplate="list" let-questions>
+              <div class="grid">
+                <div
+                  *ngFor="let question of questions; let i = index"
+                  style="gap: 8px; flex-direction: column; width: 100%"
+                >
+                  <ng-container [ngSwitch]="question.questionType">
+                    <app-aptitude-question
+                      *ngSwitchCase="'aptitude'"
+                      [question]="question"
+                      [questionSubmission]="getQuestionSubmission(question)"
+                      (optionSelection)="updateQuestionSubmission($event)"
+                      [events]="clearOptionEventSubject.asObservable()"
+                    >
+                    </app-aptitude-question>
+
+                    <div *ngSwitchDefault></div>
+                  </ng-container>
+                </div>
+              </div>
+            </ng-template>
+          </p-dataView>
+        </div>
+        <div class="assessment-question-footer">
+          <button
+            pButton
+            pRipple
+            raised="true"
+            label="Previous"
+            icon="pi pi-chevron-left"
+            iconPos="left"
+            severity="secondary"
+            rounded="true"
+            [disabled]="selectedPage < 1"
+            (click)="navigateToPreviousQuestion()"
+          ></button>
+          <button
+            pButton
+            pRipple
+            raised="true"
+            *ngIf="!isLastQuestion()"
+            label="Next"
+            severity="secondary"
+            rounded="true"
+            [disabled]="!enableNextButton()"
+            (click)="navigateToNextQuestion()"
+            icon="pi pi-chevron-right"
+            iconPos="right"
+          ></button>
+          <button
+            *ngIf="isLastQuestion()"
+            raised="true"
+            class="btn-min-8em"
+            rounded="true"
+            pButton
+            label="Submit Aptitude"
+            (click)="submitSection()"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p-sidebar [(visible)]="showSidebar" position="right" [baseZIndex]="10000">
+    <h2>Review All Questions</h2>
+    <div class="sidebar-content">
+      <!-- Add your sidebar content here -->
+      <div class="flex question-review-container">
+        <div class="question-review">
+          <button
+            pButton
+            raised="true"
+            *ngFor="let question of questions; let i = index"
+            [ngClass]="{
+              'p-button-warning': isQuestionFlagged(question.id),
+              'p-button-success':
+                !isQuestionFlagged(question.id) &&
+                isQuestionAttempted(question.id),
+              'p-button-danger':
+                !isQuestionFlagged(question.id) &&
+                !isQuestionAttempted(question.id),
+              'w-1': true,
+              'question-item': true
+            }"
+            (click)="navigateToQuestion(i)"
+          >
+            {{ i + 1 }}
+          </button>
+        </div>
+      </div>
+    </div>
+    <button
+      pButton
+      label="Close"
+      icon="pi pi-times"
+      raised="true"
+      (click)="showSidebar = false"
+    ></button>
+  </p-sidebar>
+</div>
+<p-confirmDialog></p-confirmDialog>
+<p-toast position="top-center"></p-toast>

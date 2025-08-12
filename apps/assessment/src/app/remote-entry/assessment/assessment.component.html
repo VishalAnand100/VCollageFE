@@ -1,0 +1,9 @@
+<div *ngIf="assessmentInput" class="">
+    <!-- Aptitude Section -->
+    <app-aptitude-assessment *ngIf="shouldStartAptitudeSection()" [(assessmentSubmission)]="assessmentInput"
+        (sectionSubmitted)="onSectionSubmission($event)">
+    </app-aptitude-assessment>
+    <app-personality-assessment *ngIf="shouldStartPersonalitySection()" [(assessmentSubmission)]="assessmentInput"
+        (sectionSubmitted)="onSectionSubmission($event)">
+    </app-personality-assessment>
+</div>

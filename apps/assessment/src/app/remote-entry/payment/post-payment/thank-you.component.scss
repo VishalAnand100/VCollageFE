@@ -1,0 +1,55 @@
+.post-payment-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+    overflow: hidden;
+    padding-top: 6em;
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+    .post-payment-container-content {
+      position: relative; /* Ensures children position inside this */
+      height: 100%;
+      width: 100%;
+      border-radius: 3rem;
+      background-color: #edf0fa;
+      overflow: hidden;
+
+      .blur {
+        width: 50vw; /* Makes it 60% of the viewport width */
+        min-width: 400px;
+        min-height: 400px;
+        max-height: 600px;
+        max-width: 600px;
+        aspect-ratio: 1 / 1; /* Ensures it's always square */
+        position: absolute;
+        z-index: 1;
+        border-radius: 100%;
+        filter: blur(5rem);
+        overflow: hidden;
+      }
+  
+      /* Position each child */
+      .blur-1 {
+        top: 2%;
+        left: 2%;
+        background: radial-gradient(circle at center, #0011ff50, #edf0fa);
+      }
+      .blur-2 {
+        top: 40%;
+        left: 20%;
+        background: radial-gradient(circle at center, #007fff50, #edf0fa);
+      }
+    
+      .header-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600; /* SemiBold */
+        font-size: 48px;
+        line-height: 1.2; /* Adjust for spacing */
+        color: #0062ff; /* Example text color */
+        text-align: center;
+      }
+    }
+}

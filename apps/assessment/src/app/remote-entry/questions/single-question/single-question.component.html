@@ -1,0 +1,38 @@
+<body>
+
+    <div class="quiz-container">
+        <main class="question-section">
+            <div class="options">
+                <h3>Question 1</h3>
+                <h2>{{ question.questionText }}</h2>
+                <label *ngFor="let option of question.options;let i = index" class="option"
+                    [class.selected]="option.id === selectedOption" (click)="selectOption(option.id)">
+                    <span class="option-text"> {{getOptionLabel(i) }}. {{ option.optionText }}</span>
+
+                    <input type="radio" name="questionOption" [value]="option.id"
+                        [checked]="option.id === selectedOption" />
+
+                </label>
+            </div>
+            <!-- <form class="options">
+                <label class="option">
+                    <input type="radio" name="answer"> A. 25°
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer"> B. 35°
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer"> C. 45°
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer"> D. 60°
+                </label>
+            </form> -->
+        </main>
+
+        <!-- <footer class="navigation">
+            <button class="btn prev-btn">⬅ Previous</button>
+            <button class="btn next-btn">Next ➡</button>
+        </footer> -->
+
+    </div>

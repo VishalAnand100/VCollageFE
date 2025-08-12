@@ -1,0 +1,88 @@
+.a4-size {
+  width: 100%;
+  max-width: 297mm; // A4 width in pixels
+  margin: 0 auto;
+  background: #fff;
+}
+
+.page-break {
+  page-break-after: always;
+  height: 1px;
+  background-color: lightgrey;
+}
+
+.floating {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 10px !important;
+  z-index: 9999 !important;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media print {
+  .floating{
+    visibility: collapse;
+  }
+  #download-report-btn {
+    visibility: collapse;
+  }
+
+  .download-report-btn {
+    visibility: collapse;
+  }
+  .a4-size {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-break {
+    display: none;
+    height: 0;
+    page-break-after: always;
+  }
+}
+
+/* Custom container styles */
+.custom-button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+/* Custom button styles */
+.custom-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}

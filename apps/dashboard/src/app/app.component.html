@@ -1,0 +1,18 @@
+<div class="layout-wrapper" [ngClass]="{'sidebar-closed': !isSidebarOpen, 'sidebar-open': isSidebarOpen}" *ngIf="showLayout">
+  <app-sidebar></app-sidebar>
+
+  <!-- Backdrop overlay for mobile -->
+  <div class="sidebar-backdrop" (click)="toggleSidebar()"></div>
+
+  <div class="layout-main-container">
+    <app-topbar (menuToggle)="toggleSidebar()"></app-topbar>
+
+    <div class="layout-main">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!showLayout">
+  <router-outlet></router-outlet>
+</div>

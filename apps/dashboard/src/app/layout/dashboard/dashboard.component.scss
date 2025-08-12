@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.actions-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    width: 100%;
+  }
+ 
+  
+  .container {
+    background: #EDF0FA;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* Ensures the container is fixed to the screen */
+    top: 0;
+    left: 0;
+    overflow: hidden; /* Prevents scrolling */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .subcontainer {
+      width: 90vw; /* Covers 70% of the page */
+      height: 90vh; /* Covers 70% of the page */
+  
+      background: white;
+      padding: 20px;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
+      position: absolute;
+      margin-top: 5rem;
+  
+      .footer{
+        bottom: 1rem;
+        position: absolute;
+      }
+    }
+  }
+  
+  .table {
+    width: 100%; /* Make table fill the container */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border-color: #ECECEC;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+  color: #000;
+    font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  
+  .custom-button {
+    width: 62px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #007FFF;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background: #005FCC; /* Darker shade on hover */
+  }
+  
+  .custom-button:active {
+    background: #004BA0; /* Even darker on click */
+  }
+  
+  

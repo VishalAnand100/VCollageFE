@@ -1,0 +1,41 @@
+.svg-container {
+    position: relative;
+  }
+  
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  text {
+    white-space: pre;
+  }
+  
+  .absolute-text {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    padding: 2%;
+    margin: 2%;
+    font-size: 1.75em;
+
+    @media (max-width: 600px) {
+      font-size: calc(3.15vw - 0.15em);
+    }
+
+    @media (min-width: 1000px) {
+      font-size: calc(2.15vw - 0.15em);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: calc(2vw - 0.15em);
+    }
+
+    @media (min-width: 1600px) {
+      font-size: calc(2.00vw - 0.15em);
+    }
+
+    @media (min-width: 1900px) {
+      font-size: calc(1.85vw - 0.25em);
+    }
+  }
