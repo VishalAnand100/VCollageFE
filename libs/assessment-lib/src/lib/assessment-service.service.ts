@@ -30,7 +30,7 @@ import { ScheduleRequestDto } from './models/schedule-request.dto';
 })
 export class AssessmentService {
   
-  protected basePath = 'http://localhost:5165'; //vishal
+  protected basePath = 'https://vikrant-examinationcenter.simplifyingskills.com'; //vishal
   constructor(private httpClient: HttpClient) {
     this.goToQuestionType$.pipe(
       tap((x) => {

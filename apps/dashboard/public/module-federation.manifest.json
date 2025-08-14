@@ -1,4 +1,4 @@
 {
-  "course": "http://localhost:4201",
-  "assessment": "http://localhost:4202"
+  "course": "/course",
+  "assessment": "/assessment"
 }
