@@ -79,7 +79,7 @@
             <div class="summary">
                 <div class="sumtext">Summary</div>
 
-                <div class="card pay-card" *ngIf="!dashboardData?.isSuccess">
+                <!-- <div class="card pay-card" *ngIf="!dashboardData?.isSuccess">
                     <div class="card-text">
                         <div class="tilename">Complete Your Payment</div>
                         <div class="tilepara">Please select a plan that suits you best and complete your payment to
@@ -87,7 +87,7 @@
                         <button class="card-button" (click)="goToPlanGrow()">Pay Now</button>
                     </div>
                     <img src="/assets/image/wallet.png" alt="Cashback" class="card-img2" />
-                </div>
+                </div> -->
 
                 <div class="card download-card" *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess">
                     <div class="card-text">
@@ -98,7 +98,7 @@
                     <img src="/assets/image/assessment.png" alt="Cashback" class="download-img" />
                 </div>
 
-                <div class="card download-card" *ngIf="!dashboardData?.isSubmitted && dashboardData?.isSuccess">
+                <div class="card download-card" *ngIf="!dashboardData?.isSuccess">
                     <div class="card-text">
                         <div *ngIf="dashboardData?.assessmentId" class="tilename">Continue Your Assessment</div>
                         <div *ngIf="!dashboardData?.assessmentId" class="tilename">Take Your Assessment Now</div>
@@ -130,10 +130,10 @@
                     <img class="shimg" src="/assets/image/boy.png" alt="Counselling Illustration" />
 
                     <div class="shdes" *ngIf="!dashboardData?.isSuccess">
-                        Complete your payment to unlock the assessment and get started.
+                        Complete your assessment to unlock the Counselling Session and get started.
                     </div>
                     <div class="shdes" *ngIf="dashboardData?.isSuccess && dashboardData?.planName !== 'basic'">
-                        Thank you for completing the payment. Now start with the assessment.
+                        Complete your assessment to unlock the Counselling Session and get started.
                     </div>
 
                     <div class="lock" tabindex="0" role="button" aria-label="Schedule Counselling">

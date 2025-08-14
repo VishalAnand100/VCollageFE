@@ -18,7 +18,7 @@
           <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="grid">
               <!-- Registering For Dropdown *ngIf="false"--> 
-              <div class="col-12 md:col-6" >  
+              <div class="col-12 md:col-6"  *ngIf="showRegisterSection">  
                 <p-floatLabel>
                   <p-dropdown [autofocus]="true" [style]="{ 'border-radius': '14px', width: '100%' }"
                     [options]="registrationOptions" formControlName="registerFor" id="registerFor">
@@ -32,7 +32,7 @@
               </div>
 
               <!-- Email Field -->
-              <div class="col-12 md:col-6">
+              <div class="col-12 md:col-6 mt-3">
                 <p-floatLabel>
                   <input id="email" type="email" pInputText formControlName="email"
                     style="border-radius: 14px; width: 100%" />
@@ -77,19 +77,6 @@
                 </small>
               </div>
 
-              <!-- Parent's Name Field -->
-              <div class="col-12 md:col-6 mt-3">
-                <p-floatLabel>
-                  <input id="parentsName" type="text" pInputText formControlName="parentsName"
-                    style="border-radius: 14px; width: 100%" />
-                  <label for="parentsName">Parent's Name <span class="p-error">*</span></label>
-                </p-floatLabel>
-                <small class="p-error"
-                  *ngIf="registerForm.get('parentsName')?.hasError('required') && registerForm.get('parentsName')?.touched">Parent's
-                  Name is required.</small>
-              </div>
-
-              <!-- Parent's Contact Number -->
               <div class="col-12 md:col-6 mt-3">
                 <div class="flex">
                   <p-dropdown
@@ -116,7 +103,7 @@
                 <p-floatLabel>
                   <input id="contactNumber" type="text" class="contact" pInputText formControlName="contactNumber" maxlength="15"
                     style="border-radius: 14px;" />
-                  <label for="contactNumber">Parent's Contact Number <span class="p-error">*</span></label>
+                  <label for="contactNumber">StudentContact Number <span class="p-error">*</span></label>
                 </p-floatLabel>
               </div>
 
@@ -131,6 +118,39 @@
                   cannot be more than 15 digits.</small>
              
               </div>
+                <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <p-dropdown 
+                          id="stream"
+                          [style]="{ 'border-radius': '14px', width: '100%' }"
+                          [options]="streamOptions"
+                          formControlName="stream"
+                          placeholder="Select an option">
+                        </p-dropdown>
+                        <label for="stream">Stream <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      
+                      <small class="p-error"
+                        *ngIf="registerForm.get('stream')?.touched && registerForm.get('stream')?.errors?.['required']">
+                        Stream is required.
+                      </small>
+                    </div>
+                    <div class="col-12 md:col-6 mt-3">
+                    
+                      <p-floatLabel>
+                        <input id="branch" type="text" pInputText formControlName="branch"
+                          style="border-radius: 14px; width: 100%" />
+                        <label for="branch">Branch Name<span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="registerForm.get('branch')?.hasError('required') && registerForm.get('branch')?.touched">Branch
+                        Name
+                        is required.</small>
+                      <small class="p-error"
+                        *ngIf="registerForm.get('branch')?.hasError('minlength') && registerForm.get('branch')?.touched">Branch
+                        Name
+                        must be at least 2 characters long.</small>
+                    </div>
               <!-- Dynamic Student Fields -->
               <div formArrayName="studentDetails" class="col-12">
                 <div *ngFor="let student of studentDetails.controls; let i = index" [formGroupName]="i">
@@ -162,7 +182,7 @@
                         format.</small>
                     </div> -->
 
-                    <div class="col-12 md:col-6 mt-3">
+                    <!-- <div class="col-12 md:col-6 mt-3">
                       <p-floatLabel>
                         <p-dropdown id="class" [style]="{ 'border-radius': '14px', width: '100%' }"
                           [options]="classOptions" formControlName="class" (onChange)="onClassChange($event.value, i)"
@@ -175,9 +195,9 @@
                         Class is required.
                       </small>
 
-                    </div>
+                    </div> -->
 
-                    <div class="col-12 md:col-6 mt-3">
+                    <!-- <div class="col-12 md:col-6 mt-3">
                       <p-floatLabel>
                         <input id="school" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
                           formControlName="school" />
@@ -188,9 +208,152 @@
                         School is required.
                       </small>
 
+                    </div> -->
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="pancard" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="pancard" />
+                        <label for="pancard">Pan Card/Aadhar Card <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('pancard')?.touched && student.get('pancard')?.errors?.['required']">
+                        Pan Card is required.
+                      </small>
+
+                    </div>
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="marks10th" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="marks10th" />
+                        <label for="marks10th">Marks 10th <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('marks10th')?.touched && student.get('marks10th')?.errors?.['required']">
+                        Marks 10th is required.
+                      </small>
+
+                    </div>
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="marks12th" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="marks12th" />
+                        <label for="marks12th">Marks 12th <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('marks12th')?.touched && student.get('marks12th')?.errors?.['required']">
+                        Marks 12th is required.
+                      </small>
+
+                    </div>
+                    <!-- <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="degree" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="degree" />
+                        <label for="degree">Degree <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('degree')?.touched && student.get('degree')?.errors?.['required']">
+                        Degree is required.
+                      </small>
+
+                    </div> -->
+                  
+                 
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="cureent_Cgpa" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="cureent_Cgpa" />
+                        <label for="cureent_Cgpa">Current CGPA <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('cureent_Cgpa')?.touched && student.get('cureent_Cgpa')?.errors?.['required']">
+                        Current CGPA is required.
+                      </small>
+
+                    </div>
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="backLogs" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="backLogs" />
+                        <label for="backLogs">Back Logs <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('backLogs')?.touched && student.get('backLogs')?.errors?.['required']">
+                        Back Logs is required.
+                      </small>
+
                     </div>
 
+                   
                     <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <p-dropdown
+                          id="year_Of_Passing"
+                          [options]="yearOptions"
+                          optionLabel="label"
+                          optionValue="value"
+                          formControlName="year_Of_Passing"
+                          [style]="{ 'border-radius': '14px', width: '100%' }"
+                          placeholder="Select Year"
+                        ></p-dropdown>
+                        <label for="year_Of_Passing">Year Of Passing <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      
+                      <small class="p-error"
+                        *ngIf="student.get('year_Of_Passing')?.touched && student.get('year_Of_Passing')?.errors?.['required']">
+                        Year Of Passing is required.
+                      </small>
+                    </div>
+                    
+               
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <p-dropdown 
+                          id="interest"
+                          [style]="{ 'border-radius': '14px', width: '100%' }"
+                          [options]="intrestOptions"
+                          formControlName="interest"
+                          placeholder="Select an option">
+                        </p-dropdown>
+                        <label for="interest">Interest <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      
+                      <small class="p-error"
+                        *ngIf="student.get('interest')?.touched && student.get('interest')?.errors?.['required']">
+                        Interest is required.
+                      </small>
+                    </div> 
+                    <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <p-dropdown 
+                          id="degree_Type"
+                          [style]="{ 'border-radius': '14px', width: '100%' }"
+                          [options]="degreeOptions"
+                          formControlName="degree_Type"
+                          placeholder="Select an option">
+                        </p-dropdown>
+                        <label for="degree_Type">Degree Type <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      
+                      <small class="p-error"
+                        *ngIf="student.get('degree_Type')?.touched && student.get('degree_Type')?.errors?.['required']">
+                        Degree Type is required.
+                      </small>
+                    </div> 
+                    <!-- <div class="col-12 md:col-6 mt-3">
+                      <p-floatLabel>
+                        <input id="dOB" [style]="{ 'border-radius': '14px', width: '100%' }" type="text" pInputText
+                          formControlName="dOB" />
+                        <label for="dOB">Date Of Birth <span class="p-error">*</span></label>
+                      </p-floatLabel>
+                      <small class="p-error"
+                        *ngIf="student.get('dOB')?.touched && student.get('dOB')?.errors?.['required']">
+                        Date Of Birth is required.
+                      </small>
+
+                    </div> -->
+
+                    <!-- <div class="col-12 md:col-6 mt-3">
                       <p-floatLabel>
                         <p-dropdown id="ageGroup" [style]="{ 'border-radius': '14px', width: '100%' }"
                         [options]="student.get('filteredAgeGroups')?.value"
@@ -202,8 +365,8 @@
                         Age Group is required.
                       </small>
 
-                    </div>
-                    <div class="col-12 md:col-6 mt-3">
+                    </div> -->
+                    <!-- <div class="col-12 md:col-6 mt-3">
                       <p-floatLabel>
                         <p-dropdown 
                           id="howDidYouFindUs"
@@ -219,7 +382,7 @@
                         *ngIf="student.get('howDidYouFindUs')?.touched && student.get('howDidYouFindUs')?.errors?.['required']">
                         Find Us is required.
                       </small>
-                    </div>
+                    </div> -->
                     <div class="col-12 md:col-6 mt-3 text-end">
                       <button pButton pRipple raised="true" class="m-1" type="button"
                         *ngIf="registerForm.get('registerFor')?.value === 'Parent' && studentDetails.length > 1"

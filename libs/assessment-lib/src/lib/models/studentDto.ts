@@ -12,6 +12,8 @@ export interface StudentDto {
     studentCode?: string|null;
     state?: string | null;
     city?: string | null;
+    stream?: string | null;
+    branch?: string | null;
 }
 
 export interface LoginResponseDto{

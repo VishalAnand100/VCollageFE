@@ -19,6 +19,9 @@ export class RegistrationComponent implements OnInit {
   registerForm!: FormGroup;
   referralId: string | null = null;
   selectedCountryCode = '+91';
+  showRegisterSection = false; // set to true to show it
+  yearOptions: SelectItem[] = [];
+
 
   countryCodes = [
     { label: '+1', value: '+1' },     // USA, Canada
@@ -89,8 +92,23 @@ export class RegistrationComponent implements OnInit {
     { label: 'Friends & Relatives', value: 'Friends & Relatives' },
     { label: 'Any other', value: 'Any other' }
   ];
-  
-  
+  streamOptions = [
+    { label: 'Management', value: 'management' },
+    { label: 'Engineering', value: 'engineering' },
+   
+  ];
+  degreeOptions = [
+    { label: 'Diploma', value: 'Diploma' },
+    { label: 'UG', value: 'UG' },
+    { label: 'PG', value: 'PG' },   
+  ];
+
+  intrestOptions = [
+    { label: 'Higher Studies', value: 'Higher Studies' },
+    { label: 'Entrepreneur', value: 'Entrepreneur' },
+    { label: 'Private', value: 'Private' },
+    { label: 'Government', value: 'Government' },   
+  ];
   ageGroups = [
     { label: '11-13', value: '11to13' },
     { label: '14-17', value: '14to17' },
@@ -155,7 +173,14 @@ export class RegistrationComponent implements OnInit {
     if (topbar) {
       this.renderer.setStyle(topbar, 'visibility', 'collapse');
     }
-
+    const currentYear = new Date().getFullYear();
+    const startYear = currentYear - 5;
+    const endYear = currentYear + 5;
+    
+    for (let i = startYear; i <= endYear; i++) {
+      this.yearOptions.push({ label: i.toString(), value: i.toString() });
+    }
+    
     this.registerForm = this.fb.group(
       {
         countryCode: [this.selectedCountryCode],
@@ -171,12 +196,14 @@ export class RegistrationComponent implements OnInit {
           ],
         ],
         confirmPassword: ['', [Validators.required]],
-        parentsName: ['', Validators.required],
+       // parentsName: ['', Validators.required],
         contactNumber: [
           '',
           [Validators.required, Validators.pattern('^[0-9]{6,15}$') // Accepts numbers from 6 to 15 digits (general international format)
           ],
         ],
+      stream: ['', Validators.required],
+      branch: ['', Validators.required],
 
         studentDetails: this.fb.array([this.createStudent()]), // Initialize with one student
         agreeTerms: [false, Validators.requiredTrue], // Ensure checkbox must be checked
@@ -210,11 +237,21 @@ this.referralId = this.route.snapshot.queryParamMap.get('ref');
   createStudent(): FormGroup {
     return this.fb.group({
       studentName: ['', [Validators.required, Validators.minLength(2)]],
-      class: ['', Validators.required],
-      school: ['', Validators.required],
-      ageGroup: ['', Validators.required],
+      //class: ['', Validators.required],
+    //  school: ['', Validators.required],
+     // ageGroup: ['', Validators.required],
      filteredAgeGroups: [[]] ,// Store dynamic filtered age groups
-     howDidYouFindUs: [null, Validators.required],
+    // howDidYouFindUs: [null, Validators.required],
+     pancard: [null, Validators.required],
+     marks10th: [null, Validators.required],
+     marks12th: [null, Validators.required],
+   //  degree: [null, Validators.required],
+     cureent_Cgpa: [null, Validators.required],
+     backLogs: [null, Validators.required],
+     interest: [null, Validators.required],
+     year_Of_Passing: [null, Validators.required],
+     degree_Type: [null, Validators.required],
+     //dOB: [null, Validators.required],
       email: ['', Validators.email],
     });
   }
@@ -255,13 +292,27 @@ this.referralId = this.route.snapshot.queryParamMap.get('ref');
           (student: any) =>
             ({
               studentName: student.studentName,
-              ageGroup: student.ageGroup,
+                      branch: this.registerForm.value.branch,
+
+            //  ageGroup: student.ageGroup,
+              stream: this.registerForm.value.stream,
+
               details: {
-                class: student.class,
-                school: student.school,
-                parentsName: this.registerForm.value.parentsName,
+              //  class: student.class,
+              //  school: student.school,
+               // parentsName: this.registerForm.value.parentsName,
                 contactNumber: this.selectedCountryCode + this.registerForm.value.contactNumber,
-                findUs: student.howDidYouFindUs,
+                //findUs: student.howDidYouFindUs,
+                pancard: student.pancard,
+                marks10th: student.marks10th,
+                marks12th: student.marks12th,
+                //degree: student.degree,
+                cureent_Cgpa: student.cureent_Cgpa,
+                backLogs: student.backLogs,
+                interest: student.interest,
+                year_Of_Passing: student.year_Of_Passing,
+                degree_Type: student.degree_Type,
+               // dOB: student.dOB,
               } as StudentDetailDto,
               emailAddress: student.email,
               isDeleted: false,
