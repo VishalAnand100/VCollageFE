@@ -88,7 +88,9 @@ export class PersonalityAssessmentComponent
           submission.selectedOptionId !== ''
       )
     );
-    if (!allQuestionsAnswered) {
+    if ( !allQuestionsAnswered &&
+      this.assessmentSubmission.timeRemainingInSeconds &&
+      this.remainingTime > 0) {
       // Display Toast alert in center
       this.messageService.add({
         severity: 'error',
@@ -129,6 +131,31 @@ export class PersonalityAssessmentComponent
         },
       });
       return;
+    } if (
+      !allQuestionsAnswered &&
+      this.assessmentSubmission.timeRemainingInSeconds &&
+      this.remainingTime <= 0
+    ) {
+      // Display Toast alert in center
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Submission Error',
+        detail: 'time is up',
+        life: 9000, // Duration in milliseconds (3 seconds)
+        sticky: true,
+      });
+     this.assessmentSubmission.personalitySubmitted = true;
+          this.updateAssessment();
+          this.assessmentService
+            .assessmentCompleteEventPost(this.assessmentSubmission.id)
+            .subscribe();
+          this.assessmentService
+            .updateAssessmentPost(this.assessmentSubmission)
+            .subscribe(() => {
+              this.sectionSubmitted.next('personality');
+              this.sectionSubmitted.complete();
+            });
+      return; // Exit the method if not all questions are answered
     }
     else{
       this.confirmationService.confirm({

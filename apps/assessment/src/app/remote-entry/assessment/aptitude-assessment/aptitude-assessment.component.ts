@@ -66,7 +66,7 @@ export class AptitudeAssessmentComponent
   startSections(): void {
     this.startSection();
   }
-  submitSection() {
+submitSection() {
     const allQuestionsAnswered = this.questions.every((question) =>
       this.assessmentSubmission.questionSubmissions.some(
         (submission) =>
@@ -78,7 +78,7 @@ export class AptitudeAssessmentComponent
     if (
       !allQuestionsAnswered &&
       this.assessmentSubmission.timeRemainingInSeconds &&
-      this.assessmentSubmission.timeRemainingInSeconds > 0
+      this.remainingTime > 0
     ) {
       // Display Toast alert in center
       this.messageService.add({
@@ -119,10 +119,33 @@ export class AptitudeAssessmentComponent
         },
       });
     }
+    if (
+      !allQuestionsAnswered &&
+      this.assessmentSubmission.timeRemainingInSeconds &&
+      this.remainingTime <= 0
+    ) {
+      // Display Toast alert in center
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Submission Error',
+        detail: 'time is up',
+        life: 9000, // Duration in milliseconds (3 seconds)
+        sticky: true,
+      });
+      this.assessmentSubmission.aptitudeSubmitted = true;
+      this.updateAssessment();
+      this.assessmentService
+        .updateAssessmentPost(this.assessmentSubmission)
+        .subscribe(() => {
+          this.sectionSubmitted.next('aptitude');
+          this.sectionSubmitted.complete();
+        });
+      return; // Exit the method if not all questions are answered
+    }
      else {
       this.confirmationService.confirm({
         message:
-          'Submit Aptitude Section? And navigate to next section.',
+         'Are you Sure you want to submit', //'Submit Aptitude Section? And navigate to next section.',
         header: 'Submit Aptitude ',
         icon: 'pi pi-exclamation-triangle',
         acceptIcon: 'none',
@@ -141,6 +164,9 @@ export class AptitudeAssessmentComponent
             .subscribe(() => {
               this.sectionSubmitted.next('aptitude');
               this.sectionSubmitted.complete();
+
+             // this.router.navigate([`/register`]);
+
             });
         },
         reject: () => {
