@@ -89,7 +89,7 @@
                     <img src="/assets/image/wallet.png" alt="Cashback" class="card-img2" />
                 </div> -->
 
-                <div class="card download-card" *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess">
+                <div class="card download-card" *ngIf="dashboardData?.isSubmitted">
                     <div class="card-text">
                         <div class="tilename">Download Your Report</div>
                         <div class="tilepara">Your personalized report is ready. </div>
@@ -98,7 +98,7 @@
                     <img src="/assets/image/assessment.png" alt="Cashback" class="download-img" />
                 </div>
 
-                <div class="card download-card" *ngIf="!dashboardData?.isSuccess">
+                <div class="card download-card" *ngIf="!dashboardData?.isSuccess && !dashboardData?.isSubmitted">
                     <div class="card-text">
                         <div *ngIf="dashboardData?.assessmentId" class="tilename">Continue Your Assessment</div>
                         <div *ngIf="!dashboardData?.assessmentId" class="tilename">Take Your Assessment Now</div>
@@ -145,7 +145,7 @@
                 <!-- paste here schedule -->
 
                 <div class="displayCondition"
-                    *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess && dashboardData.planName !== 'basic'">
+                    *ngIf="dashboardData?.isSubmitted">
                     <!-- Calendar -->
                     <p-calendar class="full" [(ngModel)]="date" [inline]="true" [showWeek]="false"
                         [minDate]="minSelectableDate" (onSelect)="onDateSelect($event)">
@@ -218,7 +218,7 @@
 
 
                 <!-- CLUBS -->
-                <div class="clubs" *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess && dashboardData.planName == 'basic'">
+                <!-- <div class="clubs" *ngIf="dashboardData?.isSubmitted && dashboardData?.isSuccess && dashboardData.planName == 'basic'">
 
                     <div class="club1">
                         <div class="content">
@@ -250,7 +250,7 @@
                     </div>
 
 
-                </div>
+                </div> -->
 
 
 
