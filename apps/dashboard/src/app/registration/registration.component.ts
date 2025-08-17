@@ -112,7 +112,145 @@ export class RegistrationComponent implements OnInit {
   ageGroups = [
     { label: '11-13', value: '11to13' },
     { label: '14-17', value: '14to17' },
-  ];  constructor(
+  ]; 
+   programTypes = [
+    { label: 'Certificate', value: 'Certificate' },
+    { label: 'Diploma', value: 'Diploma' },
+    { label: 'Undergraduate', value: 'Undergraduate' },
+    { label: 'Postgraduate', value: 'Postgraduate' }
+  ];
+
+  allPrograms: any = {
+     Certificate: [
+    // ✅ Engineering
+    { label: 'Certificate in Fire Technology and Safety Engineering (Industrial Safety & Engineering)', value: 'cert-fire' },
+    { label: 'Certificate in Electrical Engineering (Solar PV System & Installation and Maintenance)', value: 'cert-electrical' },
+    { label: 'Certificate in Electronics Engineering (VHDL & Verilog Programming / IoT / ICT)', value: 'cert-electronics' },
+    { label: 'Certificate in Civil Engineering (Survey Engineering / Material Testing / Construction)', value: 'cert-civil' },
+    { label: 'Certificate in Mechanical Engineering (CAD / Automobile / RAC)', value: 'cert-mechanical' },
+    { label: 'Certificate in Computer Science Engineering (Programming Language / Data Science)', value: 'cert-cse' },
+    { label: 'Certificate in Chemical Engineering', value: 'cert-chemical' },
+    { label: 'Certificate in Mining Engineering', value: 'cert-mining' },
+
+    // ✅ Business & Management
+    { label: 'Certificate in Retail and Operations Management', value: 'cert-retail' },
+    { label: 'Certificate in Banking, Financial Services & Insurance (BFSI)', value: 'cert-bfsi' },
+
+    // ✅ Language
+    { label: 'Certificate in French language', value: 'cert-french' },
+
+    // ✅ Health & Wellness
+    { label: 'Certificate in Yoga and Naturopathy', value: 'cert-yoga' },
+    { label: 'Certificate in Clinical Assistance', value: 'cert-clinical' },
+    { label: 'Certificate in Telemedicine', value: 'cert-telemedicine' },
+
+    // ✅ Design
+    { label: 'Certificate in Interior Design', value: 'cert-interior' },
+    { label: 'Certificate in Fashion Design', value: 'cert-fashion' }
+  ],
+    Diploma: [
+    // ✅ Engineering
+    { label: 'Diploma in Electrical Engineering', value: 'dip-electrical' },
+    { label: 'Diploma in Civil Engineering', value: 'dip-civil' },
+    { label: 'Diploma in Mechanical Engineering', value: 'dip-mechanical' },
+    { label: 'Diploma in Fire Technology and Safety Engineering', value: 'dip-fire' },
+    { label: 'Diploma in Electronics and Communication Engineering', value: 'dip-ece' },
+    { label: 'Diploma in Computer Science and Engineering', value: 'dip-cse' },
+    { label: 'Diploma in Information Technology', value: 'dip-it' },
+    { label: 'Diploma in Cyber Security', value: 'dip-cyber' },
+    { label: 'Diploma in Drone Technology', value: 'dip-drone' },
+    { label: 'Diploma in Chemical Engineering', value: 'dip-chemical' },
+    { label: 'Diploma in Mining Engineering', value: 'dip-mining' },
+
+    // ✅ Safety & Environment
+    { label: 'Diploma in Industrial Safety', value: 'dip-safety' },
+    { label: 'Diploma in Health Safety and Environment', value: 'dip-hse' },
+
+    // ✅ Management & Business
+    { label: 'Diploma in Retail and Operations Management', value: 'dip-retail' },
+    { label: 'Diploma in Banking, Financial Services & Insurance (BFSI)', value: 'dip-bfsi' },
+    { label: 'Diploma in Business Management', value: 'dip-business' },
+
+    // ✅ Law
+    { label: 'Diploma in Cyber Law', value: 'dip-cyberlaw' },
+    { label: 'Diploma in Labour Law', value: 'dip-labourlaw' },
+    { label: 'Diploma in International Family Relations', value: 'dip-family' },
+    { label: 'Diploma in Taxation and GST', value: 'dip-gst' },
+
+    // ✅ Agriculture
+    { label: 'Diploma in Agriculture (One year)', value: 'dip-agri1' },
+    { label: 'Diploma in Agriculture (Two years)', value: 'dip-agri2' },
+
+    // ✅ Medical & Health
+    { label: 'Diploma in Pharmacy', value: 'dip-pharma' },
+    { label: 'Diploma in Diabetes', value: 'dip-diabetes' },
+    { label: 'Diploma in Diabetes Education', value: 'dip-diabetesedu' },
+    { label: 'Diploma in Yoga and Naturopathy', value: 'dip-yoga' },
+
+    // ✅ Design
+    { label: 'Diploma in Interior Design', value: 'dip-interior' },
+    { label: 'Diploma in Fashion Design', value: 'dip-fashion' },
+    //Advance Diploma
+     { label: 'Advance Diploma in Industrial Safety', value: 'adv-safety' },
+      { label: 'Advance Diploma in Environment Health and Safety', value: 'adv-hse' }
+  ],
+    'Postgraduate': [
+      { label: 'M.Sc. (Embryology)', value: 'msc-embryology' },
+    { label: 'M.Sc. (Physics)', value: 'msc-physics' },
+    { label: 'M.Sc. (Chemistry)', value: 'msc-chemistry' },
+    { label: 'M.Sc. (Maths)', value: 'msc-maths' },
+    { label: 'M.Sc. (Biotechnology)', value: 'msc-biotech' },
+    { label: 'M.Sc. (Forensic Science)', value: 'msc-forensic' },
+    { label: 'M.Sc. (Biology)', value: 'msc-biology' },
+    { label: 'M.Sc. (Microbiology)', value: 'msc-microbiology' },
+    { label: 'M.Sc. (Environment Science)', value: 'msc-environment' }
+    ],
+    'Undergraduate': [
+    { label: 'B.Sc. (Embryology)', value: 'bsc-embryology' },
+    { label: 'B.Sc. (Physics, Chemistry, Maths)', value: 'bsc-pcm' },
+    { label: 'B.Sc. (Chemistry, Botany, Zoology)', value: 'bsc-cbz' },
+    { label: 'B.Sc. (Biotechnology)', value: 'bsc-biotech' },
+    { label: 'B.Sc. (Microbiology)', value: 'bsc-microbiology' },
+    { label: 'B.Sc. (Environment Science)', value: 'bsc-environment' },
+    { label: 'B.Sc. (Forensic Science)', value: 'bsc-forensic' },
+    { label: 'B.Sc. in Interior Design', value: 'bsc-interior' },
+    { label: 'B.Sc. in Fashion Design', value: 'bsc-fashion' },
+    { label: 'B.Sc. in Yoga and Naturopathy', value: 'bsc-yoga' },
+    { label: 'Bachelor of Science (B.Sc.) Hons. in Agriculture', value: 'bsc-agriculture-hons' },
+
+    // ✅ Design & Arts
+    { label: 'B. Design in Fashion Technology and Accessory Design', value: 'bdes-fashion' },
+    { label: 'Bachelor of Fine Arts (BFA)', value: 'bfa' },
+    { label: 'B.A. in History, Sociology, Political Science', value: 'ba-hsp' },
+    { label: 'B.A. in History, Psychology, Political Science', value: 'ba-hpp' },
+    { label: 'B.A. in Geography, History, Political Science', value: 'ba-ghp' },
+    { label: 'B.A. in Economics, Hindi, Political Science', value: 'ba-ehp' },
+    { label: 'B.A. in Economics, English, Political Science', value: 'ba-eep' },
+    { label: 'B.A. in English, Geography, Home Science', value: 'ba-egh' },
+    { label: 'B.A. in Hindi, Geography, Home Science', value: 'ba-hgh' },
+    { label: 'B.A. in Sanskrit, Hindi, History', value: 'ba-shh' },
+    { label: 'B.A. in English, Geography, Philosophy', value: 'ba-egp' },
+    { label: 'B.A. in Yoga', value: 'ba-yoga' },
+    { label: 'B.A. in Drawing and Painting', value: 'ba-drawing' },
+
+    // ✅ Professional Programs
+    { label: 'Bachelor of Social Work', value: 'bsw' },
+    { label: 'Bachelor of Computer Application (B.C.A.)', value: 'bca' },
+    { label: 'Bachelor in Pharmacy', value: 'bpharma' },
+    { label: 'Bachelor of Arts and Bachelor of Legislative Law (B.A. L.L.B.)', value: 'ba-llb' },
+    { label: 'Bachelor of Legislative Law (LL.B.)', value: 'llb' },
+    { label: 'Bachelor of Business Administration (BBA)', value: 'bba' },
+    { label: 'Bachelor of Commerce (B. Com)', value: 'bcom' },
+    { label: 'Bachelor of Commerce (B. Com) Hons', value: 'bcom-hons' },
+    { label: 'BBA with specialization in Business Analytics in collaboration with IBM', value: 'bba-analytics' },
+
+    // ✅ Engineering
+    { label: 'B. Tech in Computer Science and Engineering', value: 'btech-cse' },
+    { label: 'B.Tech in Electronics and Communications Engineering', value: 'btech-ece' },
+    { label: 'B.Tech in Fire Technology and Safety Engineering', value: 'btech-fire' }  ]  };
+
+  programNames: any[] = [];
+  constructor(
     private fb: FormBuilder,
     private messageService: MessageService,
     private router: Router,
@@ -125,6 +263,8 @@ export class RegistrationComponent implements OnInit {
     
 
   }
+
+  
   validationcheck() {
     if (this.registerForm.invalid) {
       this.markFormGroupTouched(this.registerForm); // Show validation errors
@@ -202,8 +342,8 @@ export class RegistrationComponent implements OnInit {
           [Validators.required, Validators.pattern('^[0-9]{6,15}$') // Accepts numbers from 6 to 15 digits (general international format)
           ],
         ],
-      stream: ['', Validators.required],
-      branch: ['', Validators.required],
+      //stream: ['', Validators.required],
+     // branch: ['', Validators.required],
 
         studentDetails: this.fb.array([this.createStudent()]), // Initialize with one student
         agreeTerms: [false, Validators.requiredTrue], // Ensure checkbox must be checked
@@ -218,6 +358,14 @@ this.referralId = this.route.snapshot.queryParamMap.get('ref');
     });
 
   }
+
+onProgramTypeChange(event: any) {
+    const selectedType = event.value;
+    this.programNames = this.allPrograms[selectedType] || [];
+    this.registerForm.patchValue({ programName: null }); // reset program name
+  }
+
+
 
   onCountryChange(event: any) {
   console.log('Country changed:', event);
@@ -250,9 +398,11 @@ this.referralId = this.route.snapshot.queryParamMap.get('ref');
      backLogs: [null, Validators.required],
      interest: [null, Validators.required],
      year_Of_Passing: [null, Validators.required],
-     degree_Type: [null, Validators.required],
+   //  degree_Type: [null, Validators.required],
      //dOB: [null, Validators.required],
       email: ['', Validators.email],
+       programType: [null, Validators.required],
+      programName: [null, Validators.required],
     });
   }
 
@@ -312,6 +462,8 @@ this.referralId = this.route.snapshot.queryParamMap.get('ref');
                 interest: student.interest,
                 year_Of_Passing: student.year_Of_Passing,
                 degree_Type: student.degree_Type,
+                programType: student.programType,
+                programName: student.programName,
                // dOB: student.dOB,
               } as StudentDetailDto,
               emailAddress: student.email,
