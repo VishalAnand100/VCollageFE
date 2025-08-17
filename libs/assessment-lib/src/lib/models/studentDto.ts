@@ -14,6 +14,7 @@ export interface StudentDto {
     city?: string | null;
     stream?: string | null;
     branch?: string | null;
+   
 }
 
 export interface LoginResponseDto{

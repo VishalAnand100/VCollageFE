@@ -22,5 +22,6 @@ backLogs?: string | null;
 year_Of_Passing?: string | null;
  degree_Type?: string | null;
  dOB?: string | null;
-
+ programName?: string | null;
+    programType?: string | null;
 }
