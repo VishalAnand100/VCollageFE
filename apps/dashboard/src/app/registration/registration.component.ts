@@ -245,6 +245,7 @@ export class RegistrationComponent implements OnInit {
     { label: 'BBA with specialization in Business Analytics in collaboration with IBM', value: 'bba-analytics' },
 
     // ✅ Engineering
+    { label: 'B. Tech in Civil Engineering', value: 'btech-cse' },
     { label: 'B. Tech in Computer Science and Engineering', value: 'btech-cse' },
     { label: 'B.Tech in Electronics and Communications Engineering', value: 'btech-ece' },
     { label: 'B.Tech in Fire Technology and Safety Engineering', value: 'btech-fire' }  ]  };
