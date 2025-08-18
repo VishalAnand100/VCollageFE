@@ -88,26 +88,26 @@ formData.append('file', pdfBlob, fileName);
 formData.append('studentName', this.detailedReport.student?.studentName || '');
 formData.append('email', this.detailedReport.student?.emailAddress || '');
 
-this.assessmentService.sendPdfEmail(
-  pdfBlob,
-  fileName,
-  this.detailedReport.student?.studentName || '',
-  this.detailedReport.student?.emailAddress || ''
-).subscribe({
-  next: (res) => {
-    console.log('Email sent successfully:', res.message);
-  },
-  error: (err) => {
-    console.error('Error sending email:', err);
-  },
-  complete: () => {
+// this.assessmentService.sendPdfEmail(
+//   pdfBlob,
+//   fileName,
+//   this.detailedReport.student?.studentName || '',
+//   this.detailedReport.student?.emailAddress || ''
+// ).subscribe({
+//   next: (res) => {
+//     console.log('Email sent successfully:', res.message);
+//   },
+//   error: (err) => {
+//     console.error('Error sending email:', err);
+//   },
+ // complete: () => {
     pdf.save(fileName);  // Save the PDF file locally
     this.loading = false;
     const body = document.querySelector('body');
     if (body) body.classList.remove('p-overflow-hidden');
     this.changeDetectorRef.markForCheck();
-  }
-});
+//  }
+//});
 
 
 
