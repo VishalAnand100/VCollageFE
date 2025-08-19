@@ -146,7 +146,9 @@ export class RegistrationComponent implements OnInit {
 
     // ✅ Design
     { label: 'Certificate in Interior Design', value: 'cert-interior' },
-    { label: 'Certificate in Fashion Design', value: 'cert-fashion' }
+    { label: 'Certificate in Fashion Design', value: 'cert-fashion' },
+            { label: 'Other', value: 'c-other' }
+
   ],
     Diploma: [
     // ✅ Engineering
@@ -203,7 +205,11 @@ export class RegistrationComponent implements OnInit {
     { label: 'M.Sc. (Forensic Science)', value: 'msc-forensic' },
     { label: 'M.Sc. (Biology)', value: 'msc-biology' },
     { label: 'M.Sc. (Microbiology)', value: 'msc-microbiology' },
-    { label: 'M.Sc. (Environment Science)', value: 'msc-environment' }
+    { label: 'M.Sc. (Environment Science)', value: 'msc-environment' },
+    { label: 'MCA', value: 'mca' },
+        { label: 'Other', value: 'm-other' }
+
+
     ],
     'Undergraduate': [
     { label: 'B.Sc. (Embryology)', value: 'bsc-embryology' },
@@ -245,10 +251,13 @@ export class RegistrationComponent implements OnInit {
     { label: 'BBA with specialization in Business Analytics in collaboration with IBM', value: 'bba-analytics' },
 
     // ✅ Engineering
-    { label: 'B. Tech in Civil Engineering', value: 'btech-cse' },
+    { label: 'B. Tech in AIML', value: 'btech-aiml' },
+    { label: 'B. Tech in Civil Engineering', value: 'btech-civil' },
     { label: 'B. Tech in Computer Science and Engineering', value: 'btech-cse' },
     { label: 'B.Tech in Electronics and Communications Engineering', value: 'btech-ece' },
-    { label: 'B.Tech in Fire Technology and Safety Engineering', value: 'btech-fire' }  ]  };
+    { label: 'B.Tech in Fire Technology and Safety Engineering', value: 'btech-fire' },
+          { label: 'Other', value: 'b-other' }
+  ]  };
 
   programNames: any[] = [];
   constructor(
