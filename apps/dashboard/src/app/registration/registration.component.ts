@@ -207,6 +207,8 @@ export class RegistrationComponent implements OnInit {
     { label: 'M.Sc. (Microbiology)', value: 'msc-microbiology' },
     { label: 'M.Sc. (Environment Science)', value: 'msc-environment' },
     { label: 'MCA', value: 'mca' },
+        { label: 'MBA', value: 'mba' },
+
         { label: 'Other', value: 'm-other' }
 
 
